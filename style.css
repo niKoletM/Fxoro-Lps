@@ -19,6 +19,7 @@
 .box {
   max-width: fit-content;
   margin: auto;
+  margin-top: 10px;
 }
 header {
   position: relative;
@@ -109,8 +110,8 @@ main {
   }
   .second-main-container {
     background-color: rgb(15, 31, 42);
-    background-image: url("./images/backgroundTop.png"),
-      url("./images/backgroundBottom.png");
+    background-image: url("./images/line-texture-top.png"),
+      url("./images/line-texture-bottom.png");
     background-position: top, bottom;
     background-repeat: no-repeat, no-repeat;
   }
@@ -581,6 +582,16 @@ footer {
       .center {
         display: none;
       }
+      .img-mobile-hand {
+        width: 200%;
+        overflow: visible;
+        background: rgb(255, 180, 1);
+        margin-left: -50%;
+      img {
+         max-width: 332px;
+         margin: auto;
+}
+      }
       .mobil-hand-img {
         display: block;
         width: 70%;
@@ -705,6 +716,16 @@ footer {
       .small-background-img,
       .center {
         display: none;
+      }
+      .img-mobile-hand {
+        width: 200%;
+        overflow: visible;
+        background: rgb(255, 180, 1);
+        margin-left: -50%;
+      img {
+         max-width: 332px;
+         margin: auto;
+}
       }
       .mobil-hand-img {
         display: block;
