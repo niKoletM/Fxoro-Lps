@@ -6,6 +6,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" href="./images/web-header-background.jpg" as="image" media="(max-width: 800px)">
+  <link rel="preload" href="./images/web-man.png" as="image" media="(max-width: 800px)">
+  <link rel="preload" href="./images/mobil-man.png" as="image" media="(max-width: 800px)">
+  <link rel="preload" href="./images/Mobil-header-image.jpg" as="image" media="(max-width: 800px)">
+  <link rel="preload" href="./images/icon.png" as="image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2" as="font" crossorigin="anonymous" />
@@ -27,7 +32,6 @@
                   WITH FXORO AND GET YOUR
                   FREE HANDBOOK</h3>
            </div>
-
           <div class="flex-item-right">
           <div class="form-box">
             <h4 class="text-center">REGISTER NOW
@@ -157,20 +161,20 @@
               </div>
             </form>
           </div>
-          <img class="mobil-man" src="./images/Mobil-man.png">
+            <img loading="lazy" class="mobil-man" src="./images/mobil-man.png" width="231" height="303">
           </div>
         </div>
       </div>
-          <img class="web-man" src="./images/web-man2.png" width="625" height="700">
+          <img class="web-man" src="./images/web-man.png" width="589" height="671">
     </header>
     <main>
     <section>
       <div class="center-wrap">
         <div class="row container small-box">
-            <h3 class="">INTERESTED IN <span>TRADING?</span> CHECK WHAT <span>FXORO</span> CAN OFFER:</h3>
+            <h3>INTERESTED IN <span>TRADING?</span> CHECK WHAT <span>FXORO</span> CAN OFFER:</h3>
             <div class="flex-container">
           <div class="box">
-            <a href="#" target="_blank"><img loading="lazy" src="./images/icon-1.png" alt="icon1" width="150" height="147"></a>
+            <a class="first-box" href="#" target="_blank"><img loading="lazy" src="./images/icon-1.png" alt="icon1" width="150" height="147"></a>
             <h4>Educational material</h4>
           </div>
           <div class="box">
@@ -199,11 +203,11 @@
     </section>
     </main>
     <footer>
-    <div class="p-3 col-lg-9 mx-auto">
+    <div class="p-3 lg-box mx-auto">
       <div class="center-wrap">
-        <div class="container row">
-          <img class="mobil-img" loading="lazy" src="./images/Mobil-footer-img.png" alt="mobilFooterImg">
-          <img class="web-img" loading="lazy" src="./images/web-footer-Img.png" alt="webFooterImg">
+        <div class="container">
+          <img class="mobil-img" loading="lazy" src="./images/Mobil-footer-img.png" alt="mobilFooterImg" width="339" height="31">
+          <img class="web-img" loading="lazy" src="./images/web-footer-Img.png" alt="webFooterImg" width="1118" height="73">
           <p>This website is under the operation of MCA Intelifunds Ltd trading as FX ORO .</p>
           <p>MCA INTELIFUNDS LTD, trading as “FXORO”, is a financial services company incorporated and
             registered under the laws of the Republic of Cyprus, licensed and regulated by the Cyprus

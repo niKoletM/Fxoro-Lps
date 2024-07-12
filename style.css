@@ -15,6 +15,9 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+body {
+  margin: 0;
+}
 
 .row {
   --bs-gutter-x: 1.5rem;
@@ -45,17 +48,18 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
- .col-lg-9 {
+ .lg-box {
     flex: 0 0 auto;
     width: 75%;
   }
- .col-md-6 {
+ .md-box {
     flex: 0 0 auto;
     width: 50%;
   }
 .flex-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .flex-item-left {
   flex: 50%;
@@ -120,7 +124,7 @@ form.registerForm .form-control .phone-input svg {
 }
 form.registerForm .error {
     color: var(--clr-danger);
-    font-size: 85%;
+    font-size: 61%;
     padding-top: 1px;
     color: red;
 }
@@ -183,12 +187,6 @@ input[type="checkbox"] {
     flex: 1 1 auto;
     width: 1%;
     min-width: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .form-select {
-        transition: none;
-    }
 }
 .form-select {
     display: block;
@@ -289,7 +287,7 @@ header {
   }
   .web-man {
     position: absolute;
-    top: 2px;
+    bottom: 0;
     right: 0;
     z-index: 2;
   }
@@ -298,7 +296,7 @@ header {
     float: right;
     margin-top: -30px;
   }
-  .form-box { 
+  .form-box {
     width: 400px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -367,7 +365,7 @@ header {
     p {
       font-size: 10px;
     }
-}
+  }
 }
 main {
   section {
@@ -377,15 +375,11 @@ main {
     .box {
       margin-top: 10px;
       margin-bottom: 10px;
-      a {
-        padding: auto;
-        img {
-          padding: 15px;
-       }
-        a img:first-child {
-        margin-left: 10px;
-        }
-     }
+    }
+    .first-box {
+      img {
+        margin-left: 30px;
+      }
     }
     h3 {
       color: rgb(1, 1, 1);
@@ -411,7 +405,7 @@ main {
       margin-top: 25px;
       color: rgb(15, 31, 42);
       background-color: rgb(255, 180, 1);
-      margin-bottom: 10px;
+      margin-bottom: 35px;
       border-radius: 0;
        svg {
         height: 20px;
@@ -439,34 +433,34 @@ footer {
   .mobil-img {
     display: none;
 }
-  img {
-    margin: 10px auto;
-  }
+ .web-img {
+  width: 100%;
+ }
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
-    flex: 100%;
+@media only screen and (max-width: 1584px) {
+  footer {
+    margin: auto;
+   .mobil-img {
+    display: none;
   }
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
+  .web-img {
+    display: block;
+    width: 99%;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
+  .lg-box {
     width: 100%;
   }
+    }
 }
-
-  @media only screen and (max-width: 768px) {
-    header {
+@media only screen and (max-width: 800px) {
+   .flex-container {
+    flex-direction: column;
+  }
+   .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+  header {
       background-image: url("./images/Mobil-header-image.jpg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -474,27 +468,31 @@ footer {
       .web-man {
         display: none;
       }
+
       .mobil-man {
         display: block;
         float: right;
         margin-top: -30px;
+        mask-image: linear-gradient(to bottom, white 93%, transparent 100%);
       }
       .main-content {
     width: 500px;
+    display: contents;
   h1 {
     text-align: center;
     color:  rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 800;
     line-height: 1.2;
-    padding: 20px 30px;
-    margin-bottom: 0;
+    padding: 0px 30px;
+    margin-bottom: 50px;
   }
   h3 {
     text-align: center;
     color:  rgb(255, 255, 255);
-    padding: 20px 30px;
+    padding: 0 30px;
     font-size: 20px;
+    margin-bottom: 40px;
     }
       }
       .box {
@@ -506,31 +504,169 @@ footer {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         padding: 12px 29px;
         margin: 0;
+        h4 {
+          padding: 0 40px;
+        }
   }
 }
   main {
    section .small-box h4{
-      margin: 50px auto;
+      margin: 62px auto;
     }
     section .small-box {
       width: 100%;
+      h3 {
+        font-size: 20px;
+      }
+      a {
+        padding-left: 0px;
+        img {
+          padding: 23px;
+        }
+      }
     }
   }
-     section .box {
+  section .box {
       display: flex;
-      margin: 0;
-    }
-    footer {
       margin: auto;
-   .mobil-img {
+    }
+  footer {
+  margin: auto;
+  .mobil-img {
+   display: none;
+  }
+  .web-img {
     display: block;
+    width: 99%;
+  }
+  .lg-box {
+    width: 100%;
+  }
+  .mx-auto {
+    margin-left: 0;
+    margin-right: 0;
+  }
+    p {
+      font-size: 12px;
+      padding: 0 5px;
+    }
+    }
+}
+@media only screen and (max-width: 650px) {
+    footer {
+  .mobil-img {
+    display: block;
+    width: 99%;
   }
   .web-img {
     display: none;
   }
-    p {
-      font-size: 9px;
     }
 }
+@media only screen and (max-width: 420px) {
+    header {
+      background-image: url("./images/Mobil-header-image.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100%;
+      .icon-img {
+        margin-top: -30px;
+      }
+      .web-man {
+        display: none;
+        width: 99%;
+      }
+      .mobil-man {
+        display: block;
+        float: right;
+        margin-top: -30px;
+      }
+      .main-content {
+    width: 500px;
+    display: contents;
+  h1 {
+    text-align: center;
+    color:  rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    padding: 0px 30px;
+    margin-bottom: 0;
+  }
+  h3 {
+    text-align: center;
+    color:  rgb(255, 255, 255);
+    padding: 0 30px;
+    font-size: 16px;
+    }
+      }
+      .box {
+        margin: 0
+      }
+      .form-box {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 12px 29px;
+        margin: 0;
+        h4 {
+          padding: 0 46px;
+        }
+        .register-form {
+          width: 100%;
+        }
+        label {
+          font-size: 9px;
+        }
+        p {
+          font-size: 8px;
+        }
+  }
+    }
+    main {
+   section .small-box h4{
+      margin: 62px auto;
+      font-size: 15px;
+    }
+    section .small-box {
+      width: 100%;
+      h3 {
+        font-size: 20px;
+      }
+    .first-box {
+      img {
+        margin-left: 0;
+      }
+    }
+      a {
+        margin: 0;
+        padding: 0;
+        img {
+          padding: 30px;
+        }
+      }
+    }
+    }
+    section .box {
+      display: flex;
+      margin: 0;
+    }
+    footer {
+   .mobil-img {
+    display: block;
+    width: 100%;
+  }
+  .lg-box {
+    width: 100%;
+  }
+  .mx-auto {
+    margin-left: 0;
+    margin-right: 0;
+  }
+    p {
+      font-size: 9px;
+      padding: 0 5px;
+    }
+    }
 }
 
