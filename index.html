@@ -38,7 +38,7 @@
               GET YOUR
               <br><span>FREE HANDBOOK</span><br>
             </h4>
-            <form class="register-form registerForm">
+            <form id="registerForm" class="register-form registerForm">
               <div class="registerFormInner">
                 <div class="form-control firstNameWrapper">
                   <div class="field">
@@ -139,7 +139,7 @@
                 </div>
                 <div class="form-control agreementWrapper agreementWrapperClassic">
                   <div class="field">
-                    <input id="agreementClassic" type="checkbox" name="agreementClassic">
+                    <input id="agreementClassic" type="checkbox" name="agreementClassic" checked>
                     <label id="agreementClassic" for="agreementClassic"> Yes, I agree to receive communications from FXORO.</label>
                   </div>
                   <div class="error"></div>
@@ -186,7 +186,7 @@
             <h4>Weekly webinars</h4>
           </div>
           </div>
-            <button type="submit" class="btn mx-auto" name="submit">
+            <button type="submit" class="btn mx-auto" name="submit" onclick="document.getElementById('registerForm').scrollIntoView()">
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
