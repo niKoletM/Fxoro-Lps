@@ -18,7 +18,6 @@
 body {
   margin: 0;
 }
-
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -256,7 +255,7 @@ header {
     width: 500px;
  }
   h1 {
-    font-size: 49px;
+    font-size: 50px;
     font-weight: 800;
     margin-top: 30px;
     line-height: 1.2;
@@ -293,7 +292,6 @@ header {
   }
   .mobil-man {
     display: none;
-    float: right;
     margin-top: -30px;
   }
   .form-box {
@@ -332,8 +330,8 @@ header {
       }
 }
 .btn:hover {
-  color: rgb(15, 31, 42);
-  background-color: rgb(255, 180, 1);
+  color: rgb(255, 255, 255);
+  background-color: rgb(55, 84, 116);
 }
 .register-form {
   width: 310px;
@@ -414,9 +412,9 @@ main {
       }
     }
     .btn:hover {
-      color: rgb(15, 31, 42);
-      background-color: rgb(255, 180, 1);
-}
+      color: rgb(255, 255, 255);
+      background-color: rgb(55, 84, 116);
+    }
   }
 }
 }
@@ -437,7 +435,6 @@ footer {
   width: 100%;
  }
 }
-
 @media only screen and (max-width: 1584px) {
   footer {
     margin: auto;
@@ -452,6 +449,24 @@ footer {
     width: 100%;
   }
     }
+}
+@media only screen and (max-width: 1076px) {
+  header{
+    .main-content {
+      h1 {
+        font-size: 46px;
+    }
+   }
+  }
+}
+@media only screen and (max-width: 926px) {
+  header{
+    .main-content {
+      h1 {
+        font-size: 33px;
+    }
+   }
+  }
 }
 @media only screen and (max-width: 800px) {
    .flex-container {
@@ -470,8 +485,11 @@ footer {
       }
 
       .mobil-man {
+        max-width: 100%;
+        height: auto;
         display: block;
-        float: right;
+        float: none;
+        margin: auto;
         margin-top: -30px;
         mask-image: linear-gradient(to bottom, white 93%, transparent 100%);
       }
@@ -578,8 +596,6 @@ footer {
       }
       .mobil-man {
         display: block;
-        float: right;
-        margin-top: -30px;
       }
       .main-content {
     width: 500px;
@@ -669,4 +685,16 @@ footer {
     }
     }
 }
-
+@media only screen and (max-width: 360px) {
+  header{
+    .main-content {
+      h1, h3 {
+      padding: 0px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-top: 8px;
+    }
+   }
+  }
+}
