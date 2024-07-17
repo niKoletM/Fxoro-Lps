@@ -64,11 +64,10 @@ body {
   flex-wrap: wrap;
 }
 .flex-item-left {
-  flex: 50%;
+  flex: 65%;
 }
 .flex-item-right {
-  flex: 50%;
-    z-index: 3;
+  flex: 35%;
 }
 .mx-auto {
   margin-right: auto !important;
@@ -130,7 +129,6 @@ form.registerForm .error {
     padding-top: 1px;
     color: red;
 }
-
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
@@ -171,7 +169,6 @@ input[type="checkbox"] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-
 .input-group-prepend {
       margin: 0;
     font-family: var(--bs-body-font-family);
@@ -201,7 +198,6 @@ input[type="checkbox"] {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     appearance: none;
 }
-
 [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
@@ -248,33 +244,55 @@ input[type="checkbox"] {
     text-align: center !important;
 }
 header {
-  position: relative;
+.first-header-container {
   padding-top: 40px;
-  height: 100%;
-  background-image: url("./images/web-header-background.jpg");
+  background-image: url("./images/web-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
+}
+.last-header-container{
+  background-color: #fff;
+  .small-box {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    .box {
+      display: flex;
+      width: 30%;
+      margin: 10px auto;
+    }
+    p {
+      color: rgb(1, 1, 1);
+      font-weight: 400;
+      text-align: center;
+      font-size: 14px;
+      margin: 10px auto;
+    }
+    img {
+      margin: auto 5px;
+    }
+  }
+}
  .main-content {
     width: 500px;
+    padding-left: 20px;
+    padding-right: 60px;
  }
   h1 {
     font-size: 50px;
     font-weight: 800;
     margin-top: 30px;
-    line-height: 1.2;
     margin-bottom: 45px;
-    padding: 50px 70px 50px 16px;
-    color:  rgb(255, 255, 255);
-    span {
-      color: rgb(255, 180, 1);
-    }
+    padding: 50px 70px 50px 0px;
+    color:  #fccf1a;
+    text-shadow: 2px 2px #000000;
   }
   h3 {
   color:  rgb(255, 255, 255);
   margin-bottom: 40px;
-  padding: 0px 138px 25px 18px;
-  line-height: 1.2;
-  font-weight: 400;
+  line-height: 1.6;
+  font-weight: 300;
   font-size: 25px;
   }
   h4 {
@@ -287,64 +305,44 @@ header {
       font-weight: 800;
     }
   }
-  .web-man {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-  }
-  .mobil-man {
-    display: none;
-    margin-top: -30px;
-  }
+
   .form-box {
-    width: 400px;
+    width: 300px;
     background-color: rgb(255, 255, 255);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(32, 32, 32, 0.2) 0px 2px 4px 4px,rgba(34, 34, 34, 0.2) 0px 2px 4px 4px;
     padding: 12px 29px;
-    margin: 96px 25px 20px 60px;
-    h4{
-      margin: 5px auto;
-    }
-    label {
-      font-size: 14px;
-    }
-    p {
-      font-size: 13px;
-      margin-top: 0;
-      margin-bottom: 1rem;
+    margin-top: 90px;
+    h4 {
+      margin: 20px auto;
+      font-weight: 800;
+      padding: 0;
     }
   }
 .btn {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-weight: 800;
-  color: rgb(15, 31, 42);
-  background-color: rgb(255, 180, 1);
+  font-weight: 700;
+  background-color: #000000;
+  color: #fccf1a;
   border-radius: 0;
-  font-size: 20px;
+  font-size: 14px;
   margin-bottom: 10px;
   width: 100%;
-    svg {
-        height: 20px;
-        width: 20px;
-        margin-bottom: -2px;
-      }
 }
 .btn:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(55, 84, 116);
 }
 .register-form {
-  width: 310px;
+  width: 250px;
   margin: auto;
   input,
   select {
-        margin-bottom: 13px;
-        border-radius: 0;
-        font-size: 13px;
-        padding: 3px 31px;
+  margin-bottom: 13px;
+  border-radius: 0;
+  font-size: 13px;
+  padding: 1px 15px;
   }
   select.form-select {
     background-image: url("./images/select-icon.png");
@@ -361,68 +359,70 @@ header {
     border: 1px solid rgb(206, 206, 206);
   }
      label {
-      font-size: 11px;
+      font-size: 8px;
     }
     p {
-      font-size: 10px;
+      font-size: 8px;
+         margin-top: 0;
+      margin-bottom: 1rem;
     }
   }
 }
 main {
-  section {
-  .small-box {
-    margin: auto;
-    width: 65%;
-    .box {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    .first-box {
-      img {
-        margin-left: 30px;
-      }
-    }
-    h3 {
-      color: rgb(1, 1, 1);
-      font-weight: 400;
-      text-align: center;
-      font-size: 30px;
-      margin: 30px auto;
-      span {
-        font-weight: 800;
-      }
-    }
-    h4 {
-      color: rgb(1, 1, 1);
-      font-weight: 700;
-      text-align: center;
-      font-size: 19px;
-      margin: 15px auto;
-    }
-    .btn {
-      width: 310px;
-      font-weight: 800;
-       font-size: 20px;
-      margin-top: 25px;
-      color: rgb(15, 31, 42);
-      background-color: rgb(255, 180, 1);
-      margin-bottom: 35px;
-      border-radius: 0;
-       svg {
-        height: 20px;
-        width: 20px;
-        margin-bottom: -2px;
-      }
-    }
-    .btn:hover {
-      color: rgb(255, 255, 255);
-      background-color: rgb(55, 84, 116);
+  position: relative;
+  .first-main-container {
+    border-top: 1px solid  #000000;
+h2 {
+  color: #0a4361;
+}
+h4 {
+  font-weight: 500;
+}
+  }
+  .second-main-container{
+    background-image: url("./images/web-lower-body-blue-gradient-strip.jpg");
+    h4{
+       margin: 20px auto;
+       color: rgb(255, 255, 255);
+       font-weight: 400;
+       span {
+        color: #fccf1a;
+        font-weight: 600;
+       }
+       span:first-child {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+       }
     }
   }
+  .third-main-container {
+    padding: 25px;
+   .btn {
+    background-color: #ffb401;
+    color: #000000;
+    border-radius: 0;
+    box-shadow: 2px 2px #000000;
+    font-weight: 900;
+    font-size: 24px;
+    padding: 5px 18px;
+   }
+   .btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(55, 84, 116);
 }
+  }
+  .mobil-man {
+    display: none;
+  }
+  .web-man {
+    position: absolute;
+    bottom: 10px;
+    left: 65px;
+  }
 }
 footer {
   background-color: rgb(53, 53, 53);
+  text-align: center;
   .footer-wrap {
     padding: 0px 25px;
   }
@@ -431,47 +431,48 @@ footer {
     font-size: 10px;
     color: rgb(206, 206, 206);
   }
-  .mobil-img {
-    display: none;
-}
- .web-img {
-  width: 100%;
- }
 }
 @media only screen and (max-width: 1584px) {
   footer {
     margin: auto;
-   .mobil-img {
-    display: none;
-  }
-  .web-img {
-    display: block;
-    width: 99%;
-  }
   .lg-box {
     width: 100%;
   }
     }
 }
-@media only screen and (max-width: 1076px) {
-  header{
-    .main-content {
-      h1 {
-        font-size: 46px;
+@media only screen and (max-width: 1252px) {
+ main {
+   .mobil-man {
+    display: block;
+    margin: auto;
+    margin-top: -50px;
+  }
+  .web-man {
+    display: none;
+  }
+ }
+}
+@media only screen and (max-width: 1000px) {
+   .flex-container {
+    flex-direction: row;
+  }
+  .flex-item-left {
+    flex: 60%;
+  }
+   .flex-item-right {
+    flex: 40%;
+  }
+  header {
+    .last-header-container{
+      .small-box {
+        img {
+          margin: 0 5px;
+        }
+      }
     }
-   }
   }
 }
-@media only screen and (max-width: 926px) {
-  header{
-    .main-content {
-      h1 {
-        font-size: 33px;
-    }
-   }
-  }
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 748px) {
    .flex-container {
     flex-direction: column;
   }
@@ -479,29 +480,27 @@ footer {
     flex: 100%;
   }
   header {
-      background-image: url("./images/Mobil-header-image.jpg");
+    .first-header-container {
+      background-image: url("./images/Mobil-header.jpg");
       background-repeat: no-repeat;
       background-size: contain;
       height: 100%;
-      .web-man {
-        display: none;
       }
-
-      .mobil-man {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        float: none;
-        margin: auto;
-        margin-top: -30px;
-        mask-image: linear-gradient(to bottom, white 93%, transparent 100%);
+    .last-header-container {
+      h4 {
+        margin: 62px auto;
+        }
+   .small-box .box {
+      width: 70%;
+    }
+      width: 100%;
       }
       .main-content {
     width: 500px;
     display: contents;
   h1 {
     text-align: center;
-    color:  rgb(255, 255, 255);
+    color: #fccf1a;
     font-size: 30px;
     font-weight: 800;
     line-height: 1.2;
@@ -528,38 +527,10 @@ footer {
         h4 {
           padding: 0 40px;
         }
-  }
+      }
 }
-  main {
-   section .small-box h4{
-      margin: 62px auto;
-    }
-    section .small-box {
-      width: 100%;
-      h3 {
-        font-size: 20px;
-      }
-      a {
-        padding-left: 0px;
-        img {
-          padding: 23px;
-        }
-      }
-    }
-  }
-  section .box {
-      display: flex;
-      margin: auto;
-    }
   footer {
   margin: auto;
-  .mobil-img {
-   display: none;
-  }
-  .web-img {
-    display: block;
-    width: 99%;
-  }
   .lg-box {
     width: 100%;
   }
@@ -573,131 +544,87 @@ footer {
     }
     }
 }
-@media only screen and (max-width: 650px) {
-    footer {
-  .mobil-img {
-    display: block;
-    width: 99%;
-  }
-  .web-img {
-    display: none;
-  }
-    }
-}
 @media only screen and (max-width: 420px) {
     header {
-      background-image: url("./images/Mobil-header-image.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 100%;
-      .icon-img {
-        margin-top: -30px;
-      }
-      .web-man {
-        display: none;
-        width: 99%;
-      }
-      .mobil-man {
-        display: block;
-      }
-      .main-content {
-    width: 500px;
-    display: contents;
-  h1 {
-    text-align: center;
-    color:  rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 1.2;
-    padding: 0px 30px;
-    margin-bottom: 0;
-  }
-  h3 {
-    text-align: center;
-    color:  rgb(255, 255, 255);
-    padding: 0 30px;
-    font-size: 16px;
+    .main-content {
+    h1 {
+      font-size: 29px;
+      padding: 0px 0px;
     }
-      }
-      .box {
-        margin: 0
-      }
-      .form-box {
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 12px 29px;
-        margin: 0;
-        h4 {
-          padding: 0 46px;
-        }
-        .register-form {
-          width: 100%;
-        }
-        label {
-          font-size: 9px;
-        }
-        p {
-          font-size: 8px;
-        }
-  }
-    }
-    main {
-   section .small-box h4{
-      margin: 62px auto;
+    h3 {
       font-size: 15px;
     }
-    section .small-box {
-      width: 100%;
-      h3 {
-        font-size: 20px;
-      }
-    .first-box {
+  }
+    .last-header-container {
+      h4 {
+        margin: 62px auto;
+        }
+      .small-box .box {
+      width: 90%;
       img {
-        margin-left: 0;
+        padding: 10px;
+      }
+      p {
+        font-size: 12px;
       }
     }
-      a {
-        margin: 0;
-        padding: 0;
-        img {
-          padding: 30px;
+      width: 100%;
+    }
+    }
+    main {
+      .third-main-container {
+        .btn {
+          font-size: 14px;
         }
       }
-    }
-    }
-    section .box {
-      display: flex;
-      margin: 0;
-    }
-    footer {
-   .mobil-img {
-    display: block;
-    width: 100%;
-  }
-  .lg-box {
-    width: 100%;
-  }
-  .mx-auto {
-    margin-left: 0;
-    margin-right: 0;
-  }
-    p {
-      font-size: 9px;
-      padding: 0 5px;
-    }
     }
 }
 @media only screen and (max-width: 360px) {
   header{
+    .first-header-container {
+      padding-top: 5px;
+    }
+    .flex-item-right {
+      max-height: 350px;
+    }
+    .icon-img {
+      img {
+        width: 40%;
+        height: 50%;
+      }
+    }
     .main-content {
       h1, h3 {
-      padding: 0px;
       margin-bottom: 10px;
+      padding: 0 20px;
     }
     h3 {
       margin-top: 8px;
+      font-size: 13px;
     }
    }
+    .form-box {
+      padding: 3px 6px;
+        h4{
+        padding: 0 5px;
+      }
+    }
+  .register-form {
+      width: 100%;
+    }
   }
+
+  main {
+    .first-main-container {
+      h2{
+        font-size: 20px;
+      }
+      h4{
+        font-size: 14px;
+      }
+  }
+     .mobil-man {
+      margin-left: -24px;
+    }
+}
 }
