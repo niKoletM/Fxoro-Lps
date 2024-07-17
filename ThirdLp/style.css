@@ -21,24 +21,6 @@ html{
 body {
   margin: 0;
 }
-.row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
-}
-.row > * {
-  box-sizing: border-box;
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
-}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -75,6 +57,9 @@ body {
 }
 .p-3 {
   padding: 1rem !important;
+}
+.p-4 {
+  padding: 2rem !important;
 }
 .wrap {
   width: 100%;
@@ -265,9 +250,9 @@ header {
     p {
       color: rgb(1, 1, 1);
       font-weight: 400;
-      text-align: center;
+      text-align: left;
       font-size: 14px;
-      margin: 10px auto;
+      margin: 10px 5px;
     }
     img {
       margin: auto 5px;
@@ -286,14 +271,15 @@ header {
     margin-bottom: 45px;
     padding: 50px 70px 50px 0px;
     color:  #fccf1a;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #001c2b;
   }
   h3 {
   color:  rgb(255, 255, 255);
   margin-bottom: 40px;
   line-height: 1.6;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 29px;
+   padding: 2px 60px 15px 0px;
   }
   h4 {
     color: rgb(15, 31, 42);
@@ -326,7 +312,7 @@ header {
   background-color: #000000;
   color: #fccf1a;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -377,14 +363,18 @@ h2 {
 }
 h4 {
   font-weight: 500;
+  padding: 5px;
+  font-size: 19px;
 }
   }
   .second-main-container{
     background-image: url("./images/web-lower-body-blue-gradient-strip.jpg");
     h4{
+      font-size: 20px;
        margin: 20px auto;
        color: rgb(255, 255, 255);
-       font-weight: 400;
+       font-weight: 300;
+       line-height: 1.6;
        span {
         color: #fccf1a;
         font-weight: 600;
@@ -417,7 +407,6 @@ h4 {
   .web-man {
     position: absolute;
     bottom: 10px;
-    left: 65px;
   }
 }
 footer {
@@ -440,15 +429,27 @@ footer {
   }
     }
 }
-@media only screen and (max-width: 1252px) {
+@media only screen and (max-width: 1500px) {
  main {
-   .mobil-man {
+    .mobil-man {
     display: block;
     margin: auto;
     margin-top: -50px;
   }
   .web-man {
     display: none;
+  }
+  .p-4 {
+    padding: 0.5rem !important;
+  }
+ }
+}
+@media only screen and (max-width: 1252px) {
+ main {
+  .second-main-container {
+      h4:first-child {
+      margin-top: auto;
+    }
   }
  }
 }
@@ -486,6 +487,12 @@ footer {
       background-size: contain;
       height: 100%;
       }
+      .icon-img {
+        margin: auto;
+      }
+      .register-form {
+        width: 350px;
+      }
     .last-header-container {
       h4 {
         margin: 62px auto;
@@ -505,7 +512,7 @@ footer {
     font-weight: 800;
     line-height: 1.2;
     padding: 0px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   h3 {
     text-align: center;
@@ -544,17 +551,21 @@ footer {
     }
     }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
     header {
     .main-content {
     h1 {
       font-size: 29px;
       padding: 0px 0px;
+      margin-bottom: 30px;
     }
     h3 {
-      font-size: 15px;
+      font-size: 16px;
     }
   }
+   .register-form {
+      width: 100%;
+    }
     .last-header-container {
       h4 {
         margin: 62px auto;
@@ -572,9 +583,22 @@ footer {
     }
     }
     main {
+    .first-main-container {
+      h2{
+        font-size: 20px;
+      }
+      h4{
+        font-size: 14px;
+      }
+  }
+      .second-main-container {
+        h4 {
+          font-size: 16px;
+        }
+      }
       .third-main-container {
         .btn {
-          font-size: 14px;
+          font-size: 19px;
         }
       }
     }
@@ -588,10 +612,8 @@ footer {
       max-height: 350px;
     }
     .icon-img {
-      img {
         width: 40%;
         height: 50%;
-      }
     }
     .main-content {
       h1, h3 {
@@ -601,6 +623,7 @@ footer {
     h3 {
       margin-top: 8px;
       font-size: 13px;
+      padding-bottom: 10px;
     }
    }
     .form-box {
@@ -609,22 +632,5 @@ footer {
         padding: 0 5px;
       }
     }
-  .register-form {
-      width: 100%;
-    }
   }
-
-  main {
-    .first-main-container {
-      h2{
-        font-size: 20px;
-      }
-      h4{
-        font-size: 14px;
-      }
-  }
-     .mobil-man {
-      margin-left: -24px;
-    }
-}
 }
