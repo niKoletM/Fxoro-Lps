@@ -277,7 +277,7 @@ input[type="checkbox"] {
   input,
   select {
   margin-bottom: 13px;
-  border-radius: 0;
+  border-radius: 3px;
   font-size: 14px;
   padding: 5px 15px;
   }
@@ -311,7 +311,7 @@ input[type="checkbox"] {
   font-weight: 700;
   background-color: #1b2854;
   color: #ffb401;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid #ffffff;
   width: 100%;
   }
