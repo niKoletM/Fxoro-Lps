@@ -138,6 +138,189 @@ body {
   margin: auto;
   margin-top: 10px;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #0006;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 35px 20px 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    top: 0;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+form.registerForm {
+    --formGap: 1rem;
+    --containerWidthSM: 420px;
+    container-type: inline-size;
+    position: relative;
+}
+
+form.registerForm .registerFormInner>.form-control.firstNameWrapper {
+    order: 1;
+}
+form.registerForm .form-control .input {
+    position: relative;
+}
+form.registerForm .form-control .input svg {
+    display: none;
+    height: 90%;
+    width: auto;
+    position: absolute;
+    inset: 3% 10px auto auto;
+}
+form.registerForm .form-control .phone-input svg {
+    display: none;
+    height: 62%;
+    width: auto;
+    position: absolute;
+    inset: 2% 10px auto auto;
+}
+form.registerForm .error {
+    color: var(--clr-danger);
+    font-size: 61%;
+    padding-top: 1px;
+    color: red;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: 0;
+    font-family: inherit;
+}
+input[type="checkbox"] {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-prepend {
+      margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    /* background-color: var(--bs-body-bg); */
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+.form-select {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-repeat: no-repeat;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    appearance: none;
+}
+.register-form {
+  font-family: 'Montserrat';
+  width: 320px;
+  margin: auto;
+  input,
+  select {
+  margin-bottom: 13px;
+  border-radius: 0;
+  font-size: 14px;
+  padding: 5px 15px;
+  }
+  select.form-select {
+    background-image: url("./images/select-icon.png");
+    background-position: right center;
+    background-size: auto;
+  }
+  .phone {
+    display: flex;
+  }
+  .input-prefix {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50px;
+    border: 1px solid rgb(206, 206, 206);
+  }
+     label {
+      font-size: 11px;
+    }
+    p {
+      font-size: 12px;
+         margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .btn {
+  justify-content: center;
+  font-size: 20px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #1b2854;
+  color: #ffb401;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  width: 100%;
+  }
+.btn:hover {
+  color:  rgb(255, 255, 255);
+ border: 1px solid #ffb401;
+  }
+  }
+
 [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
