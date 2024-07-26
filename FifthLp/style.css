@@ -2,48 +2,6 @@
   font-family: 'Poppins';
   src: url(./fonts/Poppins/Poppins-Medium.ttf) format('woff2');
 }
-
-@media (min-width: 1200px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    float: left;
-  }
-  .col-12 {
-    width: 100%;
-  }
-  .col-11 {
-    width: 91.66666667%;
-  }
-  .col-10 {
-    width: 83.33333333%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-8 {
-    width: 66.66666667%;
-  }
-  .col-7 {
-    width: 58.33333333%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-5 {
-    width: 41.66666667%;
-  }
-  .col-4 {
-    width: 33.33333333%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-2 {
-    width: 16.66666667%;
-  }
-  .col-1 {
-    width: 8.33333333%;
-  }
-}
 body {
   margin: 0;
 }
@@ -224,7 +182,6 @@ input[type="checkbox"] {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     appearance: none;
 }
-
 .register-form {
   width: 320px;
   margin: auto;
@@ -275,7 +232,6 @@ input[type="checkbox"] {
  background-color: #000f4c;
   }
 }
-
 [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
@@ -466,18 +422,25 @@ footer {
     color: #ffffff;
   }
 }
-
-@media only screen and (max-width: 1200px) {
-    header {
-        .flex-container {
-    flex-direction: column-reverse;
+@media only screen and (max-width: 1700px) {
+  header {
+    .main-cta{
+      h4{
+        width: 71%;
+      }
+    }
+    .man-img {
+      width: 43%;
+    }
   }
-          .icon-img {
-            margin-left: 54px;
-        }
+}
+@media only screen and (max-width: 1300px) {
+    header {
+    .icon-img {
+      margin-left: 54px;
+    }
    .main-cta {
     margin: auto 36px;
-    padding: 35px 20px 41px;
       h2 {
     font-size: 36px;
     font-weight: 800;
@@ -494,11 +457,78 @@ footer {
     font-size: 27px;
     margin-top: 30px;
     padding: 10px 60px 20px 0;
-    width: 100%;
+    width: 77%;
      }
    }
     .man-img {
+      position: absolute;
+      margin-top: 20px;
+       width: 40%;
+    }
+    .coin2-img {
+      bottom: 8%;
+    }
+    .form-box {
+      width: 400px;
+      margin: 100px 0px ;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 91.66666667%;
+  }
+  .col-10 {
+    width: 83.33333333%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-8 {
+    width: 66.66666667%;
+  }
+  .col-7 {
+    width: 58.33333333%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-5 {
+    width: 41.66666667%;
+  }
+  .col-4 {
+    width: 33.33333333%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-2 {
+    width: 16.66666667%;
+  }
+  .col-1 {
+    width: 8.33333333%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+    header {
+    .flex-container {
+    flex-direction: column-reverse;
+    }
+   .main-cta {
+    padding: 35px 20px 41px;
+    h4 {
+    width: 100%;
+     }
+    }
+    .man-img {
       width: 100%;
+      position: relative;
     }
     .coin1-img {
     position: absolute;
@@ -507,15 +537,10 @@ footer {
     width: 31%;
     height: auto;
     }
-    .man-img {
-      position: relative;
-      margin-top: 20px;
-    }
     .coin2-img {
       bottom: 25%;
     }
     .form-box {
-      width: 400px;
       margin: auto;
     }
   }
@@ -527,91 +552,33 @@ footer {
     }
   }
 }
-
 @media only screen and (max-width: 1090px) {
-    header {
-        .flex-container {
-    flex-direction: column-reverse;
-  }
-     .icon-img {
+  header {
+    .icon-img {
     margin-left: 60px;
-  }
-    .man-img {
-      width: 100%;
-    }
-    .coin1-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 31%;
-    height: auto;
     }
     .man-img {
-      position: relative;
       margin-top: 20px;
-    }
-    .coin2-img {
-      bottom: 25%;
     }
     .form-box {
       width: 400px;
-      margin: auto;
     }
-   .main-cta {
-    margin: auto 36px;
-    padding: 35px 20px 41px;
-      h2 {
-    font-size: 36px;
-    font-weight: 800;
-    margin-top: 60px;
-    color:  #ffffff;
-    span{
-      color:  #f3791f;
-    }
-  }
-  h4 {
-    color: #ffffff;
-    font-weight: 300;
-    line-height: 1.6;
-    font-size: 27px;
-    margin-top: 30px;
-    padding: 10px 60px 20px 0;
-    width: 100%;
-     }
-   }
  }
 }
 @media only screen and (max-width: 1050px) {
   header{
-    .icon-img {
-    margin-left: 60px;
-  }
     .main-cta {
-      margin: auto 36px;
       padding: 35px 20px 41px;
       h2 {
     font-size: 33px;
-    font-weight: 800;
-    margin-top: 60px;
-    color:  #ffffff;
-    span{
-      color:  #f3791f;
-    }
-  }
-  h4 {
-    color: #ffffff;
-    font-weight: 300;
-    line-height: 1.6;
-    font-size: 25px;
-    margin-top: 30px;
-    padding: 10px 60px 20px 0;
-    width: 100%;
-     }
+      }
+      h4 {
+        font-size: 25px;
+        }
    }
   }
 }
 @media only screen and (max-width: 900px) {
-
     header {
     .main-cta {
        margin: auto auto;
@@ -621,7 +588,6 @@ footer {
       }
       h4 {
         font-size: 20px;
-        width: 100%;
       }
     }
   }
@@ -629,16 +595,14 @@ footer {
        .flex-container {
     flex-direction: column;
   }
-}
+ }
 }
 @media only screen and (max-width: 700px) {
   header {
-      .icon-img {
+    .icon-img {
       margin-left: 18px;
-    }
+      }
     .man-img {
-      width: 100%;
-      position: relative;
       margin-top: 20px;
     }
     .coin2-img {
@@ -676,15 +640,7 @@ footer {
   }
 }
 @media only screen and (max-width: 647px) {
-
   header {
-    .coin1-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 31%;
-    height: auto;
-    }
     .coin2-img {
       bottom: 13%;
       width: 17%;
@@ -696,17 +652,16 @@ footer {
       }
       h4 {
         font-size: 18px;
-        width: 100%;
       }
     }
   }
 }
 @media only screen and (max-width: 500px) {
   header {
-         .form-box {
+    .form-box {
       width: 100%;
       margin: auto;
-    }
+      }
     .main-cta {
       h2 {
         margin-top: 20px;
@@ -721,12 +676,10 @@ footer {
 @media only screen and (max-width: 447px) {
   header {
     .form-box {
-       width: 100%;
-      margin: auto;
       h4 {
         font-size: 20px;
-    }
-  }
+        }
+      }
     .main-cta {
       h2 {
         margin-top: 0;
@@ -750,31 +703,10 @@ main {
 }
 @media only screen and (max-width: 375px) {
   header {
-    .form-box {
-       width: 100%;
-      margin: auto;
-      h4 {
-        font-size: 20px;
-    }
-  }
     .main-cta {
       h2 {
-        margin-top: 0;
         font-size: 18px;
       }
-      h4 {
-        font-size: 14px;
-        padding: 10px 31px 20px 0;
-        width: 100%;
-      }
-    }
-  }
-main {
-  section .small-box .xs-box {
-    width: 100%;
-    p {
-      font-size: 14px;
-    }
     }
   }
 }
