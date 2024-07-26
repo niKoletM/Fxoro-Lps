@@ -297,6 +297,9 @@ background-position: center right;
     right: 45%;
     bottom: 10%;
   }
+  .coin3-img {
+    display: none;
+  }
   .man-img {
 position: absolute;
 bottom: 0;
@@ -304,6 +307,9 @@ right: 0;
 z-index: 1;
 width: auto;
 height: auto;
+  }
+  .small-man-img {
+    display: none;
   }
   .main-cta {
   margin: auto 36px;
@@ -362,6 +368,9 @@ height: auto;
   }
   .agreementCheckbox {
     display: flex;
+    input[type="checkbox"] {
+    margin-right: 6px;
+}
   }
   .input-prefix {
     padding-left: 5px;
@@ -376,6 +385,7 @@ height: auto;
       font-size: 10px;
       margin-top: 10px;
       margin-bottom: 1rem;
+      text-align: center;
     }
   }
 }
@@ -526,8 +536,13 @@ footer {
      }
     }
     .man-img {
-      width: 100%;
-      position: relative;
+      display: none;
+    }
+    .small-man-img {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
     .coin1-img {
     position: absolute;
@@ -538,10 +553,18 @@ footer {
     }
     .coin2-img {
       bottom: 25%;
+      right: 23%;
     }
-    .form-box {
-      margin: auto;
+    .coin3-img {
+    display: block;
+    position: absolute;
+    right: 12%;
+    top: 43%;
+    width: 30%;
     }
+.form-box {
+  margin: 4px 40px;
+}
   }
   main {
     section .small-box {
@@ -556,8 +579,16 @@ footer {
     .icon-img {
       margin-left: 54px;
     }
-    .man-img {
-      margin-top: 20px;
+    .coin2-img {
+      bottom: 25%;
+      right: 23%;
+    }
+    .coin3-img {
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 43%;
+    width: 25%;
     }
     .form-box {
       width: 400px;
@@ -582,6 +613,9 @@ footer {
          .icon-img {
       margin-left: 17px;
     }
+    .shapes-img {
+      background-image: none;
+    }
     .main-cta {
        margin: auto auto;
        padding: 35px 19px 17px;
@@ -599,16 +633,35 @@ footer {
   }
  }
 }
+@media only screen and (max-width: 800px) {
+  header {
+    .icon-img {
+      margin-left: 18px;
+      }
+      .form-box {
+        margin: auto;
+        margin-bottom: 100px;
+      }
+      .small-man-img {
+        position: relative;
+        margin: auto;
+      }
+    .coin2-img {
+      bottom: 5%;
+      right: 50%;
+    }
+    .coin3-img {
+    display: none;
+    }
+  }
+}
 @media only screen and (max-width: 700px) {
   header {
     .icon-img {
       margin-left: 18px;
       }
-    .man-img {
-      margin-top: 20px;
-    }
     .coin2-img {
-      bottom: 22%;
+      bottom: 16%;
       width: 16%;
       height: auto;
     }
@@ -644,8 +697,8 @@ footer {
 @media only screen and (max-width: 647px) {
   header {
     .coin2-img {
-      bottom: 13%;
-      width: 17%;
+      bottom: 18%;
+      width: 15%;
       height: auto;
     }
     .main-cta {
@@ -663,6 +716,20 @@ footer {
     .form-box {
       width: 100%;
       margin: auto;
+      }
+    .coin2-img {
+      bottom: 2%;
+      width: 10%;
+      height: auto;
+      left: 1px;
+      }
+      .coin3-img {
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        top: auto;
+        left: 20%;
+        width: 20%;
       }
     .main-cta {
       h2 {
