@@ -34,14 +34,10 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.lg-box {
-    flex: 0 0 auto;
-    width: 75%;
-  }
 .md-box {
     flex: 0 0 auto;
     width: 50%;
-  }
+}
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -278,41 +274,41 @@ input[type="checkbox"] {
     text-align: center !important;
 }
 header {
-   background-image: url("./images/blue-header-color.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    .icon-img {
-      margin-top: 30px;
-    }
-    .shapes-img {
-    background-image: url("./images/opac-shapes.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center right;
-    }
-    .coin1-img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    .coin2-img {
-        position: absolute;
-        right: 45%;
-        bottom: 10%;
-    }
-     .man-img {
+  background-image: url("./images/blue-header-color.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+.icon-img {
+  margin-top: 30px;
+  }
+.shapes-img {
+background-image: url("./images/opac-shapes.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center right;
+  }
+  .coin1-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+  .coin2-img {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    width: auto;
-    height: auto;
+    right: 45%;
+    bottom: 10%;
+  }
+  .man-img {
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: 1;
+width: auto;
+height: auto;
   }
   .main-cta {
-    margin: auto 36px;
-    padding: 35px 40px 200px;
-      h2 {
+  margin: auto 36px;
+  padding: 35px 40px 200px;
+  h2 {
     font-size: 36px;
     font-weight: 800;
     margin-top: 5px;
@@ -331,9 +327,9 @@ header {
     width: 55%;
   }
   }
-  .form-box {
+.form-box {
     width: 90%;
-    background-color: rgb(255, 255, 255);
+    background-color: #f2f3f6;
     padding: 12px 29px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -354,6 +350,7 @@ header {
   border-radius: 0;
   font-size: 14px;
   padding: 3px 15px;
+  background-color: #f8f8f8;
   }
   select.form-select {
     background-image: url("./images/svg-select.png");
@@ -417,7 +414,7 @@ footer {
     color: #ffffff;
   }
 }
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1760px) {
   header {
     .main-cta{
       h4{
@@ -425,7 +422,14 @@ footer {
       }
     }
     .man-img {
-      width: 43%;
+      width: 37%;
+    }
+  }
+}
+@media only screen and (max-width: 1520px) {
+  header {
+    .man-img {
+      width: 39%;
     }
   }
 }
@@ -465,7 +469,7 @@ footer {
     }
     .form-box {
       width: 400px;
-      margin: 100px 0px ;
+      margin: 100px 40px ;
     }
   }
 }
@@ -550,7 +554,7 @@ footer {
 @media only screen and (max-width: 1090px) {
   header {
     .icon-img {
-    margin-left: 60px;
+      margin-left: 54px;
     }
     .man-img {
       margin-top: 20px;
@@ -575,6 +579,9 @@ footer {
 }
 @media only screen and (max-width: 900px) {
     header {
+         .icon-img {
+      margin-left: 17px;
+    }
     .main-cta {
        margin: auto auto;
        padding: 35px 19px 17px;
@@ -610,7 +617,7 @@ footer {
         font-size: 27px;
       }
       h4 {
-        font-size: 23px;
+        font-size: 20px;
       }
     }
   }
