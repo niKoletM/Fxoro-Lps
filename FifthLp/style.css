@@ -102,10 +102,10 @@ form.registerForm .form-control .input svg {
 }
 form.registerForm .form-control .phone-input svg {
     display: none;
-    height: 62%;
+    height: 55%;
     width: auto;
     position: absolute;
-    inset: 2% 10px auto auto;
+    inset: 0% 10px auto auto;
 }
 form.registerForm .error {
     color: var(--clr-danger);
@@ -285,19 +285,11 @@ header {
     .icon-img {
       margin-top: 30px;
     }
-    .container {
+    .shapes-img {
     background-image: url("./images/opac-shapes.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
-    }
-    .shapes-img {
-      position: absolute;
-      z-index: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: auto;
     }
     .coin1-img {
       position: absolute;
@@ -369,6 +361,9 @@ header {
     background-size: auto;
   }
   .phone {
+    display: flex;
+  }
+  .agreementCheckbox {
     display: flex;
   }
   .input-prefix {
