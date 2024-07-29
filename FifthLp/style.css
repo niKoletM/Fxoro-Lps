@@ -350,7 +350,7 @@ height: auto;
 .form-box {
     width: 90%;
     background-color: #f2f3f6;
-    padding: 12px 29px;
+    padding: 2px 29px 12px;
     margin-top: 50px;
     margin-bottom: 50px;
     h4 {
@@ -411,6 +411,7 @@ main {
     margin: auto;
     text-align: center;
     padding: 1px;
+    margin-bottom: 20px;
     .xs-box {
       margin: auto;
       width: 300px;
@@ -423,6 +424,7 @@ main {
     color: #000f4c;
     font-size: 20px;
     font-weight: 900;
+    margin-top: 25px;
   }
 
 }
@@ -436,6 +438,7 @@ footer {
     font-size: 13px;
     line-height: 1.6;
     color: #ffffff;
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 1760px) {
