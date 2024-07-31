@@ -276,8 +276,9 @@ input[type="checkbox"] {
     }
     p {
       font-size: 12px;
-         margin-top: 0;
+      margin-top: 0;
       margin-bottom: 1rem;
+      text-align: center;
     }
     .btn {
   justify-content: center;
@@ -662,10 +663,11 @@ footer {
 }
 @media only screen and (max-width: 1050px) {
   header{
-    background-image: url("./images/Mobil-header-design.png");
+    background-image: url("./images/23\ opac\ bitcoin\ image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-color: #000000;
     .tablet-coin-img {
       display: none;
     }
@@ -750,13 +752,6 @@ footer {
 
 @media only screen and (max-width: 600px) {
   header {
-    background-image: url("./images/Mobil-header-design.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    .tablet-coin-img {
-      display: none;
-    }
     .main-content {
       text-align: center;
       padding-left: 10px;
