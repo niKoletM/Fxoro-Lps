@@ -6,6 +6,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="./images/icon-fxoro.png" as="image">
+    <link rel="preload" href="./images/Web-header-design.png" as="image" media="(max-width: 800px)">
+    <link rel="preload" href="./images/Mobil-header-design.png" as="image" media="(max-width: 800px)">
+    <link rel="preload" href="./images/bitcoin image small-cut.png" as="image" media="(max-width: 800px)">
+    <link rel="preload" href="./images/bitcoin image small.png" as="image" media="(max-width: 800px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2" as="font"
@@ -18,33 +23,202 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="center-wrap">
-        </div>
+          <div class="center-wrap">
+            <div class="container flex-container">
+              <div class="main-content flex-item-left">
+                <img class="icon-img" src="./images/icon-fxoro.png" alt="icon" width="202" height="71">
+                <h2>Interested in learning more about <span>Bitcoin CFDs</span> - one of the most popular cryptocurrencies in the world?</h2>
+                    <button class="btn mobile-btn"
+                      onclick="document.getElementById('registerForm').scrollIntoView({ behavior: 'smooth', block: 'center' })">FIND OUT MORE</button>
+                <h4>Many traders today choose to trade CFDs on various cryptocurrencies and, in particular, on Bitcoin.</h4>
+                <h4>The historical performance of Bitcoin shown here is less than a 5 year period and therefore may not be sufficient as a
+                basis for making investment decisions. Your capital is at risk.</h4>
+              </div>
+              <div class="flex-item-right">
+              <div class="form-box">
+                <h4 class="text-center">Subscribe now!<br>
+                Fill out the form below:</h4>
+                <form id="registerForm" class="register-form registerForm">
+                  <div class="registerFormInner">
+                    <div class="form-control firstNameWrapper">
+                      <div class="field">
+                        <div class="input">
+                          <input placeholder="First name" type="text" name="firstName">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="success">
+                            <path fill="var(--clr-success)"
+                              d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="error">
+                            <path fill="var(--clr-danger)"
+                              d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="error"></div>
+                    </div>
+                    <div class="form-control lastNameWrapper">
+                      <div class="field">
+                        <div class="input">
+                          <input placeholder="Last name" type="text" name="lastName">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="success">
+                            <path fill="var(--clr-success)"
+                              d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="error">
+                            <path fill="var(--clr-danger)"
+                              d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="error">
+                      </div>
+                    </div>
+                    <div class="form-control emailWrapper">
+                      <div class="field">
+                        <div class="input">
+                          <input placeholder="E-email" type="email" name="email">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="success">
+                            <path fill="var(--clr-success)"
+                              d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="error">
+                            <path fill="var(--clr-danger)"
+                              d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="error">
+                      </div>
+                    </div>
+                    <div class="form-control countryWrapper">
+                      <div class="field">
+                        <div class="input">
+                          <select id="form1-country" class="country-select form-select" name="country">
+                          </select>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="success">
+                            <path fill="var(--clr-success)"
+                              d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="error">
+                            <path fill="var(--clr-danger)"
+                              d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="error">
+                      </div>
+                    </div>
+                    <div class="form-control phoneNumberWrapper">
+                      <div class="field">
+                        <div class="input phone-input">
+                          <div class="phone d-flex">
+                            <input type="text" class="phone-prefix input-prefix" name="phone-prefix" placeholder="prefix" disabled="">
+                            <input type="tel" id="form1-phone" placeholder="Phone number" name="phone">
+                          </div>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="success">
+                            <path fill="var(--clr-success)"
+                              d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="error">
+                            <path fill="var(--clr-danger)"
+                              d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6L8.4 17Zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z">
+                            </path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="error">
+                      </div>
+                    </div>
+                    <div class="form-control agreementWrapper agreementWrapperClassic">
+                      <div class="field agreementCheckbox">
+                        <input id="agreement1ESMA" type="checkbox" name="agreement1ESMA" checked>
+                        <label id="agreement1ESMA" for="agreement1ESMA"> I agree to be contacted and receive calls/SMS/emails
+                          for market news and marketing information.</label>
+                      </div>
+                      <div class="error"></div>
+                    </div>
+                    <div class="form-control agreementWrapper agreementWrapperClassic">
+                      <div class="field">
+                        <input id="agreement2ESMA" type="checkbox" name="agreement2ESMA" checked>
+                        <label id="agreement2ESMA" for="agreement2ESMA"> I agree with the privacy policy.</label>
+                      </div>
+                      <div class="error"></div>
+                    </div>
+                    <div class="form-control submitButtonWrapper">
+                      <button type="submit" class="btn" name="submit">FIND OUT MORE</button>
+                      <p>CFD trading is risky. You could lose all your invested capital.</p>
+                      <div class="error"></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        <img class="coin-img" src="./images/bitcoin image small-cut.png" width="734" height="570">
+        <img class="tablet-coin-img" src="./images/bitcoin image small.png" width="872" height="702">
       </header>
       <main>
-        <section class="first-main-container">
-          <div class="center-wrap">
-          </div>
-
-        </section>
-        <section class="second-main-container ">
-          <div class="center-wrap">
-          </div>
-
-        </section>
-        <section class="third-main-container">
-          <div class="text-center">
-          </div>
-        </section>
+          <section class="first-main-container">
+              <div class="small-box mx-auto ">
+                <h2>Get insight into one of the most
+                popular cryptocurrencies in the world.</h2>
+                <h4>Join a community of trading enthusiasts.</h4>
+              </div>
+            <img loading="lazy" class="mobil-man" src="./images/Mobil-bold-man-2.png" width="293" height="316">
+          </section>
+          <section class="second-main-container">
+            <div class="mx-auto small-box">
+              <h3>Insights into the Bitcoin market.</h3>
+              <h4>Stay up to date with the latest Bitcoin news using the latest market news. These resources offer valuable insights into
+              Bitcoin's ongoing performance, allowing you to stay informed.</h4>
+            </div>
+          </section>
+          <section class="third-main-container">
+              <div class="mx-auto small-box">
+                    <div class="">
+                      <h3>Frequently asked questions about trading Bitcoin CFDs.</h3>
+                      <h4><span>+</span>What is Bitcoin CFD trading?</h4>
+                      <h4><span>+</span>What tools do you have at your disposal?</h4>
+                      <h4><span>+</span>What do we have to offer?</span>
+                      </h4>
+                    </div>
+            </div>
+          </section>
+          <section class="forth-main-container">
+              <div class="mx-auto small-box">
+                <h3>Interested?</h3>
+                <h4>Join a community of traders from all over the world.</h4>
+                </div>
+                <div class="text-center mx-auto">
+                <button class="btn"
+                  onclick="document.getElementById('registerForm').scrollIntoView({ behavior: 'smooth', block: 'center' })">REGISTER
+                  NOW</button></div>
+          </section>
+        <img loading="lazy" class="web-man" src="./images/bold-man-2.png" width="649" height="757">
       </main>
       <footer>
-        <div class="center-wrap">
-          <div class="container p-3 mx-auto">
-            <p>This website is under the operation of MCA Intelifunds Ltd trading as FX ORO .</p>
-            <p>MCA INTELIFUNDS LTD, trading as “FXORO”, is a financial services company incorporated and
-              registered under the laws of the Republic of Cyprus, licensed and regulated by the Cyprus
-              Securities and Exchange Commission (CySEC) with license number 126/10.</p>
-            <p>Address: Petrou Tsirou 82, Mesa Geitonia, 3076, Limassol, Cyprus.</p>
+        <div class="p-3 container mx-auto">
+          <div class="center-wrap">
+            <div class="container">
+              <p>CFDs are complex instruments and carry a high risk of losing money rapidly due to leverage. The vast majority of retail
+              investor accounts lose money when trading CFDs. You should consider whether you understand how CFDs work and whether you
+              can afford to take the maximum risk of losing your money.</p>
+              <p>Trading in financial instruments involves significant risks, including the potential loss of some or all of your
+              invested capital. This asset may not be suitable for all investors. The prices of many financial instruments are highly
+              volatile and can be affected by external factors such as financial, regulatory or political events. Trading on margin
+              magnifies the financial risks involved. Before making the decision to trade financial instruments or cryptocurrencies,
+              it is important to be fully aware of the potential risks and costs associated with participating in financial markets.
+              Take the time to carefully evaluate your investment objectives, level of experience and risk tolerance. If necessary.</p>
+            </div>
           </div>
         </div>
       </footer>

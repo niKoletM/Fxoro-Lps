@@ -252,9 +252,15 @@ input[type="checkbox"] {
   padding: 5px 15px;
   }
   select.form-select {
-    background-image: url("./images/select-icon.png");
+    background-image: url("./images/select-svg.png");
     background-position: right center;
     background-size: auto;
+  }
+    .agreementCheckbox {
+    display: flex;
+    input[type="checkbox"] {
+    margin-right: 6px;
+}
   }
   .phone {
     display: flex;
@@ -278,16 +284,11 @@ input[type="checkbox"] {
   font-size: 20px;
   align-items: center;
   cursor: pointer;
-  font-weight: 700;
-  background-color: #1b2854;
-  color: #ffb401;
-  border-radius: 5px;
+  font-weight: 800;
+  color: #171718;
+  background-color: #ffb401;
   border: 1px solid #ffffff;
   width: 100%;
-  }
-.btn:hover {
-  color:  rgb(255, 255, 255);
- border: 1px solid #ffb401;
   }
   }
 
@@ -335,4 +336,584 @@ input[type="checkbox"] {
 }
 .text-center {
     text-align: center !important;
+}
+
+header {
+  background-image: url("./images/Web-header-design.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+   position: relative;
+   .icon-img {
+    margin-top: 10px ;
+   }
+ .main-content {
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+    h2 {
+    font-size: 37px;
+    font-weight: 700;
+    color:  #fff;
+    span {
+      color: #ffb401;
+    }
+  }
+    .mobile-btn {
+      display: none;
+      background-color: #ffb401;
+      color: #000000;
+      border-radius: 0;
+      font-weight: 800;
+      font-size: 24px;
+      padding: 3px 18px;
+      width: 300px;
+      margin: auto;
+   }
+   .mobile-btn:hover {
+  color: #fff;
+  background-color: #353535;
+}
+  h4 {
+  color: #f2f3f6;
+  font-weight: 300;
+  font-size: 20px;
+  }
+ }
+ .flex-item-right {
+  z-index: 1;
+ }
+ .coin-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+ }
+ .tablet-coin-img {
+  display: none;
+ }
+
+  .form-box {
+    width: 320px;
+    background-color: #f2f3f6;
+    padding: 10px 30px 30px 30px;
+    h4 {
+      color:#000000;
+      padding: 0px 10px 10px;
+      font-weight: 500;
+      border-bottom: 1px solid #4a4a4b;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+  }
+.btn {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 800;
+  background-color: #000000;
+  color: #ffb401;
+  border-radius: 0;
+  font-size: 17px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.btn:hover {
+  color: #f2f3f6;
+  background-color: #4a4a4b;
+}
+.register-form {
+  width: 260px;
+  margin: auto;
+  input,
+  select {
+  margin-bottom: 19px;
+  border-radius: 0;
+  font-size: 13px;
+  padding: 3px 15px;
+   background-color: #f8f8f8;
+  }
+  select.form-select {
+    background-image: url("./images/select-svg.png");
+    background-position: right center;
+    background-size: auto;
+  }
+  .phone {
+    display: flex;
+  }
+  .input-prefix {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50px;
+    border: 1px solid rgb(206, 206, 206);
+  }
+     label {
+      font-size: 8px;
+    }
+    p {
+      font-size: 8px;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
+main {
+  position: relative;
+  .small-box {
+    width: 700px;
+    padding: 10px 10px 10px 50px;
+  }
+  .first-main-container {
+    h2 {
+  color: #0f0f0f;
+  font-weight: 700;
+  font-size: 25px;
+  padding-left: 10px;
+  }
+    h4 {
+  font-weight: 500;
+  font-size: 19px;
+  margin: 10px auto 20px;
+  padding-left: 10px;
+  }
+  }
+ .second-main-container {
+    background-image: url("./images/Web-body-background-section.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    h4 {
+      font-size: 20px;
+       margin: 10px auto;
+       color: rgb(255, 255, 255);
+       font-weight: 300;
+       line-height: 1.6;
+       padding: auto 20px;
+      padding-left: 10px;
+    }
+    h3 {
+      color: #ffb401;
+      padding: auto 20px;
+      padding-left: 10px;
+    }
+  }
+  .third-main-container {
+    h3 {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      span {
+        font-size: 20px;
+        font-weight: 800;
+        padding-right: 3px;
+      }
+    }
+  }
+   .forth-main-container {
+    h3 {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+    padding:0 0 35px;
+   .btn {
+    background-color: #ffb401;
+    color: #000000;
+    border-radius: 0;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 3px 18px;
+    width: 300px;
+   }
+   .btn:hover {
+  color: #fff;
+  background-color: #353535;
+}
+  }
+  .mobil-man {
+    display: none;
+  }
+  .web-man {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  }
+}
+footer {
+  background-color: #353535;
+  text-align: left;
+  .footer-wrap {
+    padding: 0px 25px;
+  }
+    p {
+    margin-bottom: 24px;
+    font-size: 12px;
+    color: rgb(206, 206, 206);
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  main {
+    .web-man {
+      width: 28%;
+    }
+  }
+}
+@media only screen and (max-width: 1351px) {
+  header {
+    .main-content {
+      z-index: 2;
+    }
+   .coin-img {
+      opacity: 0.3;
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+   main {
+    .web-man {
+      width: 25%;
+    }
+  }
+}
+@media only screen and (max-width: 1227px) {
+  header {
+    .main-content {
+      h2{
+        font-size: 33px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 91.66666667%;
+  }
+  .col-10 {
+    width: 83.33333333%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-8 {
+    width: 66.66666667%;
+  }
+  .col-7 {
+    width: 58.33333333%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-5 {
+    width: 41.66666667%;
+  }
+  .col-4 {
+    width: 33.33333333%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-2 {
+    width: 16.66666667%;
+  }
+  .col-1 {
+    width: 8.33333333%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+    main {
+    .web-man {
+      display: none;
+    }
+    .mobil-man {
+      display: block;
+      margin: auto;
+    }
+ }
+}
+@media only screen and (max-width: 1110px) {
+  header {
+   .main-content {
+      h2{
+        font-size: 30px;
+      }
+      h4 {
+        font-size: 19px;
+      }
+    }
+  }
+
+}
+@media only screen and (max-width: 1050px) {
+  header{
+    background-image: url("./images/Mobil-header-design.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    .tablet-coin-img {
+      display: none;
+    }
+   .flex-container {
+    flex-direction: column;
+    }
+   .flex-item-left {
+    flex: 50%;
+  }
+   .flex-item-right {
+    flex: 50%;
+  }
+  .coin-img {
+    display: none;
+  }
+  .tablet-coin-img {
+    top: 0;
+    position: absolute;
+    opacity: 0.3;
+    left: 10%;
+    z-index: 0;
+  }
+   .main-content {
+    width: 80%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  .mobile-btn {
+    display: block;
+    margin: auto;
+  }
+  }
+  .icon-img {
+    margin: 10px auto;
+    display: block;
+  }
+  .form-box {
+    margin: auto;
+  }
+ }
+}
+@media only screen and (max-width: 980px) {
+    header {
+  .main-content {
+    h2 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+   }
+  }
+     main {
+  .second-main-container {
+    background-image: url("./images/Mobil-body-section-desgin.png");
+    }
+  }
+}
+
+@media only screen and (max-width: 872px) {
+  header {
+    .main-content {
+      h2 {
+        font-size: 25px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  main {
+   .small-box {
+    width: 100%;
+   } 
+  .second-main-container {
+    background-image: url("./images/Mobil-body-section-desgin.png");
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-image: url("./images/Mobil-header-design.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    .tablet-coin-img {
+      display: none;
+    }
+    .main-content {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      h2 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      .mobile-btn {
+       display: block;
+      }
+    }
+    .coin-img {
+      display: none;
+    }
+  }
+  main {
+    .first-main-container {
+      h2, h4 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .second-main-container {
+    background-image: url("./images/Mobil-body-section-desgin.png");
+    h4 {
+      font-size: 15px;
+      margin: auto;
+      text-align: center;
+    }
+         h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .third-main-container {
+          h4 {
+      font-size: 15px;
+      margin: auto;
+    }
+         h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .forth-main-container {
+          h4 {
+      font-size: 15px;
+      margin: auto;
+      text-align: center;
+    }
+         h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .small-box {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  footer {
+    p {
+      line-height: 1.7;
+      font-size: 13px;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  header {
+    background-image: url("./images/Mobil-header-design.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    .tablet-coin-img {
+      display: none;
+    }
+    .main-content {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      h2 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+      .mobile-btn {
+       display: block;
+      }
+    }
+   .form-box {
+    width: 100%;
+   }
+    .coin-img {
+      display: none;
+    }
+  }
+  main {
+    .first-main-container {
+      h2, h4 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .second-main-container {
+    background-image: url("./images/Mobil-body-section-desgin.png");
+    h4 {
+      font-size: 15px;
+      margin: auto;
+      text-align: center;
+    }
+         h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .third-main-container {
+          h4 {
+      font-size: 15px;
+      margin: auto;
+    }
+         h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .forth-main-container {
+          h4 {
+      font-size: 15px;
+      margin: auto;
+      text-align: center;
+    }
+         h3 {
+        font-size: 20px;
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .small-box {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  footer {
+    p {
+      line-height: 1.7;
+      font-size: 13px;
+    }
+  }
 }
