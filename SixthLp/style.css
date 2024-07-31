@@ -361,6 +361,12 @@ header {
       color: #ffb401;
     }
   }
+    h4 {
+  color: #f2f3f6;
+  font-weight: 300;
+  font-size: 25px;
+  padding-top: 25px;
+  }
     .mobile-btn {
       display: none;
       background-color: #ffb401;
@@ -376,12 +382,7 @@ header {
   color: #fff;
   background-color: #353535;
 }
-  h4 {
-  color: #f2f3f6;
-  font-weight: 300;
-  font-size: 25px;
-  padding-top: 20px;
-  }
+
  }
  .flex-item-right {
   z-index: 1;
