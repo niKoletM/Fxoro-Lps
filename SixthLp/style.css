@@ -256,7 +256,7 @@ input[type="checkbox"] {
     background-position: right center;
     background-size: auto;
   }
-    .agreementCheckbox {
+  .agreementCheckbox {
     display: flex;
     input[type="checkbox"] {
     margin-right: 6px;
@@ -291,7 +291,7 @@ input[type="checkbox"] {
   border: 1px solid #ffffff;
   width: 100%;
   }
-  }
+}
 
 [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
@@ -332,11 +332,11 @@ input[type="checkbox"] {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 .mx-auto {
-    margin-right: auto !important;
-    margin-left: auto !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 .text-center {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 header {
@@ -394,7 +394,7 @@ header {
   z-index: 0;
  }
 
-  .form-box {
+.form-box {
     width: 320px;
     background-color: #f2f3f6;
     padding: 10px 30px 30px 30px;
@@ -500,7 +500,7 @@ main {
       margin-top: 11px;
     }
   }
-  .third-main-container {
+ .third-main-container {
     button.accordion {
     color: #444;
     background-color: transparent;
@@ -566,7 +566,7 @@ button {
       }
     }
   }
-   .forth-main-container {
+ .forth-main-container {
     h3 {
       font-size: 20px;
       padding-left: 10px;
@@ -591,10 +591,10 @@ button {
   background-color: #353535;
 }
   }
-  .mobil-man {
+ .mobil-man {
     display: none;
   }
-  .web-man {
+ .web-man {
   width: 30%;
   height: auto;
   position: absolute;
@@ -613,7 +613,6 @@ footer {
     color: rgb(206, 206, 206);
   }
 }
-
 @media only screen and (max-width: 1460px) {
   main {
     .web-man {
