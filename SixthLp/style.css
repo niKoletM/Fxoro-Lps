@@ -393,9 +393,6 @@ header {
   right: 0;
   z-index: 0;
  }
- .tablet-coin-img {
-  display: none;
- }
 
   .form-box {
     width: 320px;
@@ -504,6 +501,57 @@ main {
     }
   }
   .third-main-container {
+    button.accordion {
+    color: #444;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    padding-top: 1px;
+}
+button {
+      h3 {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: Montserrat;
+      span {
+        font-size: 20px;
+        font-weight: 800;
+        padding-right: 3px;
+      }
+    }
+}
+.accordion {
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+  width: 100%;
+  transition: 0.4s;
+  padding: 0;
+  height: 10px;
+}
+
+.active, .accordion:hover {
+ color: #ffb401;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  p {
+    font-size: 18px;
+  }
+}
     h3 {
       font-size: 20px;
       padding-left: 10px;
@@ -599,47 +647,6 @@ footer {
     }
   }
 }
-@media (min-width: 1200px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    float: left;
-  }
-  .col-12 {
-    width: 100%;
-  }
-  .col-11 {
-    width: 91.66666667%;
-  }
-  .col-10 {
-    width: 83.33333333%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-8 {
-    width: 66.66666667%;
-  }
-  .col-7 {
-    width: 58.33333333%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-5 {
-    width: 41.66666667%;
-  }
-  .col-4 {
-    width: 33.33333333%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-2 {
-    width: 16.66666667%;
-  }
-  .col-1 {
-    width: 8.33333333%;
-  }
-}
 @media only screen and (max-width: 1200px) {
     main {
     .web-man {
@@ -672,9 +679,6 @@ footer {
     background-repeat: no-repeat;
     background-position: top;
     background-color: #000000;
-    .tablet-coin-img {
-      display: none;
-    }
    .flex-container {
     flex-direction: column;
     }
@@ -686,13 +690,6 @@ footer {
   }
   .coin-img {
     display: none;
-  }
-  .tablet-coin-img {
-    top: 0;
-    position: absolute;
-    opacity: 0.3;
-    left: 10%;
-    z-index: 0;
   }
    .main-content {
     width: 80%;
@@ -733,7 +730,6 @@ footer {
     }
   }
 }
-
 @media only screen and (max-width: 872px) {
   header {
     .main-content {
@@ -756,7 +752,6 @@ footer {
     }
   }
 }
-
 @media only screen and (max-width: 600px) {
   header {
     .main-content {
@@ -800,6 +795,9 @@ footer {
       }
     }
     .third-main-container {
+      button.accordion {
+        padding-top: 10px;
+      }
           h4 {
       font-size: 15px;
       margin: auto;
@@ -820,6 +818,7 @@ footer {
         font-size: 20px;
         text-align: center;
         padding-left: 0;
+        margin-top: 0;
       }
     }
     .small-box {
@@ -836,13 +835,10 @@ footer {
 }
 @media only screen and (max-width: 550px) {
   header {
-    background-image: url("./images/Mobil-header-design.png");
+    background-image: url("./images/Mobil-header-design-opac-v2.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
-    .tablet-coin-img {
-      display: none;
-    }
     .main-content {
       text-align: center;
       padding-left: 10px;
@@ -886,6 +882,9 @@ footer {
       }
     }
     .third-main-container {
+      button.accordion {
+        padding-top: 10px;
+      }
           h4 {
       font-size: 15px;
       margin: auto;
@@ -906,6 +905,7 @@ footer {
         font-size: 20px;
         text-align: center;
         padding-left: 0;
+        margin-top: 0;
       }
     }
     .small-box {

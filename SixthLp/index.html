@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preload" href="./images/icon-fxoro.png" as="image">
     <link rel="preload" href="./images/Web-header-design.png" as="image" media="(max-width: 800px)">
-    <link rel="preload" href="./images/Mobil-header-design.png" as="image" media="(max-width: 800px)">
+    <link rel="preload" href="./images/Mobil-header-design-opac-v2.png" as="image" media="(max-width: 800px)">
     <link rel="preload" href="./images/bitcoin image small-cut.png" as="image" media="(max-width: 800px)">
-    <link rel="preload" href="./images/bitcoin image small.png" as="image" media="(max-width: 800px)">
+    <link rel="preload" href="./images/23 opac bitcoin image.png" as="image" media="(max-width: 800px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2" as="font"
@@ -162,7 +162,6 @@
             </div>
           </div>
         <img class="coin-img" src="./images/bitcoin image small-cut.png" width="734" height="570">
-        <img class="tablet-coin-img" src="./images/bitcoin image small.png" width="872" height="702">
       </header>
       <main>
           <section class="first-main-container">
@@ -183,11 +182,21 @@
           <section class="third-main-container">
               <div class="mx-auto small-box">
                     <div class="">
-                      <h3>Frequently asked questions about trading Bitcoin CFDs.</h3>
-                      <h4><span>+</span>What is Bitcoin CFD trading?</h4>
-                      <h4><span>+</span>What tools do you have at your disposal?</h4>
-                      <h4><span>+</span>What do we have to offer?</span>
-                      </h4>
+                    <button class="accordion"><h4><span>+</span>What is Bitcoin CFD trading?</h4></button>
+                    <div class="panel">
+                      <p>Trading with Bitcoin CFDs or any other financial asset such as oil and crude oil can be challenging. It can be difficult
+                      to find the right mix among various brokers, spreads, and management fees, which can be very high. That's why, for many
+                      traders, it might be better to rely on price discrepancies to manage their investment.</p>
+                    </div>
+                    <button class="accordion"><h4><span>+</span>What tools do you have at your disposal?</h4></button>
+                    <div class="panel">
+                      <p>Access to the latest market news, educational information and many more.</p>
+                    </div>
+                    <button class="accordion"><h4><span>+</span>What do we have to offer?</h4></button>
+                    <div class="panel">
+                      <p>We understand the importance of staying ahead in the fast-paced world of finance. Therefore, we continuously update our
+                      tools and resources to align with the latest market trends and developments. We distinguish ourselves from other
+                      companies by providing cutting-edge tools and up-to-date information on the financial markets.</p>
                     </div>
             </div>
           </section>
@@ -221,6 +230,23 @@
         </div>
       </footer>
     </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
     <script type="module" src="https://assets.smartsupporthub.com/js/bundle/astro_lp.js"></script>
   </body>
 
