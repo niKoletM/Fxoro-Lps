@@ -14,7 +14,6 @@
   src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @media (min-width: 1200px) {
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     float: left;
@@ -94,11 +93,11 @@ body {
 .lg-box {
     flex: 0 0 auto;
     width: 75%;
-  }
+}
 .md-box {
     flex: 0 0 auto;
     width: 50%;
-  }
+}
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -144,7 +143,6 @@ form.registerForm {
     container-type: inline-size;
     position: relative;
 }
-
 form.registerForm .registerFormInner>.form-control.firstNameWrapper {
     order: 1;
 }
@@ -260,7 +258,7 @@ input[type="checkbox"] {
     display: flex;
     input[type="checkbox"] {
     margin-right: 6px;
-}
+    }
   }
   .phone {
     display: flex;
@@ -271,16 +269,16 @@ input[type="checkbox"] {
     width: 50px;
     border: 1px solid rgb(206, 206, 206);
   }
-     label {
+  label {
       font-size: 11px;
-    }
-    p {
+  }
+  p {
       font-size: 12px;
       margin-top: 0;
       margin-bottom: 1rem;
       text-align: center;
-    }
-    .btn {
+  }
+  .btn {
   justify-content: center;
   font-size: 20px;
   align-items: center;
@@ -292,7 +290,6 @@ input[type="checkbox"] {
   width: 100%;
   }
 }
-
 [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
@@ -338,7 +335,6 @@ input[type="checkbox"] {
 .text-center {
   text-align: center !important;
 }
-
 header {
   background-image: url("./images/Web-header-design.png");
   background-size: cover;
@@ -377,23 +373,21 @@ header {
       padding: 3px 18px;
       width: 300px;
       margin: auto;
-   }
+  }
    .mobile-btn:hover {
   color: #fff;
   background-color: #353535;
+  }
 }
-
- }
  .flex-item-right {
   z-index: 1;
- }
+}
  .coin-img {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 0;
- }
-
+}
 .form-box {
     width: 320px;
     background-color: #f2f3f6;
@@ -407,7 +401,7 @@ header {
       margin-bottom: 25px;
       font-size: 20px;
     }
-  }
+}
 .btn {
   justify-content: center;
   align-items: center;
@@ -449,7 +443,7 @@ header {
     width: 50px;
     border: 1px solid rgb(206, 206, 206);
   }
-     label {
+    label {
       font-size: 8px;
     }
     p {
@@ -477,7 +471,7 @@ main {
   font-size: 19px;
   margin: 10px auto 20px;
   padding-left: 10px;
-  }
+   }
   }
  .second-main-container {
     background-image: url("./images/Web-body-background-section.png");
@@ -538,11 +532,9 @@ button {
   padding: 0;
   height: 10px;
 }
-
 .active, .accordion:hover {
  color: #ffb401;
 }
-
 .panel {
   padding: 0 18px;
   background-color: white;
@@ -555,7 +547,7 @@ button {
     h3 {
       font-size: 20px;
       padding-left: 10px;
-    }
+  }
     h4 {
       font-size: 18px;
       font-weight: 500;
@@ -732,9 +724,6 @@ footer {
 @media only screen and (max-width: 872px) {
   header {
     .main-content {
-      h2 {
-        font-size: 25px;
-      }
       h4 {
         font-size: 18px;
       }
@@ -745,7 +734,7 @@ footer {
   main {
    .small-box {
     width: 100%;
-   } 
+   }
   .second-main-container {
     background-image: url("./images/Mobil-body-section-desgin.png");
     }
@@ -780,13 +769,12 @@ footer {
       }
     }
     .second-main-container {
-    background-image: url("./images/Mobil-body-section-desgin.png");
     h4 {
       font-size: 15px;
       margin: auto;
       text-align: center;
     }
-         h3 {
+      h3 {
         font-size: 20px;
         text-align: center;
         padding-left: 0;
@@ -839,83 +827,21 @@ footer {
     background-repeat: no-repeat;
     background-position: top;
     .main-content {
-      text-align: center;
-      padding-left: 10px;
-      padding-right: 10px;
-      h2 {
-        font-size: 20px;
-      }
       h4 {
         font-size: 16px;
-      }
-      .mobile-btn {
-       display: block;
       }
     }
    .form-box {
     width: 100%;
    }
-    .coin-img {
-      display: none;
-    }
   }
   main {
-    .first-main-container {
-      h2, h4 {
-        font-size: 20px;
-        text-align: center;
-        padding-left: 0;
-      }
-    }
     .second-main-container {
-    background-image: url("./images/Mobil-body-section-desgin.png");
-    h4 {
-      font-size: 15px;
-      margin: auto;
-      text-align: center;
-    }
          h3 {
         font-size: 20px;
         text-align: center;
         padding-left: 0;
       }
-    }
-    .third-main-container {
-      button.accordion {
-        padding-top: 10px;
-      }
-          h4 {
-      font-size: 15px;
-      margin: auto;
-    }
-         h3 {
-        font-size: 20px;
-        text-align: center;
-        padding-left: 0;
-      }
-    }
-    .forth-main-container {
-          h4 {
-      font-size: 15px;
-      margin: auto;
-      text-align: center;
-    }
-         h3 {
-        font-size: 20px;
-        text-align: center;
-        padding-left: 0;
-        margin-top: 0;
-      }
-    }
-    .small-box {
-      width: 100%;
-      padding: 20px;
-    }
-  }
-  footer {
-    p {
-      line-height: 1.7;
-      font-size: 13px;
     }
   }
 }
