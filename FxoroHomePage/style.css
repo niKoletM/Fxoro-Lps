@@ -384,7 +384,8 @@ input[type="checkbox"] {
 header {
 .top-bar {
   background-color: #273773;
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -395,19 +396,34 @@ header {
   border-radius: 10px;
   color: #f2f2f2;
   font-weight: 700;
-  margin: 15px auto;
+  margin: 10px auto;
   float: right;
   text-align: center;
   height: 37px;
+  box-shadow:
+ #273773 10px 10px 0px -3px,
+ #f2f2f2 10px 10px;
 }
+.btn:hover {
+   background-color: #273773;
+   border: 1px solid #ffb401;
+   color: #ffb401;
+}
+
+.lang-sel {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
 /* General link styling for menu items */
 li a, .dropbtn {
   display: inline-block;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px;
+  margin-bottom: 5px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Hover styles for links and dropdown buttons */
@@ -421,6 +437,22 @@ li.dropdown {
   display: inline-block;
   position: relative; /* Ensure the dropdown-content is positioned relative to this */
 }
+
+li.dropdown:hover a.dropbtn,
+li.dropdown:hover .dropbtn {
+  color: #ffb401;
+  border-bottom: 1px solid #ffb401;
+}
+.svg-icon {
+    width: 30px; height: 15px;
+    fill: #ffffff;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+ li.dropdown:hover .svg-icon {
+      transform: rotate(180deg);
+      fill: #ffb401;
+  }
 
 /* Dropdown content styling */
 .dropdown-content {
@@ -467,7 +499,7 @@ li.dropdown {
   display: none; /* Initially hidden */
   position: absolute;
   left: 100%; /* Position to the right of the parent menu item */
-  top: 25px; /* Align with the top of the parent menu item */
+  top: 0; /* Align with the top of the parent menu item */
   background-color: #ffffff;
   min-width: 160px; /* Adjust width as needed */
   z-index: 2;
@@ -476,6 +508,9 @@ li.dropdown {
 
 /* Display submenu on hover of parent .dropdown-content */
 .dropdown-content > a:hover + .dropdown-submenu {
+  display: block;
+}
+.dropdown-submenu:hover {
   display: block;
 }
 
@@ -614,12 +649,19 @@ img {vertical-align: middle;}
   }
   .btn {
   background-color: #EF5A28;
-  width: 200px;
+  width: 180px;
   border-radius: 10px;
   color: #f2f2f2;
   font-weight: 700;
   margin: auto;
   text-align: center;
+  box-shadow:
+ #f2f2f2 10px 10px 0px -3px,
+ #273773 10px 10px;
+}
+.btn:hover {
+   background-color: #273773;
+   color: #ffb401;
 }
 .main-btn {
   margin-top: 20px;
@@ -659,10 +701,25 @@ main {
   display: block;
   position: absolute;
   top: 20%;
-  right: 0;
+  right: 10%;
    transform: rotate(320deg);
 }
+.vertical {
+margin-top: 320px;
+white-space: nowrap;
+position: relative;
+left: 0;
+/* bottom: 0; */
+top: 70px;
+transform: rotate(270deg);
+      p {
+    font-weight: 900;
+    font-size: 130px;
+    color: #273773;
+    padding: 20px;
 
+    }
+}
 .vertical-text {
   white-space: nowrap;
   position: absolute;
@@ -671,8 +728,9 @@ main {
   transform: rotate(270deg);
     p {
     font-weight: 900;
-    font-size: 100px;
+    font-size: 110px;
     color: #273773;
+    margin: 0 ;
     }
   }
 h2 {
@@ -753,7 +811,6 @@ li:first-child {
   ul {
     list-style: none;
     margin: 0 0 10px;
-    padding: 0;
     white-space: nowrap;
     img {
     margin-bottom: -5px;
@@ -829,7 +886,7 @@ span {
     padding-top: 1px;
     padding: 0;
     height: 10px;
-    margin-left: 25%;
+    padding-left: 25%;
 }
 h4 {
       font-size: 15px;
@@ -1125,16 +1182,24 @@ display: none;
   float: right;
 }
 
-
-  .gallery {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    margin-bottom: 20px;
+.carusell {
+  width: auto;
 }
-  .gallery-cell {
-    width: 100%;
-  }
+
+.gallery {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+}
+.gallery-cell {
+  /*width: 100%;*/
+  padding: 10px;
+  img:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+}
+}
 }
 .white-container {
 background-color: #ffffff;
@@ -1174,6 +1239,34 @@ height: 20px;
 
 }
 .eighth-container {
+  .box {
+img:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+}
+.left-top-shadow {
+  box-shadow:
+   rgb(255, 255, 255) -10px -10px 0px -3px,
+    rgb(12, 14, 12) -10px -10px;
+}
+.left-Bottom-shadow {
+  box-shadow:
+   rgb(255, 255, 255) -10px 10px 0px -3px,
+    rgb(12, 14, 12) -10px 10px;
+
+}
+.right-top-shadow {
+  box-shadow:
+ rgb(255, 255, 255) 10px -10px 0px -3px,
+ rgb(12, 14, 12) 10px -10px;
+}
+.right-bottom-shadow {
+box-shadow:
+ rgb(255, 255, 255) 10px 10px 0px -3px,
+ rgb(12, 14, 12) 10px 10px;
+}
+
+  }
   text-align: center;
   .blog-btn {
   background-color: #171718;
@@ -1185,7 +1278,7 @@ height: 20px;
   margin: auto;
   text-align: center;
   padding: 10px;
-    }
+  }
   h5 {
     font-size: 17px;
     font-weight: 800;
@@ -1264,6 +1357,13 @@ p {
   font-weight: 700;
   margin: auto;
   text-align: center;
+  box-shadow:
+ #f2f2f2 10px 10px 0px -3px,
+ #273773 10px 10px;
+}
+.btn:hover {
+   background-color: #273773;
+   color: #ffb401;
 }
 
 }
