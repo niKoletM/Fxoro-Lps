@@ -55,6 +55,41 @@
     width: 8.33333333%;
   }
 }
+.svg-arrow-one {
+  fill: none;
+  stroke: #ffb10a;
+  stroke-width: 10;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: draw 4s ease forwards;
+}
+.svg-arrow-two {
+  fill: none;
+  stroke: #ffb10a;
+  stroke-width: 15;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: draw 4s ease forwards;
+}
+.svg-arrow-three {
+  fill: none;
+  stroke: #ffb10a;
+  stroke-width: 30;
+  stroke-dasharray: 6000;
+  stroke-dashoffset: 5000;
+  animation: draw 4s ease forwards;
+}
+.draw {
+  animation: draw 4s ease forwards;
+}
+@keyframes draw {
+  from {
+      stroke-dashoffset: 5000;
+    }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 html{
   scroll-behavior: smooth;
 }
@@ -687,7 +722,6 @@ img {vertical-align: middle;}
 }
 
 }
-
 .first-img {
   background-image: url("./images/circles.svg");
   background-size: contain;
@@ -715,6 +749,7 @@ main {
     transform: rotate(320deg);
     position: absolute;
   }
+
   svg {
   width: 300px;
   display: block;
@@ -828,6 +863,10 @@ li:first-child {
   }
 }
 .fourth-container {
+  .md-box {
+    width: 300px;
+    margin: auto;
+  }
   border-top: 1px solid #ffffff;
   background-color: #273773;
   padding-bottom: 5px;
@@ -858,13 +897,14 @@ li:first-child {
 .fifth-container {
   .arrow2-img {
     position: absolute;
-    left: 20%;
-    top: 10%;
+    left: 10%;
+    top: 0;
   }
   .arrow3-img {
   position: absolute;
   bottom: 0%;
-  right: 0%;
+  right: 20%;
+  z-index: 1;
 }
   .info-box {
     margin-bottom: 30px;
@@ -913,8 +953,8 @@ span {
     transition: 0.4s;
     padding-top: 1px;
     padding: 0;
-    height: 10px;
-    padding-left: 25%;
+    height: 23px;
+    padding-left: 20%;
 }
 h4 {
       font-size: 17px;
@@ -949,21 +989,30 @@ h4 {
  color: #273773;
 }
 .active, h4:active {
+ 
 .icon {
 background-image: url("./images/minus-svg.png");
 }
 }
+.active .panel {
+  max-height: 200px; /* Adjust based on your content height */
+}
 .panel {
+    max-height: 0;
   padding: 0 18px;
-  display: none;
   overflow: hidden;
   margin: 20px;
-  width: 90%;
-   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  margin: auto;
+  width: 80%;
+  position: relative;
+  background-color: #f1f1f1;
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  transition: max-height 0.3s ease-out;
   p {
     font-size: 13px;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     padding: 10px 10px;
     .prefix-fx {
       font-size: 14px;
@@ -991,9 +1040,11 @@ background-image: url("./images/minus-svg.png");
 }
 .subpanel {
    box-shadow: none;
+   background-color: transparent;
 }
 .subpanel .accordion {
-  padding-left: 30% ;
+  padding-left: 18% ;
+  height: 10px;
   .icon {
   width: 15px;
   height: 15px;
@@ -1131,114 +1182,9 @@ background-image: url("./images/minus-svg.png");
   right: 0;
   bottom: 10px;
 }
-
-
-.tiny-carusell {
-position: relative;
-display: none;
-}
-.items {
-  position: absolute;
-  user-select: none;
-}
-
-.items .item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  transition: all 300ms ease-in-out;
-  z-index: -1;
-  opacity: 0;
-}
-
-.item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.item.active {
-  opacity: 1;
-  z-index: 99;
-  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
-}
-
-.item.prev {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(-125%, -50%);
-}
-
-.item.next {
-  z-index: 2;
-  opacity: 0.25;
-  transform: translate(25%, -50%);
-}
-
-.items .button-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 275px;
-  z-index: 100;
-}
-
-.button-container .button {
-  color: #fff;
-  font-size: 32px;
-  cursor: pointer;
-  position: relative;
-  opacity: 0.75;
-  transition: all 300ms ease-in-out;
-}
-
-.button-container .button:hover {
-  opacity: 1;
-}
-
-.button-container .button:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 50%;
-  z-index: -99;
-}
-
-.button-container .button:nth-child(1) {
-  float: left;
-}
-
-.button-container .button:nth-child(2) {
-  float: right;
-}
-
-.carusell {
-  width: auto;
-}
-
-.gallery {
-  display: flex;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+.big-carusell {
+  margin-top: 10px;
   margin-bottom: 20px;
-}
-.gallery-cell {
-  /*width: 100%;*/
-  padding: 10px;
-  img:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  cursor: pointer;
-}
 }
 }
 .white-container {
@@ -1453,8 +1399,20 @@ footer {
     font-size: 14px;
     font-weight: 500;
   }
+  .xxs-box{
+    width: 140px;
+    margin: auto;
+  }
+  .sm-box {
+    width: 430px;
+    margin: auto;
+  }
+  .xs-box {
+    width: 322px;
+    margin: auto;
+  }
   .invest-img {
-    margin: 35px 20px 10px;
+    margin: 10px 20px 10px;
   }
   .follow-btn {
     display: inline-flex;
@@ -1471,7 +1429,7 @@ footer {
     }
   }
   img {
-    margin: 20px;
+    margin: 20px 10px;
   }
  }
  .brands {
@@ -1479,9 +1437,21 @@ footer {
   border-bottom: 1px solid #ffffff;
   margin: 20px auto;
   display: flex;
-  img {
-    margin: 15px auto;
+  .sm-box {
+    width: 450px;
+    margin: auto;
+      img {
+    margin: 15px 35px;
   }
+  }
+  .lg-box {
+    width: 800px;
+    margin: auto;
+      img {
+    margin: 15px 55px;
+  }
+  }
+
  }
 p {
   font-size: 12px;
@@ -1527,9 +1497,39 @@ span {
   }
 }
 
+@media only screen and (max-width: 1010px) {
+
+  main {
+.vertical {
+  display: none;
+}
+.fifth-container {
+  .arrow2-img {
+    display: none;
+  }
+    }
+.tenth-container {
+  .arrow {
+    display: none;
+  }
+}
+  }
+  .footer {
+    .col-3 {
+      width: 25%;
+    }
+  }
+}
+
 @media only screen and (max-width: 872px) {
   header {
     .top-bar {
+    }
+    .flex-item-right {
+      img {
+        width: 85%;
+        height: auto;
+      }
     }
   }
   main {
