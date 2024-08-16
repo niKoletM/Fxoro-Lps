@@ -79,6 +79,15 @@
   stroke-dashoffset: 5000;
   animation: draw 4s ease forwards;
 }
+.svg-arrow-four {
+  fill: none;
+  stroke: #ffb10a;
+  stroke-width: 25;
+  stroke-dasharray: 7000;
+  stroke-dashoffset: 5000;
+  animation: draw 4s ease forwards;
+}
+
 .draw {
   animation: draw 4s ease forwards;
 }
@@ -989,7 +998,6 @@ h4 {
  color: #273773;
 }
 .active, h4:active {
- 
 .icon {
 background-image: url("./images/minus-svg.png");
 }
@@ -998,7 +1006,7 @@ background-image: url("./images/minus-svg.png");
   max-height: 200px; /* Adjust based on your content height */
 }
 .panel {
-    max-height: 0;
+  max-height: 0;
   padding: 0 18px;
   overflow: hidden;
   margin: 20px;
@@ -1264,9 +1272,14 @@ box-shadow:
   margin: auto;
   text-align: center;
   padding: 10px;
+  margin-bottom: 15px;
+  }
+  .box {
+    margin: auto;
+    margin-bottom: 20px;
   }
   h5 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 800;
     padding: 5px 30px;
   }
@@ -1277,6 +1290,7 @@ box-shadow:
   p {
     font-size: 14px;
     font-weight: 500;
+    padding-bottom: 10px;
   }
 }
 .ninth-container {
@@ -1306,7 +1320,7 @@ p {
   font-weight: 500;
 }
 .arrow {
-  width: 100px;
+  width: 130px;
   margin: auto;
 }
 .xs-box {
