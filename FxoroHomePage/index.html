@@ -19,170 +19,318 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="top-bar">
+        <div class="top-bar top-nav">
           <div class="container flex-container">
             <img src="./images/fxoro-logo.png" alt="icon" width="198" height="68">
-  
-                  <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-                  <div class="menu-container">
-                    <ul id="menu">
-                      <li class="dropdown"><a class="dropbtn">INSTRUMENTS</a><svg viewBox="0 0 320 512" class="svg-icon">
+
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <div id="Mobile-menu">
+                <nav class="header_menu">
+                  <ul class="menu">
+                    <li class="menu-item accordion">
+                      <img src="./images/icon1-mobile-menu.png" width="25px" height="23"><label
+                        for="menu"><a>Instruments</a></label>
+                      <svg viewBox="0 0 320 512" class="svg-icon">
                         <path
                           d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
                       </svg>
-                        <div class="dropdown-content">
-                          <a href="../buletin.html">CFD's</a>
-                          <div class="dropdown-submenu">
-                            <a href="https://fxoro.com/en/forex/">Forex</a>
-                            <a href="https://fxoro.com/en/shares/">Shares</a>
-                            <a href="https://fxoro.com/en/commodities/">Commodities</a>
-                            <a href="https://fxoro.com/en/indices/">Indices</a>
-                            <a href="https://fxoro.com/en/cryptocurrencies/">Cryptocurrencies</a>
-                            <a href="https://fxoro.com/en/etfs/">ETFs (Exchange Traded Funds)</a>
-                          </div>
-                          <a href="../despre.html">INVESTING</a>
-                          <div class="dropdown-submenu">
-                            <a href="https://fxoro.com/en/invest-stocks/">Real shares</a>
-                          </div>
-                        </div>
-                      </li>
-                  
-                      <li class="dropdown"><a style="cursor:pointer" class="dropbtn">TRADING CENTER</a><svg viewBox="0 0 320 512" class="svg-icon">
+                      <ul class="panel sub-menu">
+                        <li><a class="subtitle">CFD's</a></li>
+                        <li><a href="https://fxoro.com/en/forex/" target="_blank">Forex</a></li>
+                        <li><a href="https://fxoro.com/en/shares/" target="_blank">Shares</a></li>
+                        <li><a href="https://fxoro.com/en/commodities/" target="_blank">Commodities</a></li>
+                        <li><a href="https://fxoro.com/en/indices/" target="_blank">Indices</a></li>
+                        <li><a href="https://fxoro.com/en/cryptocurrencies/" target="_blank">Cryptocurrencies</a></li>
+                        <li><a href="https://fxoro.com/en/etfs/" target="_blank">ETFs (Exchange Traded Funds)</a></li>
+                        <li><a class="subtitle">Investing</a></li>
+                        <li><a href="https://fxoro.com/en/invest-stocks/" target="_blank">Real shares</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item accordion"><img src="./images/icon2-mobile-menu.png" width="25px"
+                        height="23"><label for="menu"><a>Trading Center</a></label>
+                      <svg viewBox="0 0 320 512" class="svg-icon">
                         <path
                           d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
                       </svg>
-                        <div class="dropdown-content">
-                          <a href="https://fxoro.com/en/trading-info/">Trading info</a>
-                          <a href="https://fxoro.com/en/trading-conditions/">Trading conditions</a>
-                          <a href="https://fxoro.com/en/accounts/">Accounts</a>
-                          <a href="https://fxoro.com/en/become-a-professional-client/">Professional account</a>
-                          <a href="https://fxoro.com/en/islamic-account/">Islamic account</a>
-                          <a href="https://fxoro.com/en/faq/">FAQ</a>
-                          <a class="main" href="#">Education</a>
-                          <a href="https://fxoro.com/en/basic-course/">Basic course</a>
-                          <a href="https://fxoro.com/en/in-depth-courses/">In-depth courses</a>
-                          <a href="https://fxoro.com/en/e-book/">E-Book</a>
-                          <a href="https://fxoro.com/en/glossary/">Glossary</a>
-                          <a href="https://fxoro.com/en/webinars/">Webinars</a>
-                        </div>
-                      </li>
-                  
-                      <li class="dropdown"><a style="cursor:pointer" class="dropbtn">TOOLS</a><svg viewBox="0 0 320 512" class="svg-icon">
+                      <ul class="panel sub-menu">
+                        <li><a href="https://fxoro.com/en/trading-info/" target="_blank">Trading info</a></li>
+                        <li><a href="https://fxoro.com/en/trading-conditions/" target="_blank">Trading conditions</a>
+                        </li>
+                        <li><a href="https://fxoro.com/en/accounts/" target="_blank">Accounts</a></li>
+                        <li><a href="https://fxoro.com/en/become-a-professional-client/" target="_blank">Professional
+                            account</a></li>
+                        <li><a href="https://fxoro.com/en/islamic-account/" target="_blank">Islamic account</a></li>
+                        <li><a href="https://fxoro.com/en/faq/" target="_blank">FAQ</a></li>
+                        <li><a class="main" href="#">Education</a></li>
+                        <li><a href="https://fxoro.com/en/basic-course/" target="_blank">Basic course</a></li>
+                        <li><a href="https://fxoro.com/en/in-depth-courses/" target="_blank">In-depth courses</a></li>
+                        <li><a href="https://fxoro.com/en/e-book/" target="_blank">E-Book</a></li>
+                        <li><a href="https://fxoro.com/en/glossary/" target="_blank">Glossary</a></li>
+                        <li><a href="https://fxoro.com/en/webinars/" target="_blank">Webinars</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item accordion"><img src="./images/icon3-mobile-menu.png" width="25px"
+                        height="25"><label for="menu"><a>Tools</a></label>
+                      <svg viewBox="0 0 320 512" class="svg-icon">
                         <path
                           d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
                       </svg>
-                        <div class="dropdown-content">
-                          <a href="https://fxoro.com/en/digital-identity-verification/">Digital Identity Verification</a>
-                          <a href="https://fxoro.com/en/mt4/">MT4</a>
-                          <a class="main" href="#">Trading Central</a>
-                          <a href="https://fxoro.com/en/tc0/">Trading Central</a>
-                          <a class="main" href="#">Market analysis</a>
-                          <a href="https://fxoro.com/en/margin-calculator-tool/">Margin calculator tool</a>
-                          <a href="https://fxoro.com/en/economic-calendar/">Economic calendar</a>
-                          <a href="https://fxoro.com/en/news/">News</a>
-                          <a href="https://fxoro.com/en/signals/">Signals</a>
-                        </div>
-                      </li>
-                  
-                      <li class="dropdown"><a style="cursor:pointer" class="dropbtn">ABOUT</a><svg viewBox="0 0 320 512" class="svg-icon">
+                      <ul class="panel sub-menu">
+                        <li><a href="https://fxoro.com/en/digital-identity-verification/" target="_blank">Digital
+                            Identity
+                            Verification</a></li>
+                        <li><a href="https://fxoro.com/en/mt4/" target="_blank">MT4</a></li>
+                        <li><a class="main" href="#">Trading Central</a></li>
+                        <li><a href="https://fxoro.com/en/tc0/" target="_blank">Trading Central</a></li>
+                        <li><a class="main" href="#">Market analysis</a></li>
+                        <li><a href="https://fxoro.com/en/margin-calculator-tool/" target="_blank">Margin calculator
+                            tool</a></li>
+                        <li><a href="https://fxoro.com/en/economic-calendar/" target="_blank">Economic calendar</a></li>
+                        <li><a href="https://fxoro.com/en/news/" target="_blank">News</a></li>
+                        <li><a href="https://fxoro.com/en/signals/" target="_blank">Signals</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item accordion"><img src="./images/icon4-mobile-menu.png" width="25px"
+                        height="23"><label for="menu"><a>About</a></label>
+                      <svg viewBox="0 0 320 512" class="svg-icon">
                         <path
                           d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
                       </svg>
-                        <div class="dropdown-content">
-                          <a href="https://fxoro.com/en/about-us/">About us</a>
-                          <a href="https://fxoro.com/en/why-fxoro/">Why FXORO</a>
-                          <a href="https://fxoro.com/en/eventi/">Events</a>
-                          <a href="https://fxoro.com/en/contact-us/">Contact us</a>
-                          <a href="https://fxoro.com/en/news-and-updates/">News on financial instruments</a>
-                          <a href="https://fxoro.com/en/blog/">Blog</a>
-                        </div>
-                      </li>
-                      <li class="dropdown lang-sel"><span style="cursor:pointer" class="dropbtn">EN</span><svg viewBox="0 0 320 512"
-                            class="svg-icon">
-                            <path
-                              d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-                          </svg>
-                        <div class="dropdown-content">
-                          <a class="text-center" href="https://fxoro.com/it/" title="Italiano (it)"><span>Italiano</span></a>
-                          <a class="text-center" href="https://fxoro.com/tr/" title="Türkçe (tr)"><span>Türkçe</span></a>
-                          <a class="text-center" href="https://fxoro.com/ro/" title="Română (ro)"><span>Română</span></a>
-                          <a class="text-center" href="https://fxoro.com/ar/" title="العربية (ar)"><span>العربية</span></a>
-                          <a class="text-center" href="https://fxoro.com/de/" title="Deutsch (de)"><span>Deutsch</span></a>
-                          <a class="text-center" href="https://fxoro.com/es/" title="Español (es)"><span>Español</span></a>
-                          <a class="text-center" href="https://fxoro.com/sv/" title="Svenska (sv)"><span>Svenska</span></a>
-                          <a class="text-center" href="https://fxoro.com/pt/" title="Português (pt)"><span>Português</span></a>
-                          <a class="text-center" href="https://fxoro.com/fi/" title="Suomi (fi)"><span>Suomi</span></a>
-                          <a class="text-center" href="https://fxoro.com/pl/" title="Polski (pl)"><span>Polski</span></a>
-                          <a class="text-center" href="https://fxoro.com/hu/" title="Magyar (hu)"><span>Magyar</span></a>
-                        </div>
-                      </li>
-                      <li class="dropdown"><a href="https://my.fxoro.com/login" style="cursor:pointer" class="dropbtn">LOG IN</a>
-                      </li>
-                    </ul>
+                      <ul class="panel sub-menu">
+                        <li><a href="https://fxoro.com/en/about-us/" target="_blank">About us</a></li>
+                        <li><a href="https://fxoro.com/en/why-fxoro/" target="_blank">Why FXORO</a></li>
+                        <li><a href="https://fxoro.com/en/eventi/" target="_blank">Events</a></li>
+                        <li><a href="https://fxoro.com/en/contact-us/" target="_blank">Contact us</a></li>
+                        <li><a href="https://fxoro.com/en/news-and-updates/" target="_blank">News on financial
+                            instruments</a></li>
+                        <li><a href="https://fxoro.com/en/blog/" target="_blank">Blog</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item accordion"><img src="./images/icon5-mobile-menu.png" width="28px"
+                        height="23"><label for="menu"><a>Help Center</a></label>
+                      <svg viewBox="0 0 320 512" class="svg-icon">
+                        <path
+                          d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                      </svg>
+                      <ul class="panel sub-menu">
+                        <li><a href="https://fxoro.com/en/contact-us/" target="_blank">Contact us</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="borders">
+                  <p class="accordion"><img src="./images/icon6-mobile-menu.png" width="25px" height="23">English
+                    <svg viewBox="0 0 320 512" class="svg-icon">
+                      <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                    </svg>
+                  </p>
+                  <div class="panel">
+                    <p><a href="https://fxoro.com/it/" target="_blank" title="Italiano (it)">Italiano</a></p>
+                    <p><a href="https://fxoro.com/tr/" target="_blank" title="Türkçe (tr)">Türkçe</a></p>
+                    <p><a href="https://fxoro.com/ro/" target="_blank" title="Română (ro)">Română</a></p>
+                    <p><a href="https://fxoro.com/ar/" target="_blank" title="العربية (ar)"> العربية</a></p>
+                    <p><a href="https://fxoro.com/de/" target="_blank" title="Deutsch (de)">Deutsch</a></p>
+                    <p><a href="https://fxoro.com/es/" target="_blank" title="Español (es)">Español</a></p>
+                    <p><a href="https://fxoro.com/sv/" target="_blank" title="Svenska (sv)">Svenska</a></p>
+                    <p><a href="https://fxoro.com/pt/" target="_blank" title="Português (pt)">Português</a></p>
+                    <p><a href="https://fxoro.com/fi/" target="_blank" title="Suomi (fi)">Suomi</a></p>
+                    <p><a href="https://fxoro.com/pl/" target="_blank" title="Polski (pl)">Polski</a></p>
+                    <p><a href="https://fxoro.com/hu/" target="_blank" title="Magyar (hu)">Magyar</a></p>
                   </div>
-                  <a href="https://my.fxoro.com/register/" class="btn">REGISTER</a>
-          
+                </div>
+                <div class="text-center mobil-btn">
+                  <a href="https://my.fxoro.com/register/" target="_blank" class="small-btn register">Register</a>
+                </div>
+                <div class="text-center mobil-btn">
+                  <a href="https://my.fxoro.com/login" target="_blank" class="small-btn logIn">Log
+                    in</a>
+                </div>
+              </div>
+            </div>
+
+            <nav class="header_menu" id="cssecoMenu">
+              <div class="menu-container">
+                <ul id="menu-fxoro-menu" class="menu">
+                  <li class="dropdown menu-item">
+                    <a class="dropbtn">INSTRUMENTS</a><svg viewBox="0 0 320 512" class="svg-icon">
+                      <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                    </svg>
+                    <ul class="dropdown-content sub-menu">
+                      <li><a>CFD's</a></li>
+                      <ul class="dropdown-submenu sub-menu">
+                        <li><a href="https://fxoro.com/en/forex/" target="_blank">Forex</a></li>
+                        <li><a href="https://fxoro.com/en/shares/" target="_blank">Shares</a></li>
+                        <li><a href="https://fxoro.com/en/commodities/" target="_blank">Commodities</a></li>
+                        <li><a href="https://fxoro.com/en/indices/" target="_blank">Indices</a></li>
+                        <li><a href="https://fxoro.com/en/cryptocurrencies/" target="_blank">Cryptocurrencies</a></li>
+                        <li><a href="https://fxoro.com/en/etfs/" target="_blank">ETFs (Exchange Traded Funds)</a></li>
+                      </ul>
+                      <li><a>INVESTING</a></li>
+                      <ul class="dropdown-submenu sub-menu">
+                        <li><a href="https://fxoro.com/en/invest-stocks/" target="_blank">Real shares</a></li>
+                      </ul>
+                    </ul>
+                  </li>
+                  <li class="dropdown menu-item">
+                    <a class="dropbtn">TRADING CENTER</a><svg viewBox="0 0 320 512" class="svg-icon">
+                      <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                    </svg>
+                    <ul class="dropdown-content sub-menu">
+                      <li><a href="https://fxoro.com/en/trading-info/" target="_blank">Trading info</a></li>
+                      <li><a href="https://fxoro.com/en/trading-conditions/" target="_blank">Trading conditions</a></li>
+                      <li><a href="https://fxoro.com/en/accounts/" target="_blank">Accounts</a></li>
+                      <li><a href="https://fxoro.com/en/become-a-professional-client/" target="_blank">Professional
+                          account</a></li>
+                      <li><a href="https://fxoro.com/en/islamic-account/" target="_blank">Islamic account</a></li>
+                      <li><a href="https://fxoro.com/en/faq/" target="_blank">FAQ</a></li>
+                      <li><a class="main" href="#">Education</a></li>
+                      <li><a href="https://fxoro.com/en/basic-course/" target="_blank">Basic course</a></li>
+                      <li><a href="https://fxoro.com/en/in-depth-courses/" target="_blank">In-depth courses</a></li>
+                      <li><a href="https://fxoro.com/en/e-book/" target="_blank">E-Book</a></li>
+                      <li><a href="https://fxoro.com/en/glossary/" target="_blank">Glossary</a></li>
+                      <li><a href="https://fxoro.com/en/webinars/" target="_blank">Webinars</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown menu-item">
+                    <a class="dropbtn">TOOLS</a><svg viewBox="0 0 320 512" class="svg-icon">
+                      <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                    </svg>
+                    <ul class="dropdown-content sub-menu">
+                      <li><a href="https://fxoro.com/en/digital-identity-verification/" target="_blank">Digital Identity
+                          Verification</a></li>
+                      <li><a href="https://fxoro.com/en/mt4/" target="_blank">MT4</a></li>
+                      <li><a class="main" href="#">Trading Central</a></li>
+                      <li><a href="https://fxoro.com/en/tc0/" target="_blank">Trading Central</a></li>
+                      <li><a class="main" href="#">Market analysis</a></li>
+                      <li><a href="https://fxoro.com/en/margin-calculator-tool/" target="_blank">Margin calculator
+                          tool</a></li>
+                      <li><a href="https://fxoro.com/en/economic-calendar/" target="_blank">Economic calendar</a></li>
+                      <li><a href="https://fxoro.com/en/news/" target="_blank">News</a></li>
+                      <li><a href="https://fxoro.com/en/signals/" target="_blank">Signals</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown menu-item">
+                    <a class="dropbtn">ABOUT</a>
+                    <svg viewBox="0 0 320 512" class="svg-icon">
+                      <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                    </svg>
+                    <ul class="dropdown-content sub-menu">
+                      <li><a href="https://fxoro.com/en/about-us/" target="_blank">About us</a></li>
+                      <li><a href="https://fxoro.com/en/why-fxoro/" target="_blank">Why FXORO</a></li>
+                      <li><a href="https://fxoro.com/en/eventi/" target="_blank">Events</a></li>
+                      <li><a href="https://fxoro.com/en/contact-us/" target="_blank">Contact us</a></li>
+                      <li><a href="https://fxoro.com/en/news-and-updates/" target="_blank">News on financial
+                          instruments</a></li>
+                      <li><a href="https://fxoro.com/en/blog/" target="_blank">Blog</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="buttons">
+              <div class="select-lang dropdown">
+                <p class="dropbtn">EN
+                </p>
+                <svg viewBox="0 0 320 512" class="svg-icon">
+                  <path
+                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+                <div class="dropdown-content">
+                  <p><a href="https://fxoro.com/it/" target="_blank" title="Italiano (it)">Italiano</a></p>
+                  <p><a href="https://fxoro.com/tr/" target="_blank" title="Türkçe (tr)">Türkçe</a></p>
+                  <p><a href="https://fxoro.com/ro/" target="_blank" title="Română (ro)">Română</a></p>
+                  <p><a href="https://fxoro.com/ar/" target="_blank" title="العربية (ar)"> العربية</a></p>
+                  <p><a href="https://fxoro.com/de/" target="_blank" title="Deutsch (de)">Deutsch</a></p>
+                  <p><a href="https://fxoro.com/es/" target="_blank" title="Español (es)">Español</a></p>
+                  <p><a href="https://fxoro.com/sv/" target="_blank" title="Svenska (sv)">Svenska</a></p>
+                  <p><a href="https://fxoro.com/pt/" target="_blank" title="Português (pt)">Português</a></p>
+                  <p><a href="https://fxoro.com/fi/" target="_blank" title="Suomi (fi)">Suomi</a></p>
+                  <p><a href="https://fxoro.com/pl/" target="_blank" title="Polski (pl)">Polski</a></p>
+                  <p><a href="https://fxoro.com/hu/" target="_blank" title="Magyar (hu)">Magyar</a></p>
+                </div>
+              </div>
+              <a href="https://my.fxoro.com/login" target="_blank" class="logIn-btn">LOG IN</a>
+              <a href="https://my.fxoro.com/register/" target="_blank" class="btn">REGISTER</a>
+            </div>
+
           </div>
         </div>
+
         <div class="center-wrap">
           <div class="container row">
             <div class="slideshow-container">
               <div class="mySlides fade">
                 <div class="flex-container">
-                    <div class="col-5 main-cta flex-item-left">
-                      <h1>CHOOSE FX<span>ORO</span> AND ENJOY THE BEST<br><span class="second-title"> TRADING EXPERIENCE</span></h1>
-                      <p class="subtitle">Join a professional community of ambitious traders.Trade CFDs, Indices, Commodities and
-                        Cryptocurrencies.</p>
-                      <div class="main-btn col-4">
-                        <button class="btn">START TRADING</button>
-                        <p>*Terms and conditions apply.Trading CFD’s is risky.
-                          You might lose all your invested capital.</p>
-                      </div>
+                  <div class="main-cta flex-item-left">
+                    <h1>CHOOSE FX<span>ORO</span> AND ENJOY THE BEST<br><span class="second-title"> TRADING
+                        EXPERIENCE</span></h1>
+                    <p class="subtitle">Join a professional community of ambitious traders.Trade CFDs, Indices,
+                      Commodities and
+                      Cryptocurrencies.</p>
+                    <div class="main-btn">
+                      <a href="https://my.global.fxoro.com/register?version=global" target="_blank" class="btn">START
+                        TRADING</a>
+                      <p>*Terms and conditions apply.Trading CFD’s is risky.
+                        You might lose all your invested capital.</p>
                     </div>
-                    <div class="col-7 flex-item-right">
-                      <div class="first-img"><img src="./images/card header element.png" width="594" height="408"></div>
-                    </div>
+                  </div>
+                  <div class="flex-item-right">
+                    <div class="first-img"><img src="./images/card header element.png" width="594" height="408"></div>
+                  </div>
                 </div>
-                </div>
+              </div>
               <div class="mySlides fade">
                 <div class="flex-container">
-                  <div class="col-5 main-cta flex-item-left">
-                  <h1 class="second-title">INTERESTS AND DIVIDENDS FROM SHARE TRADING</h1>
-                  <ul>
-                    <li>USD interest rates</li>
-                    <li>ETFs and many other products</li>
-                    <li>Dividend paying stocks</li>
-                  </ul>
-                  <div class="main-btn col-4">
-                    <button class="btn">START TRADING</button>
-                    <p>*Terms and conditions apply.Trading CFD’s is risky.
-                      You might lose all your invested capital.</p>
+                  <div class="main-cta flex-item-left">
+                    <h1 class="second-title">INTERESTS AND DIVIDENDS FROM SHARE TRADING</h1>
+                    <ul>
+                      <li>USD interest rates</li>
+                      <li>ETFs and many other products</li>
+                      <li>Dividend paying stocks</li>
+                    </ul>
+                    <div class="main-btn">
+                      <a href="https://my.global.fxoro.com/register?version=global" target="_blank" class="btn">START
+                        TRADING</a>
+                      <p>*Terms and conditions apply.Trading CFD’s is risky.
+                        You might lose all your invested capital.</p>
+                    </div>
                   </div>
-                    </div>
-                  <div class="col-7 flex-item-right">
-                  <div class="second-img"><img src="./images/bbwzorzones.webp" width="677" height="469"></div>
-                    </div>
+                  <div class=" flex-item-right">
+                    <div class="second-img"><img src="./images/bbwzorzones.webp" width="677" height="469"></div>
                   </div>
                 </div>
+              </div>
               <div class="mySlides fade">
-                  <div class="flex-container">
-                    <div class="col-5 main-cta flex-item-left">
-                      <h1>CHOOSE FX<span>ORO</span> AND ENJOY THE BEST<br><span class="second-title"> TRADING EXPERIENCE</span></h1>
-                      <p class="subtitle">Join a professional community of ambitious traders.Trade CFDs, Indices, Commodities and
-                        Cryptocurrencies.</p>
-                      <div class="main-btn col-4">
-                        <button class="btn">START TRADING</button>
-                        <p>*Terms and conditions apply.Trading CFD’s is risky.
-                          You might lose all your invested capital.</p>
-                      </div>
-                    </div>
-                    <div class="col-7 flex-item-right">
-                      <div class="first-img"><img src="./images/card header element.png" width="594" height="408"></div>
+                <div class="flex-container">
+                  <div class="main-cta flex-item-left">
+                    <h1>CHOOSE FX<span>ORO</span> AND ENJOY THE BEST<br><span class="second-title"> TRADING
+                        EXPERIENCE</span></h1>
+                    <p class="subtitle">Join a professional community of ambitious traders.Trade CFDs, Indices,
+                      Commodities and
+                      Cryptocurrencies.</p>
+                    <div class="main-btn">
+                      <a href="https://my.global.fxoro.com/register?version=global" target="_blank" class="btn">START
+                        TRADING</a>
+                      <p>*Terms and conditions apply.Trading CFD’s is risky.
+                        You might lose all your invested capital.</p>
                     </div>
                   </div>
+                  <div class="flex-item-right">
+                    <div class="first-img"><img src="./images/card header element.png" width="594" height="408"></div>
+                  </div>
                 </div>
+              </div>
             </div>
-              <br>
+            <br>
             <div style="text-align:center">
               <span class="dot"></span>
               <span class="dot"></span>
@@ -196,39 +344,39 @@
           <div class="first-container">
             <div class="container">
               <div class="text-center">
-                <img src="./images/nuvei.png" alt="icon">
-              <img src="./images/unlimint.png" alt="icon">
-              <img src="./images/Skrill.png" alt="icon">
-              <img src="./images/neteller.png" alt="icon">
-              <img src="./images/sofort.png" alt="icon">
-              <img src="./images/MyBank.png" alt="icon">
-              <img src="./images/ecopayz.png" alt="icon">
-            </div>
+                <img loading="lazy" src="./images/nuvei.png" width="73" height="24" alt="icon">
+                <img loading="lazy" src="./images/unlimint.png" width="124" height="24" alt="icon">
+                <img loading="lazy" src="./images/Skrill.png" width="69" height="24" alt="icon">
+                <img loading="lazy" src="./images/neteller.png" width="140" height="24" alt="icon">
+                <img loading="lazy" src="./images/sofort.png" width="157" height="28" alt="icon">
+                <img loading="lazy" src="./images/MyBank.png" width="72" height="40" alt="icon">
+                <img loading="lazy" src="./images/ecopayz.png" width="119" height="28" alt="icon">
+              </div>
               <div class="text-center">
-                <img src="./images/Jeton.png" alt="icon">
-              <img src="./images/Przelewy24.png" alt="icon">
-              <img src="./images/PayPal.png" alt="icon">
-              <img src="./images/giropay.png" alt="icon">
-              <img src="./images/trustly.png" alt="icon">
-              <img src="./images/OB.png" alt="icon">
-            </div>
+                <img loading="lazy" src="./images/Jeton.png" width="97" height="28" alt="icon">
+                <img loading="lazy" src="./images/Przelewy24.png" width="108" height="36" alt="icon">
+                <img loading="lazy" src="./images/PayPal.png" width="131" height="36" alt="icon">
+                <img loading="lazy" src="./images/giropay.png" width="84" height="36" alt="icon">
+                <img loading="lazy" src="./images/trustly.png" width="173" height="36" alt="icon">
+                <img loading="lazy" src="./images/OB.png" width="50" height="44" alt="icon">
+              </div>
             </div>
           </div>
-        <div class="second-container">
+          <div class="second-container">
             <div class="container row">
               <div class="col-12 text-center">
                 <h2>DISCOVER THE FX<span>ORO</span> APP!</h2>
                 <p>Download our app from the AppStore and Google Play and start trading!</p>
               </div>
-              <div class="col-2">
+              <div class="sm-box">
                 <div class="vertical">
                   <p>THE APP</p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="md-box">
                 <ul>
                   <li>
-                    <img src="./images/icon-1.png" alt="icon1" width="135" height="136">
+                    <img loading="lazy" src="./images/icon-1.png" alt="icon1" width="135" height="136">
                     <div class="text">
                       <p class="title">Manage your account</p>
                       <p>Personalize your account and choose
@@ -236,7 +384,7 @@
                     </div>
                   </li>
                   <li>
-                    <img src="./images/icon-2.png" alt="icon2" width="138" height="132">
+                    <img loading="lazy" src="./images/icon-2.png" alt="icon2" width="138" height="132">
                     <div class="text">
                       <p class="title">Trade anywhere</p>
                       <p>Use the FXORO app and start
@@ -244,7 +392,7 @@
                     </div>
                   </li>
                   <li>
-                    <img src="./images/icon-3.png" alt="icon3" width="134" height="122">
+                    <img loading="lazy" src="./images/icon-3.png" alt="icon3" width="134" height="122">
                     <div class="text">
                       <p class="title">Create your own strategy</p>
                       <p>Follow the advanced charts and
@@ -253,123 +401,131 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-6">
-                <img class="phone" src="./images/mobil screen.png" width="310" height="645">
-              <svg id="Layer_2" data-name="Layer 2" class="drawable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1426.71 2042.25">
-                <path class="svg-arrow-one"
-                  d="m1365.02,11.91c70.66,145.89,57.54,326.84-33.43,461-35.62,52.54-82.33,96.64-135.69,130.16-8.16-4.82-16.51-9.38-25.02-13.62-87.67-43.77-181.28-51.27-263.59-21.11-21.6,7.91-50.5,26.36-60.84,52.33-5.09,12.81-4.68,25.83,1.2,37.65,9.72,19.53,31.58,30.26,66.84,32.8,98.4,7.1,197.35-18.28,281.36-68.6,63.36,39.32,116.65,97.67,146.81,168.75,64.91,153,31.18,348.49-85.94,498.03-56.78,72.5-123.3,122.08-192.36,143.36-7.64,2.36-15.34,4.34-23.06,5.98-45.38-53.73-107.36-93.27-175.9-110.5-25-6.28-42.92-3.02-53.27,9.68-15.81,19.43-2.9,47.01,15.79,64.43,51.38,47.88,129.72,67.86,206.82,54.52,14.14,17.8,26.4,37.12,36.42,57.64,40.9,83.84,42.77,184.82,5.01,270.11-46.25,104.46-152.75,186.61-284.88,219.75-131.09,32.88-268.69,16.91-373.91-.68-40.89-6.84-82.36-14.91-122.47-22.73-77.81-15.15-158.12-30.69-238.62-38.17l129.45-28.36c4.47-.98,7.32-5.4,6.32-9.87-.98-4.47-5.4-7.31-9.88-6.33l-175.66,38.48c-3.71.81-6.39,4.04-6.51,7.84,0,.1,0,.19,0,.28,0,3.68,2.45,6.93,6.01,7.96,55.03,15.75,105.13,45.85,144.88,87.03,3.18,3.3,8.43,3.39,11.73.21,3.31-3.19,3.39-8.44.21-11.73-26.51-27.47-57.43-50.2-91.25-67.41,74.09,7.91,148.2,22.33,220.15,36.35,40.21,7.83,81.79,15.93,122.9,22.8,106.82,17.86,246.62,34.04,380.69.42,137.05-34.38,247.71-120.04,296.01-229.13,39.72-89.72,37.75-195.92-5.27-284.09-9.33-19.11-20.5-37.23-33.26-54.12,5.5-1.34,10.98-2.84,16.44-4.52,72.31-22.29,141.65-73.8,200.53-148.98,120.79-154.23,155.38-356.27,88.15-514.74-29.06-68.51-81.26-129.37-146.47-172.02,52.48-34.16,98.45-78.33,133.85-130.53,94.23-138.97,107.83-326.41,34.63-477.54-2-4.12-6.96-5.85-11.08-3.85s-5.85,6.96-3.85,11.08Zm-525.79,1378.19c-10.62-9.89-23.87-30-14.24-41.83,7.38-9.07,23.85-7.21,36.36-4.07,62.01,15.58,118.36,50.37,160.85,97.72-68.87,9.3-137.48-9.42-182.98-51.82Zm340.28-777.2c-79.39,45.54-171.86,68.29-263.82,61.66-28.91-2.08-46.3-9.81-53.19-23.64-3.83-7.69-4.03-15.58-.64-24.12,6.63-16.66,27.66-34.3,51.13-42.9,85.3-31.25,183.27-17.17,266.51,29Z" />
-                <path class="svg-arrow-one"
-                  d="m1392.8,1184.08c-13.61,66.47-52.04,128.6-105.44,170.46-2.09,1.64-3.18,4.08-3.18,6.55,0,1.78.58,3.58,1.77,5.09,2.82,3.61,8.04,4.24,11.64,1.41,56.45-44.24,97.07-109.92,111.45-180.19.92-4.46-1.97-8.87-6.46-9.79-4.49-.92-8.87,1.97-9.79,6.46Z" />
-                <path class="svg-arrow-one"
-                  d="m1250.02,1387.46c.01,4.58,3.73,8.29,8.31,8.27h2.76c4.58-.02,8.29-3.74,8.27-8.32s-3.73-8.29-8.31-8.27h-2.76c-4.58.02-8.29,3.74-8.27,8.32Z" />
-                <path class="svg-arrow-one"
-                  d="m1097.53,529.93c1.77-4.23-.22-9.09-4.45-10.85-63.13-26.44-137.94-25.13-200.11,3.5-3.04,1.41-4.83,4.42-4.83,7.56,0,1.16.25,2.33.76,3.44,1.92,4.16,6.84,5.98,11,4.07,58.02-26.72,127.84-27.94,186.76-3.27,4.22,1.77,9.08-.22,10.85-4.44Z" />
-                <path class="svg-arrow-one"
-                  d="m852.79,553.48c.01,4.58,3.73,8.29,8.31,8.27s8.29-3.73,8.27-8.31v-2.76c-.02-4.58-3.74-8.29-8.32-8.27s-8.29,3.73-8.27,8.31v2.76Z" />
-                <path class="svg-arrow-one"
-                  d="m849.84,1451.31c-1.06,1.47-1.56,3.17-1.56,4.85,0,2.57,1.21,5.11,3.45,6.73,35.82,25.72,81.55,38.02,125.44,33.73,4.56-.45,7.93-4.49,7.45-9.06-.45-4.56-4.5-7.89-9.06-7.45-39.94,3.91-81.55-7.28-114.15-30.7-3.72-2.67-8.9-1.82-11.57,1.9Z" />
-              </svg>
+              <div class="lg-box">
+                <img loading="lazy" class="phone" src="./images/mobil screen.png" width="310" height="645">
+                <svg id="Layer_2" data-name="Layer 2" class="drawable arrow1-img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1426.71 2042.25">
+                  <path class="svg-arrow-one"
+                    d="m1365.02,11.91c70.66,145.89,57.54,326.84-33.43,461-35.62,52.54-82.33,96.64-135.69,130.16-8.16-4.82-16.51-9.38-25.02-13.62-87.67-43.77-181.28-51.27-263.59-21.11-21.6,7.91-50.5,26.36-60.84,52.33-5.09,12.81-4.68,25.83,1.2,37.65,9.72,19.53,31.58,30.26,66.84,32.8,98.4,7.1,197.35-18.28,281.36-68.6,63.36,39.32,116.65,97.67,146.81,168.75,64.91,153,31.18,348.49-85.94,498.03-56.78,72.5-123.3,122.08-192.36,143.36-7.64,2.36-15.34,4.34-23.06,5.98-45.38-53.73-107.36-93.27-175.9-110.5-25-6.28-42.92-3.02-53.27,9.68-15.81,19.43-2.9,47.01,15.79,64.43,51.38,47.88,129.72,67.86,206.82,54.52,14.14,17.8,26.4,37.12,36.42,57.64,40.9,83.84,42.77,184.82,5.01,270.11-46.25,104.46-152.75,186.61-284.88,219.75-131.09,32.88-268.69,16.91-373.91-.68-40.89-6.84-82.36-14.91-122.47-22.73-77.81-15.15-158.12-30.69-238.62-38.17l129.45-28.36c4.47-.98,7.32-5.4,6.32-9.87-.98-4.47-5.4-7.31-9.88-6.33l-175.66,38.48c-3.71.81-6.39,4.04-6.51,7.84,0,.1,0,.19,0,.28,0,3.68,2.45,6.93,6.01,7.96,55.03,15.75,105.13,45.85,144.88,87.03,3.18,3.3,8.43,3.39,11.73.21,3.31-3.19,3.39-8.44.21-11.73-26.51-27.47-57.43-50.2-91.25-67.41,74.09,7.91,148.2,22.33,220.15,36.35,40.21,7.83,81.79,15.93,122.9,22.8,106.82,17.86,246.62,34.04,380.69.42,137.05-34.38,247.71-120.04,296.01-229.13,39.72-89.72,37.75-195.92-5.27-284.09-9.33-19.11-20.5-37.23-33.26-54.12,5.5-1.34,10.98-2.84,16.44-4.52,72.31-22.29,141.65-73.8,200.53-148.98,120.79-154.23,155.38-356.27,88.15-514.74-29.06-68.51-81.26-129.37-146.47-172.02,52.48-34.16,98.45-78.33,133.85-130.53,94.23-138.97,107.83-326.41,34.63-477.54-2-4.12-6.96-5.85-11.08-3.85s-5.85,6.96-3.85,11.08Zm-525.79,1378.19c-10.62-9.89-23.87-30-14.24-41.83,7.38-9.07,23.85-7.21,36.36-4.07,62.01,15.58,118.36,50.37,160.85,97.72-68.87,9.3-137.48-9.42-182.98-51.82Zm340.28-777.2c-79.39,45.54-171.86,68.29-263.82,61.66-28.91-2.08-46.3-9.81-53.19-23.64-3.83-7.69-4.03-15.58-.64-24.12,6.63-16.66,27.66-34.3,51.13-42.9,85.3-31.25,183.27-17.17,266.51,29Z" />
+                  <path class="svg-arrow-one"
+                    d="m1392.8,1184.08c-13.61,66.47-52.04,128.6-105.44,170.46-2.09,1.64-3.18,4.08-3.18,6.55,0,1.78.58,3.58,1.77,5.09,2.82,3.61,8.04,4.24,11.64,1.41,56.45-44.24,97.07-109.92,111.45-180.19.92-4.46-1.97-8.87-6.46-9.79-4.49-.92-8.87,1.97-9.79,6.46Z" />
+                  <path class="svg-arrow-one"
+                    d="m1250.02,1387.46c.01,4.58,3.73,8.29,8.31,8.27h2.76c4.58-.02,8.29-3.74,8.27-8.32s-3.73-8.29-8.31-8.27h-2.76c-4.58.02-8.29,3.74-8.27,8.32Z" />
+                  <path class="svg-arrow-one"
+                    d="m1097.53,529.93c1.77-4.23-.22-9.09-4.45-10.85-63.13-26.44-137.94-25.13-200.11,3.5-3.04,1.41-4.83,4.42-4.83,7.56,0,1.16.25,2.33.76,3.44,1.92,4.16,6.84,5.98,11,4.07,58.02-26.72,127.84-27.94,186.76-3.27,4.22,1.77,9.08-.22,10.85-4.44Z" />
+                  <path class="svg-arrow-one"
+                    d="m852.79,553.48c.01,4.58,3.73,8.29,8.31,8.27s8.29-3.73,8.27-8.31v-2.76c-.02-4.58-3.74-8.29-8.32-8.27s-8.29,3.73-8.27,8.31v2.76Z" />
+                  <path class="svg-arrow-one"
+                    d="m849.84,1451.31c-1.06,1.47-1.56,3.17-1.56,4.85,0,2.57,1.21,5.11,3.45,6.73,35.82,25.72,81.55,38.02,125.44,33.73,4.56-.45,7.93-4.49,7.45-9.06-.45-4.56-4.5-7.89-9.06-7.45-39.94,3.91-81.55-7.28-114.15-30.7-3.72-2.67-8.9-1.82-11.57,1.9Z" />
+                </svg>
               </div>
             </div>
-        </div>
-        <div class="third-container">
+          </div>
+          <div class="third-container">
             <div class="container row">
               <div class="col-8 mx-auto">
-                  <h3>REGISTRATION AND AUTHORIZATION</h3>
-                    <p><span class="prefix-fx">FX</span><span>ORO</span> is a brand that belongs to MCA Intelifunds LTD, a financial
-                        company incorporated and Registered
-                            under the laws of the Republic of Cyprus. It is authorized by CYSEC, with license number 126/10.</p>
-                      <img src="./images/mifid-logo.png" alt="logo">
+                <h3>REGISTRATION AND AUTHORIZATION</h3>
+                <p><span class="prefix-fx">FX</span><span>ORO</span> is a brand that belongs to MCA Intelifunds LTD, a
+                  financial
+                  company incorporated and Registered
+                  under the laws of the Republic of Cyprus. It is authorized by CYSEC, with license number 126/10.</p>
+                <img loading="lazy" src="./images/mifid-logo.png" alt="logo" width="169" height="88">
               </div>
             </div>
-        </div>
+          </div>
         </section>
         <section>
-            <div class="fourth-container">
+          <div class="fourth-container">
             <div class="container flex-container">
               <ul class="md-box">
                 <li>
-                  <img src="./images/it.jpg" alt="it" width="32" height="20">
+                  <img loading="lazy" src="./images/it.jpg" alt="it" width="32" height="20">
                   <p>Italy: CONSOB, reg. no: 3318</p>
                 </li>
                 <li>
-                  <img src="./images/es.jpg" alt="es" width="32" height="20">
+                  <img loading="lazy" src="./images/es.jpg" alt="es" width="32" height="20">
                   <p>Spain: CNVM, reg. no: 3065</p>
                 </li>
                 <li>
-                  <img src="./images/de.jpg" alt="de" width="32" height="20">
+                  <img loading="lazy" src="./images/de.jpg" alt="de" width="32" height="20">
                   <p>Germany: BAFIN, reg. no: 126396</p>
                 </li>
               </ul>
               <ul class="md-box">
                 <li>
-                  <img src="./images/hu.jpg" alt="hu" width="32" height="20">
+                  <img loading="lazy" src="./images/hu.jpg" alt="hu" width="32" height="20">
                   <p>Hungary: MNB, reg. no: K0000373</p>
                 </li>
                 <li>
-                  <img src="./images/pt.jpg" alt="pt" width="32" height="20">
+                  <img loading="lazy" src="./images/pt.jpg" alt="pt" width="32" height="20">
                   <p>Portugal: Registered (CMVM)</p>
                 </li>
                 <li>
-                  <img src="./images/fr.jpg" alt="fr" width="32" height="20">
+                  <img loading="lazy" src="./images/fr.jpg" alt="fr" width="32" height="20">
                   <p>France: AMF, reg. no: 48949</p>
                 </li>
               </ul>
               <ul class="md-box">
                 <li>
-                  <img src="./images/sw.jpg" alt="sw" width="32" height="20">
+                  <img loading="lazy" src="./images/sw.jpg" alt="sw" width="32" height="20">
                   <p>Sweden: FI reg. no: 29332</p>
                 </li>
                 <li>
-                  <img src="./images/pl.jpg" alt="pl" width="32" height="20">
+                  <img loading="lazy" src="./images/pl.jpg" alt="pl" width="32" height="20">
                   <p>Poland (KNF)</p>
                 </li>
                 <li>
-                  <img src="./images/fi.webp" alt="fi" width="32" height="20">
+                  <img loading="lazy" src="./images/fi.webp" alt="fi" width="32" height="20">
                   <p>Finland</p>
                 </li>
               </ul>
             </div>
-            </div>
-            <div class="fifth-container">
-              <div class="container row">
-                <div class="col-8 mx-auto xl-box">
-                  <svg id="Layer_2" data-name="Layer 2" class="drawable arrow2-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 793.48 2149.68" width="70" height="250">
-                    <path class="svg-arrow-two"
-                      d="m282.83,29.54c-4.79-4.45-12.28-4.18-16.74.61C122.69,184.38,41.57,394.64,41.56,605.04c0,26.23,1.26,52.43,3.81,78.56,20.27,207.21,121.87,405.1,276.46,544.3-80.37,137.22-112.26,305.32-89.77,473.64,17.56,131.48,67.22,254.03,142.19,354.48-34.31-17.93-71.51-30.33-110.11-36.24-6.46-.99-12.51,3.45-13.49,9.92-.09.61-.14,1.21-.14,1.81,0,5.75,4.19,10.8,10.06,11.69,73.76,11.28,142.21,47.74,192.71,102.66,4.31,4.68,11.54,5.12,16.39,1.01,4.83-4.12,5.59-11.33,1.64-16.34-48.29-61.53-74.46-141.54-71.69-219.82.24-6.59-4.89-12.02-11.42-12.25-6.54-.23-12.02,4.88-12.25,11.42-1.67,47.43,6.77,95.55,23.69,140.36-172.4-224.7-201.27-560.54-59.64-806.46,15.68,13.31,31.89,26.02,48.56,38.1,78.56,56.89,149.72,84.28,217.54,83.73,75.51-.61,165.75-47.45,184.28-133.07,9.96-46.12-4.2-93.23-39.93-132.73-43.98-48.61-112.29-75.48-174.02-68.46-117.79,13.39-198.87,108.9-241.99,176.01-148.45-135.11-245.92-326.13-265.48-526.07C46.52,452.22,126.72,214.85,283.44,46.28c4.46-4.8,4.17-12.28-.61-16.74Zm69.58,1193.69c40.11-63.37,116.6-155.83,226.69-168.34,54.39-6.18,114.76,17.69,153.78,60.82,24.21,26.77,36.89,57.36,36.89,88.08,0,7.93-.84,15.86-2.54,23.74-15.93,73.58-95,113.85-161.32,114.39-62.59.51-129.14-25.41-203.46-79.23-17.22-12.46-33.92-25.65-50.04-39.46Z" />
-                    <path class="svg-arrow-two"
-                      d="m778.92,1052.59c3.65,5.43,2.22,12.79-3.2,16.44-5.43,3.66-12.79,2.22-16.45-3.2-27.6-40.95-79.1-64.53-128.14-58.68-6.49.78-12.39-3.86-13.16-10.36-.06-.48-.08-.95-.08-1.42,0-5.91,4.42-11.03,10.44-11.74,57.63-6.88,118.16,20.83,150.6,68.96Z" />
-                    <path class="svg-arrow-two"
-                      d="m525.21,1017.5c-1.43-2.06-2.11-4.41-2.11-6.75,0-3.75,1.77-7.44,5.09-9.74,17.57-12.21,39.87-18.03,61.18-15.97,6.51.63,11.29,6.48,10.65,12.93-.63,6.51-6.42,11.28-12.93,10.65-15.81-1.53-32.35,2.78-45.39,11.84-5.37,3.73-12.75,2.4-16.49-2.97Z" />
-                    <path class="svg-arrow-two"
-                      d="m18.04,381c2.11-6.19,8.85-9.49,15.04-7.38,6.19,2.12,9.5,8.87,7.37,15.04-15.59,45.57-20.43,94.88-14,142.62.91,6.45-3.67,12.45-10.16,13.32-6.49.87-12.45-3.68-13.32-10.16C.99,519.7,0,504.81,0,489.92c0-36.97,6.08-73.98,18.04-108.93Z" />
-                    <path class="svg-arrow-two"
-                      d="m35.04,347.38c0-.56.04-1.13.12-1.71,2.28-15.8,8.8-30.71,18.86-43.12,4.12-5.08,11.57-5.86,16.66-1.75,5.09,4.12,5.88,11.57,1.74,16.66-7.36,9.1-12.14,20.02-13.82,31.6-.93,6.47-6.94,10.97-13.42,10.03-5.9-.85-10.15-5.91-10.15-11.71Z" />
-                    <path class="svg-arrow-two"
-                      d="m315.8,11.84v1.97c0,6.54-5.31,11.84-11.84,11.84s-11.84-5.3-11.84-11.84v-1.97c0-6.54,5.31-11.84,11.84-11.84,6.54,0,11.84,5.3,11.84,11.84Z" />
-                  </svg>
-                    <h3>FX<span>ORO</span> WITH US YOU CAN TRADE CFDs
-              ON THE MOST POPULAR EXCHANGE
-                      TRADED FUNDS (ETFs)</h3>
-                      <p>For an online trading activity, the ideal is to rely on an innovative and safe broker
-              like <span class="prefix-fx">FX</span><span>ORO</span>. In this way it is possible to create the ideal conditions for investing and
-              adequately training on the risks and opportunities of trading. Here's everything you
-                        need to know about <span class="prefix-fx">FX</span><span>ORO</span>'s offering.</p>
-                </div>
+          </div>
+          <div class="fifth-container">
+            <div class="container row">
+              <div class="col-8 mx-auto xl-box">
+                <svg id="Layer_2" data-name="Layer 2" class="drawable arrow2-img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 793.48 2149.68" width="70" height="250">
+                  <path class="svg-arrow-two"
+                    d="m282.83,29.54c-4.79-4.45-12.28-4.18-16.74.61C122.69,184.38,41.57,394.64,41.56,605.04c0,26.23,1.26,52.43,3.81,78.56,20.27,207.21,121.87,405.1,276.46,544.3-80.37,137.22-112.26,305.32-89.77,473.64,17.56,131.48,67.22,254.03,142.19,354.48-34.31-17.93-71.51-30.33-110.11-36.24-6.46-.99-12.51,3.45-13.49,9.92-.09.61-.14,1.21-.14,1.81,0,5.75,4.19,10.8,10.06,11.69,73.76,11.28,142.21,47.74,192.71,102.66,4.31,4.68,11.54,5.12,16.39,1.01,4.83-4.12,5.59-11.33,1.64-16.34-48.29-61.53-74.46-141.54-71.69-219.82.24-6.59-4.89-12.02-11.42-12.25-6.54-.23-12.02,4.88-12.25,11.42-1.67,47.43,6.77,95.55,23.69,140.36-172.4-224.7-201.27-560.54-59.64-806.46,15.68,13.31,31.89,26.02,48.56,38.1,78.56,56.89,149.72,84.28,217.54,83.73,75.51-.61,165.75-47.45,184.28-133.07,9.96-46.12-4.2-93.23-39.93-132.73-43.98-48.61-112.29-75.48-174.02-68.46-117.79,13.39-198.87,108.9-241.99,176.01-148.45-135.11-245.92-326.13-265.48-526.07C46.52,452.22,126.72,214.85,283.44,46.28c4.46-4.8,4.17-12.28-.61-16.74Zm69.58,1193.69c40.11-63.37,116.6-155.83,226.69-168.34,54.39-6.18,114.76,17.69,153.78,60.82,24.21,26.77,36.89,57.36,36.89,88.08,0,7.93-.84,15.86-2.54,23.74-15.93,73.58-95,113.85-161.32,114.39-62.59.51-129.14-25.41-203.46-79.23-17.22-12.46-33.92-25.65-50.04-39.46Z" />
+                  <path class="svg-arrow-two"
+                    d="m778.92,1052.59c3.65,5.43,2.22,12.79-3.2,16.44-5.43,3.66-12.79,2.22-16.45-3.2-27.6-40.95-79.1-64.53-128.14-58.68-6.49.78-12.39-3.86-13.16-10.36-.06-.48-.08-.95-.08-1.42,0-5.91,4.42-11.03,10.44-11.74,57.63-6.88,118.16,20.83,150.6,68.96Z" />
+                  <path class="svg-arrow-two"
+                    d="m525.21,1017.5c-1.43-2.06-2.11-4.41-2.11-6.75,0-3.75,1.77-7.44,5.09-9.74,17.57-12.21,39.87-18.03,61.18-15.97,6.51.63,11.29,6.48,10.65,12.93-.63,6.51-6.42,11.28-12.93,10.65-15.81-1.53-32.35,2.78-45.39,11.84-5.37,3.73-12.75,2.4-16.49-2.97Z" />
+                  <path class="svg-arrow-two"
+                    d="m18.04,381c2.11-6.19,8.85-9.49,15.04-7.38,6.19,2.12,9.5,8.87,7.37,15.04-15.59,45.57-20.43,94.88-14,142.62.91,6.45-3.67,12.45-10.16,13.32-6.49.87-12.45-3.68-13.32-10.16C.99,519.7,0,504.81,0,489.92c0-36.97,6.08-73.98,18.04-108.93Z" />
+                  <path class="svg-arrow-two"
+                    d="m35.04,347.38c0-.56.04-1.13.12-1.71,2.28-15.8,8.8-30.71,18.86-43.12,4.12-5.08,11.57-5.86,16.66-1.75,5.09,4.12,5.88,11.57,1.74,16.66-7.36,9.1-12.14,20.02-13.82,31.6-.93,6.47-6.94,10.97-13.42,10.03-5.9-.85-10.15-5.91-10.15-11.71Z" />
+                  <path class="svg-arrow-two"
+                    d="m315.8,11.84v1.97c0,6.54-5.31,11.84-11.84,11.84s-11.84-5.3-11.84-11.84v-1.97c0-6.54,5.31-11.84,11.84-11.84,6.54,0,11.84,5.3,11.84,11.84Z" />
+                </svg>
+                <h3>FX<span>ORO</span> WITH US YOU CAN TRADE CFDs
+                  ON THE MOST POPULAR EXCHANGE
+                  TRADED FUNDS (ETFs)</h3>
+                <p>For an online trading activity, the ideal is to rely on an innovative and safe broker
+                  like <span class="prefix-fx">FX</span><span>ORO</span>. In this way it is possible to create the ideal
+                  conditions for investing and
+                  adequately training on the risks and opportunities of trading. Here's everything you
+                  need to know about <span class="prefix-fx">FX</span><span>ORO</span>'s offering.</p>
+              </div>
               <div>
                 <div class="info-box">
                   <div class="accordion">
                     <h4><span class="icon"></span>What is <span class="prefix-fx">FX</span><span>ORO</span></h4>
                   </div>
                   <div class="panel">
-                    <p><span class="prefix-fx">FX</span><span>ORO</span> is a broker founded in 2012. Right from the start, the broker's
+                    <p><span class="prefix-fx">FX</span><span>ORO</span> is a broker founded in 2012. Right from the
+                      start, the broker's
                       goal was to offer its clients an innovative
-                      approach to trading. Within a few years the platform has acquired a central role in the financial markets, quickly
-                      becoming a reference point for traders looking for an effective, safe and technologicaly wholesome trading
+                      approach to trading. Within a few years the platform has acquired a central role in the financial
+                      markets, quickly
+                      becoming a reference point for traders looking for an effective, safe and technologicaly wholesome
+                      trading
                       experience.
                       Offering a complete and informed trading experience on a daily basis is <span
                         class="prefix-fx">FX</span><span>ORO</span>'s mission. To do this, customers can take
-                      advantage of the best conditions and the most advanced technologies, also making use of targeted partnerships such
+                      advantage of the best conditions and the most advanced technologies, also making use of targeted
+                      partnerships such
                       as
                       the one with Trading Central.</p>
                   </div>
@@ -377,26 +533,34 @@
                     <h4><span class="icon"></span>What <span class="prefix-fx">FX</span><span>ORO</span> does</h4>
                   </div>
                   <div class="panel">
-                    <p><span class="prefix-fx">FX</span><span>ORO</span> works on a daily basis to create the best investment conditions
+                    <p><span class="prefix-fx">FX</span><span>ORO</span> works on a daily basis to create the best
+                      investment conditions
                       for the client. Within its offer it is possible to
-                      trade with the most popular financial instruments, such as ETFs, Currencies (Forex), precious metals,
+                      trade with the most popular financial instruments, such as ETFs, Currencies (Forex), precious
+                      metals,
                       cryptocurrencies,
                       commodities, indices and CFDs based on shares.
-                
+
                       The 4 strengths of <span class="prefix-fx">FX</span><span>ORO</span> are :
-                
-                      Technology: because the broker offers a wide range of products in the FX and CFD markets, through cutting-edge
+
+                      Technology: because the broker offers a wide range of products in the FX and CFD markets, through
+                      cutting-edge
                       technologies and the help of experienced and qualified personnel in the financial ecosystem.
-                      Support: because the staff is always available to provide customers with information and support on the use of all
+                      Support: because the staff is always available to provide customers with information and support
+                      on the use of all
                       financial instruments.
-                      Security:because <span class="prefix-fx">FX</span><span>ORO</span> complies with all the highest security
+                      Security:because <span class="prefix-fx">FX</span><span>ORO</span> complies with all the highest
+                      security
                       standards required by the financial market. With this in
-                      mind, it is enough to point out that the platform is regulated by CySEC, one of the largest supervisory
+                      mind, it is enough to point out that the platform is regulated by CySEC, one of the largest
+                      supervisory
                       authorities in
                       the world.
-                      Training:because <span class="prefix-fx">FX</span><span>ORO</span> is aware that without adequate training and
+                      Training:because <span class="prefix-fx">FX</span><span>ORO</span> is aware that without adequate
+                      training and
                       knowledge of financial instruments it is impossible
-                      to trade appropriately. That's why <span class="prefix-fx">FX</span><span>ORO</span>'s offer includes an
+                      to trade appropriately. That's why <span class="prefix-fx">FX</span><span>ORO</span>'s offer
+                      includes an
                       educational library with e-book, basic courses and in-depth
                       courses with weekly webinars.</p>
                   </div>
@@ -404,263 +568,335 @@
                     <h4><span class="icon"></span><span class="prefix-fx">FX</span><span>ORO</span> Products</h4>
                   </div>
                   <div class="panel subpanel">
-                      <h4 class="accordion"><span class="icon"></span>Forex</h4>
-                      <div class="panel">
-                        <p>
-                          The Forex is the largest and most widely used financial market by far, hosting a daily trading volume of over
-                          £ 4
-                          billion. It is highly appreciated by traders who wish to trade on the values of currency pairs. Forex, in
-                          fact, comes
-                          from the terms Foreign Exchange Market, or the global market where currency trading takes place. The growing
-                          interest in
-                          Forex is certainly linked to the volatility of currencies.
-                
-                          With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to operate on Forex with the main world
-                          currencies, having access to more than 60 currency
-                          pairs, 24 hours a day and 5 days a week, through the three classic financial instruments: Spot Market, Forward
-                          Market
-                          and Futures Market.
-                        </p>
-                      </div>
-                      <h4 class="accordion"><span class="icon"></span>Shares</h4>
-                      <div class="panel">
-                        <p>
-                          <span class="prefix-fx">FX</span><span>ORO</span> offers the possibility to trade CFDs online with shares.
-                          CFDs are known as Contract For Difference, or Contracts
-                          for Difference. These are derivative instruments that allow the trader to operate on a specific financial
-                          market without
-                          buying or selling the underlying asset.
-                
-                          Ultimately, through CFDs, you risk on the possible increase or decrease in a financial market, such as a share
-                          , or an
-                          index, a commodity, a cryptocurrency, an ETF or a currency. It is therefore a negotiation on the price
-                          difference.
-                
-                          With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to trade CFDs on shares gaining
-                          immediate access to the main global markets, among which the
-                          United States, the United Kingdom, Asia and Europe stand out.
-                        </p>
-                      </div>
-                      <h4 class="accordion"><span class="icon"></span>Commodities</h4>
-                      <div class="panel">
-                        <p>
-                          Trading on commodities is undoubtedly among the investment strategies most used by traders. Among the most
-                          popular
-                          commodities for this type of trading are gold, silver and oil. With <span
-                            class="prefix-fx">FX</span><span>ORO</span> it is however possible to trade also on
-                          Copper, Oil, Brent, Ngas, Coffee, Sugar, Corn, Wheat, Sbeam, Cotton and Cocoa.
-                
-                          Commodity Trading (or, precisely, trading on Commodities) is based on the negotiation of these assets in order
-                          to make a
-                          profit on their price fluctuations, which can be up or down. <span class="prefix-fx">FX</span><span>ORO</span>
-                          allows Commodity Trading through the main derivative
-                          instruments, such as Futures, CFDs and ETCs.
-                        </p>
-                      </div>
-                      <h4 class="accordion"><span class="icon"></span>Indices</h4>
-                      <div class="panel">
-                        <p>
-                          Trading on indices consists of financial transactions initiated with the aim of making a profit on changes in
-                          the prices
-                          of indices.
-                
-                          Financial indices are synthetic indicators that group the financial performance of a given pool of securities,
-                          grouped
-                          according to a predefined criterion. Among the most famous we find the Dow Jones, the Nasdaq 100, the S&P 500,
-                          the Euro
-                          Stoxx 50, the FTSE 100, the DAX, the Nikkei 225 and the CAC40.
-                
-                          With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to trade on these indices and on others
-                          such as the SMI20, the Gaming and E-sports Giants and
-                          the ASX200.
-                        </p>
-                      </div>
-                      <h4 class="accordion"><span class="icon"></span>ETF</h4>
-                      <div class="panel">
-                        <p>
-                          The ETFs, which stands for Exchange Traded Funds, began trading in 1993. There are now more than 5,000 ETFs
-                          available
-                          for $ 3 trillion worth of assets.
-                
-                          These are similar products to investment funds and essentially represent a fund invested on the stock exchange
-                          that
-                          faithfully replicates the performance of an index that invests in stocks, bonds or other assets.
-                
-                          There are two types of ETFs, physically replicating and synthetically replicating ETFs. The former buy and
-                          replicate all
-                          the securities in an index (full replication) or only a part (partial replication). The latter, on the other
-                          hand,
-                          replicate the reference index through the signing of swap contracts with a counterparty, usually a bank.
-                        </p>
-                      </div>
-                      <h4 class="accordion"><span class="icon"></span>CFDs on Cryptocurrencies</h4>
-                      <div class="panel">
-                        <p>
-                          CFD trading on cryptocurrencies is very popular today, because it consists of speculating on the appreciation
-                          or
-                          depreciation of a crypto, without buying it directly.
-                
-                          With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to operate with the main
-                          cryptocurrencies on the market, among which Bitcoin, Litecoin,
-                          Ethereum, Dash and Dogecoin stand out.
-                        </p>
-                      </div>
-                  
+                    <h4 class="accordion"><span class="icon"></span>Forex</h4>
+                    <div class="panel">
+                      <p>
+                        The Forex is the largest and most widely used financial market by far, hosting a daily trading
+                        volume of over
+                        £ 4
+                        billion. It is highly appreciated by traders who wish to trade on the values of currency pairs.
+                        Forex, in
+                        fact, comes
+                        from the terms Foreign Exchange Market, or the global market where currency trading takes place.
+                        The growing
+                        interest in
+                        Forex is certainly linked to the volatility of currencies.
+
+                        With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to operate on Forex with
+                        the main world
+                        currencies, having access to more than 60 currency
+                        pairs, 24 hours a day and 5 days a week, through the three classic financial instruments: Spot
+                        Market, Forward
+                        Market
+                        and Futures Market.
+                      </p>
+                    </div>
+                    <h4 class="accordion"><span class="icon"></span>Shares</h4>
+                    <div class="panel">
+                      <p>
+                        <span class="prefix-fx">FX</span><span>ORO</span> offers the possibility to trade CFDs online
+                        with shares.
+                        CFDs are known as Contract For Difference, or Contracts
+                        for Difference. These are derivative instruments that allow the trader to operate on a specific
+                        financial
+                        market without
+                        buying or selling the underlying asset.
+
+                        Ultimately, through CFDs, you risk on the possible increase or decrease in a financial market,
+                        such as a share
+                        , or an
+                        index, a commodity, a cryptocurrency, an ETF or a currency. It is therefore a negotiation on the
+                        price
+                        difference.
+
+                        With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to trade CFDs on shares
+                        gaining
+                        immediate access to the main global markets, among which the
+                        United States, the United Kingdom, Asia and Europe stand out.
+                      </p>
+                    </div>
+                    <h4 class="accordion"><span class="icon"></span>Commodities</h4>
+                    <div class="panel">
+                      <p>
+                        Trading on commodities is undoubtedly among the investment strategies most used by traders.
+                        Among the most
+                        popular
+                        commodities for this type of trading are gold, silver and oil. With <span
+                          class="prefix-fx">FX</span><span>ORO</span> it is however possible to trade also on
+                        Copper, Oil, Brent, Ngas, Coffee, Sugar, Corn, Wheat, Sbeam, Cotton and Cocoa.
+
+                        Commodity Trading (or, precisely, trading on Commodities) is based on the negotiation of these
+                        assets in order
+                        to make a
+                        profit on their price fluctuations, which can be up or down. <span
+                          class="prefix-fx">FX</span><span>ORO</span>
+                        allows Commodity Trading through the main derivative
+                        instruments, such as Futures, CFDs and ETCs.
+                      </p>
+                    </div>
+                    <h4 class="accordion"><span class="icon"></span>Indices</h4>
+                    <div class="panel">
+                      <p>
+                        Trading on indices consists of financial transactions initiated with the aim of making a profit
+                        on changes in
+                        the prices
+                        of indices.
+
+                        Financial indices are synthetic indicators that group the financial performance of a given pool
+                        of securities,
+                        grouped
+                        according to a predefined criterion. Among the most famous we find the Dow Jones, the Nasdaq
+                        100, the S&P 500,
+                        the Euro
+                        Stoxx 50, the FTSE 100, the DAX, the Nikkei 225 and the CAC40.
+
+                        With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to trade on these indices
+                        and on others
+                        such as the SMI20, the Gaming and E-sports Giants and
+                        the ASX200.
+                      </p>
+                    </div>
+                    <h4 class="accordion"><span class="icon"></span>ETF</h4>
+                    <div class="panel">
+                      <p>
+                        The ETFs, which stands for Exchange Traded Funds, began trading in 1993. There are now more than
+                        5,000 ETFs
+                        available
+                        for $ 3 trillion worth of assets.
+
+                        These are similar products to investment funds and essentially represent a fund invested on the
+                        stock exchange
+                        that
+                        faithfully replicates the performance of an index that invests in stocks, bonds or other assets.
+
+                        There are two types of ETFs, physically replicating and synthetically replicating ETFs. The
+                        former buy and
+                        replicate all
+                        the securities in an index (full replication) or only a part (partial replication). The latter,
+                        on the other
+                        hand,
+                        replicate the reference index through the signing of swap contracts with a counterparty, usually
+                        a bank.
+                      </p>
+                    </div>
+                    <h4 class="accordion"><span class="icon"></span>CFDs on Cryptocurrencies</h4>
+                    <div class="panel">
+                      <p>
+                        CFD trading on cryptocurrencies is very popular today, because it consists of speculating on the
+                        appreciation
+                        or
+                        depreciation of a crypto, without buying it directly.
+
+                        With <span class="prefix-fx">FX</span><span>ORO</span> it is possible to operate with the main
+                        cryptocurrencies on the market, among which Bitcoin, Litecoin,
+                        Ethereum, Dash and Dogecoin stand out.
+                      </p>
+                    </div>
+
                   </div>
                   <div class="accordion">
-                    <h4><span class="icon"></span>How to open an account with <span class="prefix-fx">FX</span><span>ORO</span></h4>
+                    <h4><span class="icon"></span>How to open an account with <span
+                        class="prefix-fx">FX</span><span>ORO</span></h4>
                   </div>
                   <div class="panel">
                     <p>
-                      With FXORO it is possible to open trading accounts to invest in the financial markets. Our broker provides the
-                      possibility to open an account by choosing from the 4 main types available on the market: Fixed Spread Account,
+                      With FXORO it is possible to open trading accounts to invest in the financial markets. Our broker
+                      provides the
+                      possibility to open an account by choosing from the 4 main types available on the market: Fixed
+                      Spread Account,
                       Variable
                       Spread Account, ECN Account and Islamic Account.
-                
-                      The Fixed Spread Account provides a spread, that is the difference between the purchase price and the sale price,
+
+                      The Fixed Spread Account provides a spread, that is the difference between the purchase price and
+                      the sale price,
                       fixed
-                      and always identical. On the contrary, the Variable Spread Account has a floating spread, which depends on the buy
+                      and always identical. On the contrary, the Variable Spread Account has a floating spread, which
+                      depends on the buy
                       and
                       sell prices at the time of the investment.
-                
-                      The ECN account belongs to the category of No Dealing Desk. This means that in this case the broker does not act
+
+                      The ECN account belongs to the category of No Dealing Desk. This means that in this case the
+                      broker does not act
                       as the
                       user's counterpart, but only as an intermediary for accessing the financial markets.
-                
-                      Finally, you can open with FXORO an Islamic Account, or an account specially set up to respect Islamic law in
+
+                      Finally, you can open with FXORO an Islamic Account, or an account specially set up to respect
+                      Islamic law in
                       terms of
-                      loans and finance, a discipline in which any collection of interest corresponds is illegal. For this reason, the
+                      loans and finance, a discipline in which any collection of interest corresponds is illegal. For
+                      this reason, the
                       Islamic
-                      Account is set up in such a way as to avoid the creation of Swap commissions and Overnight interests.
+                      Account is set up in such a way as to avoid the creation of Swap commissions and Overnight
+                      interests.
                     </p>
                   </div>
-                    <svg id="Layer_2" data-name="Layer 2" class="drawable arrow3-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1832.4 2022.95" width="136" height="100">
-                      <path class="svg-arrow-three"
-                        d="m1205.28,255.37C866.44,60.64,417.33,103.5,115.71,346.97c62.58-106.78,132.69-209.28,210.34-305.41,8.86-10.96,7.17-27.01-3.81-35.89-10.97-8.86-27.03-7.15-35.89,3.81C177.37,144.41,81.97,291.07,2.81,445.43c-2.61,5.09-3.37,10.76-2.42,16.12.89,4.97,3.25,9.7,6.98,13.47,7.76,7.85,19.68,9.81,29.54,4.88,138.32-69.09,299.29-99.41,453.25-85.38,14.03,1.28,26.45-9.05,27.73-23.08,1.23-14.07-9.07-26.46-23.1-27.73-113.02-10.3-226.21,1.36-334.05,33.19,283.71-217.81,708.49-255.8,1019.11-77.28,345.9,198.78,531.32,655.06,422.11,1038.81-80.96,284.43-288.64,493.6-533.56,626.95v57.57c266.34-138.58,494.9-362.28,582.64-670.55,117.29-411.99-74.37-883.63-445.77-1097.03Z" />
-                      <path class="svg-arrow-three"
-                        d="m1619.88,1623.67c-1.38-7.74.83-16.01,6.68-22.13,114.99-120.24,172.38-297.34,149.75-462.17-1.92-13.97,7.85-26.85,21.82-28.76,13.96-1.91,26.52,7.8,28.75,21.81,25.06,182.62-36.03,371.19-163.43,504.4-9.74,10.19-25.89,10.54-36.08.81-4.07-3.9-6.56-8.8-7.48-13.96Z" />
-                      <path class="svg-arrow-three"
-                        d="m1550.03,1707.44l8.37-1.49c13.88-2.47,27.13,6.78,29.6,20.65,2.47,13.87-6.77,27.13-20.65,29.6l-8.37,1.49c-13.88,2.47-27.13-6.78-29.6-20.65-2.47-13.87,6.77-27.13,20.65-29.6Z" />
-                    </svg>
+                  <svg id="Layer_2" data-name="Layer 2" class="drawable arrow3-img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1832.4 2022.95" width="136" height="100">
+                    <path class="svg-arrow-three"
+                      d="m1205.28,255.37C866.44,60.64,417.33,103.5,115.71,346.97c62.58-106.78,132.69-209.28,210.34-305.41,8.86-10.96,7.17-27.01-3.81-35.89-10.97-8.86-27.03-7.15-35.89,3.81C177.37,144.41,81.97,291.07,2.81,445.43c-2.61,5.09-3.37,10.76-2.42,16.12.89,4.97,3.25,9.7,6.98,13.47,7.76,7.85,19.68,9.81,29.54,4.88,138.32-69.09,299.29-99.41,453.25-85.38,14.03,1.28,26.45-9.05,27.73-23.08,1.23-14.07-9.07-26.46-23.1-27.73-113.02-10.3-226.21,1.36-334.05,33.19,283.71-217.81,708.49-255.8,1019.11-77.28,345.9,198.78,531.32,655.06,422.11,1038.81-80.96,284.43-288.64,493.6-533.56,626.95v57.57c266.34-138.58,494.9-362.28,582.64-670.55,117.29-411.99-74.37-883.63-445.77-1097.03Z" />
+                    <path class="svg-arrow-three"
+                      d="m1619.88,1623.67c-1.38-7.74.83-16.01,6.68-22.13,114.99-120.24,172.38-297.34,149.75-462.17-1.92-13.97,7.85-26.85,21.82-28.76,13.96-1.91,26.52,7.8,28.75,21.81,25.06,182.62-36.03,371.19-163.43,504.4-9.74,10.19-25.89,10.54-36.08.81-4.07-3.9-6.56-8.8-7.48-13.96Z" />
+                    <path class="svg-arrow-three"
+                      d="m1550.03,1707.44l8.37-1.49c13.88-2.47,27.13,6.78,29.6,20.65,2.47,13.87-6.77,27.13-20.65,29.6l-8.37,1.49c-13.88,2.47-27.13-6.78-29.6-20.65-2.47-13.87,6.77-27.13,20.65-29.6Z" />
+                  </svg>
                 </div>
               </div>
-              </div>
             </div>
-            <div class="sixth-container">
+          </div>
+          <div class="sixth-container">
             <div class="container row">
               <div class="col-5 mx-auto">
                 <h3>REAL TIME UPDATES</h3>
                 <p>Stay up to date with the latest market development.
-                Just one click and you get updates any time you need.</p>
+                  Just one click and you get updates any time you need.</p>
               </div>
-             
-            <p><span>MOST POPULAR</span> - FOREX - SHARES - COMMODITIES - INDICES - CRYPTO - RISERS - FALLERS</p>
-              <div class="big-carusell">
-                  <div class="button-left">
-                  </div>
+
+              <p><span>MOST POPULAR</span> - FOREX - SHARES - COMMODITIES - INDICES - CRYPTO - RISERS - FALLERS</p>
+              <div class="big-carousel">
+                <div class="button-left">
+                </div>
                 <div id="carousel">
                   <div class="hideLeft">
-                    <img src="./images/web design fxoro copy.png">
+                    <img loading="lazy" src="./images/web design fxoro copy.png">
                   </div>
-                
+
                   <div class="prevLeftSecond">
-                    <img src="./images/web design fxoro.png">
+                    <img loading="lazy" src="./images/web design fxoro.png">
                   </div>
-                
+
                   <div class="prev">
-                    <img src="./images/web design fxoro copy.png">
+                    <img loading="lazy" src="./images/web design fxoro copy.png">
                   </div>
-                
+
                   <div class="selected">
-                    <img src="./images/web design fxoro.png">
+                    <img loading="lazy" src="./images/web design fxoro.png">
                   </div>
-                
+
                   <div class="next">
-                  <img src="./images/web design fxoro copy.png">
+                    <img loading="lazy" src="./images/web design fxoro copy.png">
                   </div>
-                
+
                   <div class="nextRightSecond">
-                  <img src="./images/web design fxoro.png">
+                    <img loading="lazy" src="./images/web design fxoro.png">
                   </div>
-                
+
                   <div class="hideRight">
-                  <img src="./images/web design fxoro copy.png">
+                    <img loading="lazy" src="./images/web design fxoro copy.png">
                   </div>
                 </div>
-                  <div class="button-right">
-                  </div>
+                <div class="button-right">
+                </div>
               </div>
             </div>
-            </div>
-            <div class="white-container"></div>
+          </div>
+          <div class="white-container"></div>
         </section>
         <section>
           <div class="seventh-container">
             <div class="container">
-              <div class="mx-auto box">
-                <a href="https://www.facebook.com/people/FXORO-Global/100087993320592/" target="_blank"><img onmouseover="hoverFb(this)" onmouseout="unhoverFb(this)" src="./images/Icon.png" width="64" height="64"></a>
-                <a href="https://www.youtube.com/@fxoro.global" target="_blank"><img onmouseover="hoverYt(this)" onmouseout="unhoverYt(this)" src="./images/icon (1).png" width="64" height="64"></a>
-                <a href="https://www.linkedin.com/company/fxoro-global/" target="_blank"><img onmouseover="hoverIn(this)" onmouseout="unhoverIn(this)" src="./images/icon (2).png" width="64" height="64"></a>
-                <a href="https://www.instagram.com/fxoro.global/" target="_blank"><img onmouseover="hoverIns(this)" onmouseout="unhoverIns(this)" src="./images/icon (3).png" width="64" height="64"></a>
-                <a href="https://www.whatsapp.com/fxoro.global/" target="_blank"><img onmouseover="hoverWh(this)" onmouseout="unhoverWh(this)" src="./images/icon (4).png" width="64" height="64"></a>
-                <a href="https://t.me/fxoro_official" target="_blank"><img onmouseover="hoverTe(this)" onmouseout="unhoverTe(this)" src="./images/icon (5).png" width="64" height="64"></a>
-                <a href="https://x.com/FXORO1" target="_blank"><img onmouseover="hoverTw(this)" onmouseout="unhoverTw(this)" src="./images/icon (6).png" width="64" height="64"></a>
+              <div class="mx-auto text-center box">
+                <a href="https://www.facebook.com/people/FXORO-Global/100087993320592/" target="_blank"><img
+                    onmouseover="hoverFb(this)" onmouseout="unhoverFb(this)" src="./images/Icon.png" width="64"
+                    height="64"></a>
+                <a href="https://www.youtube.com/@fxoro.global" target="_blank">
+                  <img loading="lazy" onmouseover="hoverYt(this)" onmouseout="unhoverYt(this)"
+                    src="./images/icon (1).png" width="64" height="64"></a>
+                <a href="https://www.linkedin.com/company/fxoro-global/" target="_blank">
+                  <img loading="lazy" onmouseover="hoverIn(this)" onmouseout="unhoverIn(this)"
+                    src="./images/icon (2).png" width="64" height="64"></a>
+                <a href="https://www.instagram.com/fxoro.global/" target="_blank">
+                  <img loading="lazy" onmouseover="hoverIns(this)" onmouseout="unhoverIns(this)"
+                    src="./images/icon (3).png" width="64" height="64"></a>
+                <a href="https://www.whatsapp.com/fxoro.global/" target="_blank">
+                  <img loading="lazy" onmouseover="hoverWh(this)" onmouseout="unhoverWh(this)"
+                    src="./images/icon (4).png" width="64" height="64"></a>
+                <a href="https://t.me/fxoro_official" target="_blank">
+                  <img loading="lazy" onmouseover="hoverTe(this)" onmouseout="unhoverTe(this)"
+                    src="./images/icon (5).png" width="64" height="64"></a>
+                <a href="https://x.com/FXORO1" target="_blank">
+                  <img loading="lazy" onmouseover="hoverTw(this)" onmouseout="unhoverTw(this)"
+                    src="./images/icon (6).png" width="64" height="64"></a>
               </div>
             </div>
           </div>
           <div class="eighth-container">
             <div class="container row">
-              <div class="col-12 text-center">
+              <div class="xxl-box text-center">
                 <h3>READ OUR BLOG</h3>
-                <p>Stay up to date with the latest events markets have to offer by following our latest blog articles. Remember to check in
-                frequently to discover the most recent news and to dive into complex, yet easy to read analysis.</p>
+                <p>Stay up to date with the latest events markets have to offer by following our latest blog articles.
+                  Remember to check in
+                  frequently to discover the most recent news and to dive into complex, yet easy to read analysis.</p>
               </div>
-              <div class="col-4 box">
-                <img class="left-top-shadow" src="./images/blog pic 1.png">
-                <h5>OPEN AI VALUATION SKYROCKETS: A GLIMPSE INTO THE FUTURE OF AI INVESTMENT</h5>
+              <div class="sm-box box">
+                <a href="https://fxoro.com/en/openai-valuation-skyrockets-a-glimpse-into-the-future-of-ai-investment/"
+                  target="_blank">
+                  <img loading="lazy" class="left-top-shadow" src="./images/blog pic 1.png" width="356"
+                    height="266"></a>
+                <h5><a
+                    href="https://fxoro.com/en/openai-valuation-skyrockets-a-glimpse-into-the-future-of-ai-investment/"
+                    target="_blank">OPEN AI VALUATION SKYROCKETS: A GLIMPSE INTO THE FUTURE OF AI INVESTMENT</a></h5>
                 <p>October 2nd, 2023</p>
-                <button class="blog-btn">READ MORE</button>
+                <a href="https://fxoro.com/en/openai-valuation-skyrockets-a-glimpse-into-the-future-of-ai-investment/"
+                  target="_blank" class="blog-btn">READ MORE</a>
               </div>
-              <div class="col-4 box">
-                <img src="./images/blog pic 2.png">
-                <h5>COULD MICROSOFT’S AI CLOUD SERVICE BE THE NEXT PROFITABLE FRONTIER?</h5>
+              <div class="sm-box box">
+                <a href="https://fxoro.com/en/could-microsofts-ai-cloud-service-be-the-next-profitable-frontier/"
+                  target="_blank"><img loading="lazy" src="./images/blog pic 2.png" width="356" height="266"></a>
+                <h5><a href="https://fxoro.com/en/could-microsofts-ai-cloud-service-be-the-next-profitable-frontier/"
+                    target="_blank">COULD MICROSOFT’S AI CLOUD SERVICE BE THE NEXT PROFITABLE FRONTIER?</a></h5>
                 <p>October 2nd, 2023</p>
-                <button class="blog-btn">READ MORE</button>
+                <a href="https://fxoro.com/en/could-microsofts-ai-cloud-service-be-the-next-profitable-frontier/"
+                  target="_blank" class="blog-btn">READ MORE</a>
               </div>
-              <div class="col-4 box">
-                <img class="right-top-shadow" src="./images/blog pic 3.png">
-                <h5>DISNEY RAMPS UP PARK INVESTMENT: WHAT THIS MEANS FOR SHAREHOLDERS</h5>
+              <div class="sm-box box">
+                <a href="https://fxoro.com/en/disneys-impressive-earnings-and-the-persistent-activist-pressure/"
+                  target="_blank"><img loading="lazy" class="right-top-shadow" src="./images/blog pic 3.png" width="356"
+                    height="266"></a>
+                <h5><a href="https://fxoro.com/en/disneys-impressive-earnings-and-the-persistent-activist-pressure/"
+                    target="_blank">DISNEY RAMPS UP PARK INVESTMENT: WHAT THIS MEANS FOR SHAREHOLDERS</a></h5>
                 <p>October 2nd, 2023</p>
-                <button class="blog-btn">READ MORE</button>
+                <a href="https://fxoro.com/en/disneys-impressive-earnings-and-the-persistent-activist-pressure/"
+                  target="_blank" class="blog-btn">READ MORE</a>
               </div>
-              <div class="col-4 box">
-                <img class="left-Bottom-shadow" src="./images/blog pic 4.png">
-                <h5>NVIDIA STOCK AT RECORD HIGHS: THREE FACTORS TO KEEP AN EYE ON</h5>
+              <div class="sm-box box">
+                <a href="https://fxoro.com/en/nvidia-and-tesla-pioneers-in-megatrends-with-challengers-in-pursuit/"
+                  target="_blank"><img loading="lazy" class="left-Bottom-shadow" src="./images/blog pic 4.png"
+                    width="356" height="266"></a>
+                <h5><a href="https://fxoro.com/en/nvidia-and-tesla-pioneers-in-megatrends-with-challengers-in-pursuit/"
+                    target="_blank">NVIDIA STOCK AT RECORD HIGHS: THREE FACTORS TO KEEP AN EYE ON</a></h5>
                 <p>October 2nd, 2023</p>
-                <button class="blog-btn">READ MORE</button>
+                <a href="https://fxoro.com/en/nvidia-and-tesla-pioneers-in-megatrends-with-challengers-in-pursuit/"
+                  target="_blank" class="blog-btn">READ MORE</a>
               </div>
-              <div class="col-4 box">
-                <img src="./images/blog pic 5.png">
-                <h5>NAVIGATING THE TERRAIN OF THE S&P 500: THE WHO, WHAT, AND THE HOW</h5>
+              <div class="sm-box box">
+                <a href="" target="_blank"><img loading="lazy" src="./images/blog pic 5.png" width="356"
+                    height="266"></a>
+                <h5><a href="" target="_blank">NAVIGATING THE TERRAIN OF THE S&P 500: THE WHO, WHAT, AND THE HOW</a>
+                </h5>
                 <p>October 2nd, 2023</p>
-                <button class="blog-btn">READ MORE</button>
+                <a href="" target="_blank" class="blog-btn">READ MORE</a>
               </div>
-              <div class="col-4 box">
-                <img class="right-bottom-shadow" src="./images/blog pic 6.png">
-                <h5>TESLA’S DOJO SUPERCOMPUTER: A FINANCIAL GAME-CHANGER?</h5>
+              <div class="sm-box box">
+                <a href="" target="_blank"><img loading="lazy" class="right-bottom-shadow" src="./images/blog pic 6.png"
+                    width="356" height="266"></a>
+                <h5><a href="" target="_blank">TESLA’S DOJO SUPERCOMPUTER: A FINANCIAL GAME-CHANGER?</a></h5>
                 <p>October 2nd, 2023</p>
-                <button class="blog-btn">READ MORE</button>
+                <a href="" target="_blank" class="blog-btn">READ MORE</a>
               </div>
             </div>
           </div>
           <div class="ninth-container d-none">
             <div class="container row">
-              <div class="col-5"><p>We care about our customers' satisfaction.</p></div>
-              <div class="col-5">
-                <img src="./images/trust pilot logo 1.png" width="196" height="48">
-                <img src="./images/Stars (1).png" width="248" height="40">
+              <div class="md-box">
+                <p>We care about our customers' satisfaction.</p>
               </div>
-              <div class="col-1"><p class="score">4.4</p></div>
+              <div class="md-box">
+                <img loading="lazy" src="./images/trust pilot logo 1.png" width="196" height="48">
+                <img loading="lazy" src="./images/Stars (1).png" width="248" height="40">
+              </div>
+              <div class="xxs-box">
+                <p class="score">4.4</p>
+              </div>
             </div>
           </div>
           <div class="white-container d-none"></div>
@@ -668,16 +904,18 @@
         <section>
           <div class="tenth-container">
             <div class="container row">
-              <div class="col-12 text-center">
+              <div class="xxl-box text-center">
                 <h3>REAL TIME UPDATES</h3>
-                <p>Stay up to date with the latest market development. Just one click and you get updates any time you need.</p>
+                <p>Stay up to date with the latest market development. Just one click and you get updates any time you
+                  need.</p>
               </div>
               <div class="xs-box">
-                <img src="./images/icon 4.svg" width="150" height="150">
+                <img loading="lazy" src="./images/icon 4.svg" width="150" height="150">
                 <p class="text-center">Webinars</p>
               </div>
               <div class="arrow">
-                <svg id="Layer_2" data-name="Layer 2" class="drawable arrow2-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2668.78 479.53">
+                <svg id="Layer_2" data-name="Layer 2" class="drawable arrow2-img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2668.78 479.53">
                   <path class="svg-arrow-four"
                     d="m2644.91,200.69c-189.78-10.02-377.19-79.43-527.69-195.46-11.04-8.48-26.83-6.44-35.34,4.57-8.48,11.02-6.44,26.84,4.57,35.34,90.99,70.13,194.8,124.05,304.53,159.3H104.82c-13.91,0-25.19,11.28-25.19,25.19s11.27,25.19,25.19,25.19h2320.03c-116.48,37.6-219.58,91.35-293.66,183.77-8.69,10.86-6.95,26.71,3.9,35.42,4.66,3.72,10.22,5.53,15.74,5.53,7.38,0,14.69-3.23,19.68-9.43,106.67-133.11,287.07-179.83,478.2-219.59,12.4-2.57,20.94-13.95,19.99-26.58-.97-12.63-11.15-22.56-23.79-23.24Z" />
                   <path class="svg-arrow-four"
@@ -689,24 +927,24 @@
                 </svg>
               </div>
               <div class="xs-box">
-                <img src="./images/icon 5.svg" width="153" height="150">
+                <img loading="lazy" src="./images/icon 5.svg" width="153" height="150">
                 <p class="text-center">Constantly updated e-books</p>
               </div>
-            <div class="arrow">
-              <svg id="Layer_2" data-name="Layer 2" class="drawable arrow2-img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 2668.78 479.53">
-                <path class="svg-arrow-four"
-                  d="m2644.91,200.69c-189.78-10.02-377.19-79.43-527.69-195.46-11.04-8.48-26.83-6.44-35.34,4.57-8.48,11.02-6.44,26.84,4.57,35.34,90.99,70.13,194.8,124.05,304.53,159.3H104.82c-13.91,0-25.19,11.28-25.19,25.19s11.27,25.19,25.19,25.19h2320.03c-116.48,37.6-219.58,91.35-293.66,183.77-8.69,10.86-6.95,26.71,3.9,35.42,4.66,3.72,10.22,5.53,15.74,5.53,7.38,0,14.69-3.23,19.68-9.43,106.67-133.11,287.07-179.83,478.2-219.59,12.4-2.57,20.94-13.95,19.99-26.58-.97-12.63-11.15-22.56-23.79-23.24Z" />
-                <path class="svg-arrow-four"
-                  d="m1190.48,178.01c13.9,0,25.19-11.28,25.19-25.19s-11.28-25.19-25.19-25.19h-239.27c-13.91,0-25.19,11.28-25.19,25.19s11.27,25.19,25.19,25.19h239.27Z" />
-                <path class="svg-arrow-four"
-                  d="m1261.84,178.01c4.36,0,8.53-1.24,12.24-3.32,2.73,1.02,5.66,1.65,8.74,1.65h46.18c13.91,0,25.19-11.28,25.19-25.19s-11.28-25.19-25.19-25.19h-46.18c-4.64,0-8.93,1.34-12.66,3.53-8.89-2.92-19.38-1.22-26.13,5.52-1.16,1.18-2.18,2.53-3.18,3.87-.84,1.34-1.69,2.85-2.36,4.36-.49,1.51-1,3.02-1.33,4.71-.34,1.51-.51,3.18-.51,4.87,0,6.71,2.69,13.1,7.38,17.79,2.36,2.36,5.05,4.2,8.07,5.54,3.18,1.18,6.38,1.85,9.74,1.85Z" />
-                <path class="svg-arrow-four"
-                  d="m25.19,201.53c-13.91,0-25.19,11.28-25.19,25.19v4.2c0,13.91,11.27,25.19,25.19,25.19s25.19-11.28,25.19-25.19v-4.2c0-13.91-11.27-25.19-25.19-25.19Z" />
-              </svg>
-            </div>
+              <div class="arrow">
+                <svg id="Layer_2" data-name="Layer 2" class="drawable arrow2-img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2668.78 479.53">
+                  <path class="svg-arrow-four"
+                    d="m2644.91,200.69c-189.78-10.02-377.19-79.43-527.69-195.46-11.04-8.48-26.83-6.44-35.34,4.57-8.48,11.02-6.44,26.84,4.57,35.34,90.99,70.13,194.8,124.05,304.53,159.3H104.82c-13.91,0-25.19,11.28-25.19,25.19s11.27,25.19,25.19,25.19h2320.03c-116.48,37.6-219.58,91.35-293.66,183.77-8.69,10.86-6.95,26.71,3.9,35.42,4.66,3.72,10.22,5.53,15.74,5.53,7.38,0,14.69-3.23,19.68-9.43,106.67-133.11,287.07-179.83,478.2-219.59,12.4-2.57,20.94-13.95,19.99-26.58-.97-12.63-11.15-22.56-23.79-23.24Z" />
+                  <path class="svg-arrow-four"
+                    d="m1190.48,178.01c13.9,0,25.19-11.28,25.19-25.19s-11.28-25.19-25.19-25.19h-239.27c-13.91,0-25.19,11.28-25.19,25.19s11.27,25.19,25.19,25.19h239.27Z" />
+                  <path class="svg-arrow-four"
+                    d="m1261.84,178.01c4.36,0,8.53-1.24,12.24-3.32,2.73,1.02,5.66,1.65,8.74,1.65h46.18c13.91,0,25.19-11.28,25.19-25.19s-11.28-25.19-25.19-25.19h-46.18c-4.64,0-8.93,1.34-12.66,3.53-8.89-2.92-19.38-1.22-26.13,5.52-1.16,1.18-2.18,2.53-3.18,3.87-.84,1.34-1.69,2.85-2.36,4.36-.49,1.51-1,3.02-1.33,4.71-.34,1.51-.51,3.18-.51,4.87,0,6.71,2.69,13.1,7.38,17.79,2.36,2.36,5.05,4.2,8.07,5.54,3.18,1.18,6.38,1.85,9.74,1.85Z" />
+                  <path class="svg-arrow-four"
+                    d="m25.19,201.53c-13.91,0-25.19,11.28-25.19,25.19v4.2c0,13.91,11.27,25.19,25.19,25.19s25.19-11.28,25.19-25.19v-4.2c0-13.91-11.27-25.19-25.19-25.19Z" />
+                </svg>
+              </div>
               <div class="xs-box">
-                <img src="./images/icon 6.svg" width="145" height="150">
+                <img loading="lazy" src="./images/icon 6.svg" width="145" height="150">
                 <p class="text-center">Webinars</p>
               </div>
             </div>
@@ -714,59 +952,75 @@
           <div class="eleventh-container">
             <div class="container">
               <div class="second-btn">
-                <button class="btn">JOIN OUR WEBINARS</button>
+                <a href="https://my.global.fxoro.com/register?version=global" target="_blank" class="btn">JOIN OUR
+                  WEBINARS</a>
                 <p>Trading CFD’s is risky.<br> You might lose all your invested capital.</p>
               </div>
-              <img src="./images/communication icons.svg" width="61" height="50">
+              <img loading="lazy" src="./images/communication icons.svg" width="61" height="50">
             </div>
           </div>
           <div class="twelfth-container">
             <div class="container row">
-              <p>Trading FOREX/ CFDs involves considerable risk of loss of the entire investment. <a href="https://fxoro.com/wp-content/uploads/Risk_discolure_and_warning_notice.pdf">Read more</a></p>
+              <p>Trading FOREX/ CFDs involves considerable risk of loss of the entire investment. <a
+                  href="https://fxoro.com/wp-content/uploads/Risk_discolure_and_warning_notice.pdf" target="_blank">Read
+                  more</a></p>
             </div>
           </div>
           <div class="white-container"></div>
         </section>
       </main>
       <footer>
-        <div class="first-container"><div class="container mx-auto">
-          <div class="center-wrap">
-            <div class="container">
-              <p><span>INSTRUMENTS:</span> CFDs - Shares</p>
-              <p><span>TRADING CENTER:</span> Trading info - FAQ</p>
-              <p><span>TOOLS:</span> Trading Central - MT4 - Digital Verification - Margin Calculator - Economic Calenda -
-                Signals - Blog - Courses -
-                eBook - Glossary - Webinars</p>
-              <p><span>ABOUT:</span> News on financial instruments - Affiliation - About - Contact - Privacy and security -
-                Terms of use - Risk
-                warning notice - Regulations - Terms and conditions - Conflict of interest -
-                Supporting documents - Kei information Documents (KIDs)</p>
+        <div class="first-container">
+          <div class="container mx-auto">
+            <div class="center-wrap">
+              <div class="container">
+                <p><span>INSTRUMENTS:</span> CFDs - Shares</p>
+                <p><span>TRADING CENTER:</span> Trading info - FAQ</p>
+                <p><span>TOOLS:</span> Trading Central - MT4 - Digital Verification - Margin Calculator - Economic
+                  Calenda -
+                  Signals - Blog - Courses -
+                  eBook - Glossary - Webinars</p>
+                <p><span>ABOUT:</span> News on financial instruments - Affiliation - About - Contact - Privacy and
+                  security -
+                  Terms of use - Risk
+                  warning notice - Regulations - Terms and conditions - Conflict of interest -
+                  Supporting documents - Kei information Documents (KIDs)</p>
+              </div>
             </div>
           </div>
-        </div></div>
+        </div>
         <div class="second-container">
           <div class="container row">
             <div class="xxs-box">
-             <img src="./images/QR.png" width="116" height="116">
+              <img src="./images/QR.png" width="116" height="116">
             </div>
             <div class="xs-box">
-            <p>Get our app!</p>
-            <div class="app-btn">
-            <a href="https://play.google.com/store/apps/details?id=com.fxoro.app" target="_blank"><img src="./images/google-play.png" width="148" height="48"></a>
-            <a href="https://apps.apple.com/th/app/fxoro-trading-app/id1579042568" target="_blank"><img src="./images/apple-icon-1.png" width="132" height="48"></a>
-            </div>
+              <p>Get our app!</p>
+              <div class="app-btn">
+                <a href="https://play.google.com/store/apps/details?id=com.fxoro.app" target="_blank"><img
+                    loading="lazy" src="./images/google-play.png" width="148" height="48"></a>
+                <a href="https://apps.apple.com/th/app/fxoro-trading-app/id1579042568" target="_blank"><img
+                    loading="lazy" src="./images/apple-icon-1.png" width="132" height="48"></a>
+              </div>
             </div>
             <div class="sm-box">
-                <p>Follow us on</p>
-            <div class="follow-btn">
-              <a href="https://www.facebook.com/people/FXORO-Global/100087993320592/" target="_blank"><img src="./images/Facebook.png" width="48" height="48"></a>
-              <a href="https://www.linkedin.com/company/fxoro-global/" target="_blank"><img src="./images/LinkedIn.png" width="48" height="48"></a>
-              <a href="https://www.instagram.com/fxoro.global/" target="_blank"><img src="./images/Instagram.png" width="48" height="48"></a>
-              <a href="https://www.whatsapp.com/fxoro.global/" target="_blank"><img src="./images/Whatsapp.png" width="48" height="48"></a>
-              <a href="https://t.me/fxoro_official" target="_blank"><img src="./images/Telegram.png" width="48" height="48"></a>
-              <a href="https://www.youtube.com/@fxoro.global" target="_blank"><img src="./images/Youtube.png" width="48" height="48"></a>
-              <a href="https://x.com/FXORO1" target="_blank"><img src="./images/Twitter.png" width="48" height="48"></a>
-            </div>
+              <p>Follow us on</p>
+              <div class="follow-btn">
+                <a href="https://www.facebook.com/people/FXORO-Global/100087993320592/" target="_blank"><img
+                    src="./images/Facebook.png" width="48" height="48"></a>
+                <a href="https://www.linkedin.com/company/fxoro-global/" target="_blank"><img
+                    src="./images/LinkedIn.png" width="48" height="48"></a>
+                <a href="https://www.instagram.com/fxoro.global/" target="_blank"><img src="./images/Instagram.png"
+                    width="48" height="48"></a>
+                <a href="https://www.whatsapp.com/fxoro.global/" target="_blank"><img src="./images/Whatsapp.png"
+                    width="48" height="48"></a>
+                <a href="https://t.me/fxoro_official" target="_blank"><img src="./images/Telegram.png" width="48"
+                    height="48"></a>
+                <a href="https://www.youtube.com/@fxoro.global" target="_blank"><img src="./images/Youtube.png"
+                    width="48" height="48"></a>
+                <a href="https://x.com/FXORO1" target="_blank"><img src="./images/Twitter.png" width="48"
+                    height="48"></a>
+              </div>
             </div>
             <div class="xs-box">
               <img class="invest-img" src="./images/investing.com logo.png" width="194" height="58">
@@ -779,39 +1033,64 @@
               <div class="container">
                 <div class="brands">
                   <div class="lg-box"><img src="./images/London logo.png" width="154" height="50">
-                  <img src="./images/refinitiv logo.png" width="175" height="36">
-                  <img src="./images/cboe logo.png" width="106" height="36"></div>
+                    <img src="./images/refinitiv logo.png" width="175" height="36">
+                    <img src="./images/cboe logo.png" width="106" height="36">
+                  </div>
                   <div class="sm-box"><img src="./images/Bita logo.png" width="105" height="36">
-                  <img src="./images/mazars logo.png" width="178" height="28"></div>
+                    <img src="./images/mazars logo.png" width="178" height="28">
+                  </div>
                 </div>
-                <p>This website is under the operation of MCA Intelifunds Ltd, trading as <span class="prefix-fx">FX</span><span>ORO</span>.</p>
-                <p>MCA INTELIFUNDS LTD, trading as “<span class="prefix-fx">FX</span><span>ORO</span>”, is a financial services company incorporated and registered under the laws of
-                the Republic of Cyprus, licensed and regulated by the Cyprus Securities and Exchange Commission (CySEC) with license
-                number 126/10.</p>
+                <p>This website is under the operation of MCA Intelifunds Ltd, trading as <span
+                    class="prefix-fx">FX</span><span>ORO</span>.</p>
+                <p>MCA INTELIFUNDS LTD, trading as “<span class="prefix-fx">FX</span><span>ORO</span>”, is a financial
+                  services company incorporated and registered under the laws of
+                  the Republic of Cyprus, licensed and regulated by the Cyprus Securities and Exchange Commission
+                  (CySEC) with license
+                  number 126/10.</p>
                 <p>Address: Petrou Tsirou 82, Mesa Geitonia, 3076, Limassol, Cyprus.</p>
-                <p>Clients funds are held in segregated accounts and insured by the client compensation funds subject to eligibility.</p>
+                <p>Clients funds are held in segregated accounts and insured by the client compensation funds subject to
+                  eligibility.</p>
                 <p>Risk disclaimer.</p>
-                <p>CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 75.28% of retail
-                investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs
-                work and whether you can afford to take the high risk of losing your money.</p>
-                <p>The National Securities Market commission of Spain (the “CNMV”) has determined that, due to the complexity of CFDs and
-                the risks involved, the purchase of such a product by Retail Clients is not appropriate/suitable. In this respect,
-                pursuant to the relevant requirements introduced by CNMV, you are warned that you are about to purchase a product that
-                is complex and difficult to understand: Contracts for Differences (CFDs). CNMV has determined that, due to its
-                complexity and the risks involved, the purchase of this product by retail investors is not appropriate/suitable.</p>
-                <p>Because of such, CFDs may not be the ideal investment for everyone. The high rate of leverage that is available to CFD
-                traders can work for or against you. You should only invest money that you can afford to lose. CFDs are intricate
-                leveraged financial assets. Trading Forex, Commodities, Indexes and Shares based CFDs, or any other underlaying
-                instruments of the Company implies a high degree of risk and can lead to the loss of your investment. Before getting
-                involved with trading, consider your financial goals, your skills and gage the possible risks associated with trading
-                Company’s Products. Derivate assets like CFDs and likely instruments from other markets can present extreme volatility.
-                CFDs may shift price rapidly and may depict change in market conditions that result from unforeseeable occurrences. None
-                of these facts can be manipulated by either you or <span class="prefix-fx">FX</span><span>ORO</span>. It is best to consult with a licensed financial counselor.
-                <span class="prefix-fx">FX</span><span>ORO</span> does not avail its customers with financial advice and the information provided herein is intended for marketing
-                purposes only. Past performance is not an indicator for future results. Make sure to read the "Risk Warning" to get a
-                clear picture of the risks inherent with trading Company’s Products.</p>
-                <p>MCA Intelifunds Limited does not offer Contracts for Difference to residents of certain jurisdictions such as the United
-                States of America, the Islamic Republic of Iran and Canada.</p>
+                <p>CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.
+                  75.28% of retail
+                  investor accounts lose money when trading CFDs with this provider. You should consider whether you
+                  understand how CFDs
+                  work and whether you can afford to take the high risk of losing your money.</p>
+                <p>The National Securities Market commission of Spain (the “CNMV”) has determined that, due to the
+                  complexity of CFDs and
+                  the risks involved, the purchase of such a product by Retail Clients is not appropriate/suitable. In
+                  this respect,
+                  pursuant to the relevant requirements introduced by CNMV, you are warned that you are about to
+                  purchase a product that
+                  is complex and difficult to understand: Contracts for Differences (CFDs). CNMV has determined that,
+                  due to its
+                  complexity and the risks involved, the purchase of this product by retail investors is not
+                  appropriate/suitable.</p>
+                <p>Because of such, CFDs may not be the ideal investment for everyone. The high rate of leverage that is
+                  available to CFD
+                  traders can work for or against you. You should only invest money that you can afford to lose. CFDs
+                  are intricate
+                  leveraged financial assets. Trading Forex, Commodities, Indexes and Shares based CFDs, or any other
+                  underlaying
+                  instruments of the Company implies a high degree of risk and can lead to the loss of your investment.
+                  Before getting
+                  involved with trading, consider your financial goals, your skills and gage the possible risks
+                  associated with trading
+                  Company’s Products. Derivate assets like CFDs and likely instruments from other markets can present
+                  extreme volatility.
+                  CFDs may shift price rapidly and may depict change in market conditions that result from unforeseeable
+                  occurrences. None
+                  of these facts can be manipulated by either you or <span class="prefix-fx">FX</span><span>ORO</span>.
+                  It is best to consult with a licensed financial counselor.
+                  <span class="prefix-fx">FX</span><span>ORO</span> does not avail its customers with financial advice
+                  and the information provided herein is intended for marketing
+                  purposes only. Past performance is not an indicator for future results. Make sure to read the "Risk
+                  Warning" to get a
+                  clear picture of the risks inherent with trading Company’s Products.
+                </p>
+                <p>MCA Intelifunds Limited does not offer Contracts for Difference to residents of certain jurisdictions
+                  such as the United
+                  States of America, the Islamic Republic of Iran and Canada.</p>
                 <p>2023 <span class="prefix-fx">FX</span><span>ORO</span>All rights reserved</p>
               </div>
             </div>
@@ -830,51 +1109,51 @@
     </script>
     <script>
       function hoverFb(element) {
-          element.setAttribute('src', './images/facebook_alt.png');
-        }
+        element.setAttribute('src', './images/facebook_alt.png');
+      }
       function unhoverFb(element) {
-          element.setAttribute('src', './images/Icon.png');
-        }
+        element.setAttribute('src', './images/Icon.png');
+      }
       function hoverYt(element) {
-          element.setAttribute('src', './images/youtube_4494485.png');
-        }
+        element.setAttribute('src', './images/youtube_4494485.png');
+      }
       function unhoverYt(element) {
-          element.setAttribute('src', './images/icon (1).png');
-        }
+        element.setAttribute('src', './images/icon (1).png');
+      }
       function hoverWh(element) {
-          element.setAttribute('src', './images/whatsapp_3670051.png');
-        }
+        element.setAttribute('src', './images/whatsapp_3670051.png');
+      }
       function unhoverWh(element) {
         element.setAttribute('src', './images/icon (4).png');
-        }
+      }
       function hoverIn(element) {
-          element.setAttribute('src', './images/link.png');
-        }
+        element.setAttribute('src', './images/link.png');
+      }
       function unhoverIn(element) {
-          element.setAttribute('src', './images/icon (2).png');
-        }
+        element.setAttribute('src', './images/icon (2).png');
+      }
       function hoverIns(element) {
-          element.setAttribute('src', './images/insta.png');
-        }
+        element.setAttribute('src', './images/insta.png');
+      }
       function unhoverIns(element) {
-          element.setAttribute('src', './images/icon (3).png');
-        }
+        element.setAttribute('src', './images/icon (3).png');
+      }
       function hoverTe(element) {
-          element.setAttribute('src', './images/telegram-alt.png');
-        }
-        function unhoverTe(element) {
-          element.setAttribute('src', './images/icon (5).png');
-        }
+        element.setAttribute('src', './images/telegram-alt.png');
+      }
+      function unhoverTe(element) {
+        element.setAttribute('src', './images/icon (5).png');
+      }
       function hoverTw(element) {
-          element.setAttribute('src', './images/twitter_x.png');
-        }
+        element.setAttribute('src', './images/twitter_x.png');
+      }
       function unhoverTw(element) {
         element.setAttribute('src', './images/icon (6).png');
       }
 
     </script>
     <script>
-    let slideIndex1 = 0;
+      let slideIndex1 = 0;
       showSlides();
 
       function showSlides() {
@@ -896,7 +1175,7 @@
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-    function moveToSelected(element) {
+      function moveToSelected(element) {
         if (element == "next") {
           var selected = $(".selected").next();
         } else if (element == "prev") {
@@ -952,44 +1231,45 @@
 
     </script>
     <script>
-        var svgElements = document.querySelectorAll('.drawable');
-        document.addEventListener('scroll', animate);
+      var svgElements = document.querySelectorAll('.drawable');
+      document.addEventListener('scroll', animate);
 
-        function inView(element) {
-          var windowHeight = window.innerHeight;
-          var scrollY = window.scrollY || window.pageYOffset;
+      function inView(element) {
+        var windowHeight = window.innerHeight;
+        var scrollY = window.scrollY || window.pageYOffset;
 
-          var scrollPosition = scrollY + windowHeight;
-          var elementPosition = element.getBoundingClientRect().top + scrollY + element.clientHeight;
+        var scrollPosition = scrollY + windowHeight;
+        var elementPosition = element.getBoundingClientRect().top + scrollY + element.clientHeight;
 
-          return scrollPosition > elementPosition;
-        }
+        return scrollPosition > elementPosition;
+      }
 
-        function animate() {
-          svgElements.forEach(function (svgElement) {
-            if (inView(svgElement)) {
-              svgElement.classList.add('draw');
-            }
-          });
-        }
+      function animate() {
+        svgElements.forEach(function (svgElement) {
+          if (inView(svgElement)) {
+            svgElement.classList.add('draw');
+          }
+        });
+      }
     </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
-        var i;
+      var i;
 
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
 
-            var panel = this.nextElementSibling;
+          var panel = this.nextElementSibling;
 
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null; // Close the panel
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px"; // Open the panel
-            }
-          });
-        }
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null; // Close the panel
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px"; // Open the panel
+          }
+        });
+      }
     </script>
   </body>
+
 </html>
