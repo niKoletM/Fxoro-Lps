@@ -216,6 +216,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    height: 100px;
     .btn {
       background-color: #ef5a28;
       width: 150px;
@@ -347,6 +348,11 @@ header {
       display: none;
     }
     @media (max-width: 1016px) {
+      .logo {
+        width: 150px;
+        height: fit-content;
+        margin: auto 5px;
+      }
       #Menu,
       .buttons {
         display: none;
@@ -384,7 +390,7 @@ header {
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        background: #cdcdcd;
+        background: #fff;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;
@@ -520,10 +526,9 @@ header {
       }
       .panel {
         max-height: 0;
-        padding: 0 0 0 40px;
+        padding: 0 0 0 45px;
         overflow: hidden;
-        margin: 20px;
-        margin: auto;
+        margin: 3px auto;
         width: 100%;
         position: relative;
         transition: max-height 0.3s ease-out;
@@ -967,6 +972,7 @@ main {
         font-size: 20px;
         font-weight: 900;
         color: #273773;
+        padding: 0;
       }
     }
     .active,
@@ -1481,6 +1487,13 @@ footer {
   }
 }
 @media only screen and (max-width: 1284px) {
+  header {
+    .second-img {
+      img {
+        width: 95%;
+      }
+    }
+  }
   footer {
     .third-container {
       .brands {
@@ -1791,9 +1804,6 @@ footer {
           margin: 3px;
         }
       }
-      .follow-btn {
-        display: block;
-      }
       .invest-img {
         margin: 10px 20px 10px;
         width: 90%;
@@ -1804,8 +1814,8 @@ footer {
 }
 @media only screen and (max-width: 695px) {
   header {
-      .first-img,
-      .second-img {
+    .first-img,
+    .second-img {
       max-height: 300px;
       img {
         width: 300px;
@@ -1827,12 +1837,26 @@ footer {
     .second-img,
     .first-img {
       max-height: 350px;
-
     }
   }
 }
 @media only screen and (max-width: 630px) {
   main {
+    .first-container {
+      img {
+        margin: 1px 10px;
+        width: 20%;
+        height: fit-content;
+      }
+      .sm-img {
+        width: 8%;
+        height: auto;
+      }
+      .xs-img {
+        width: 13%;
+        height: auto;
+      }
+    }
     .tenth-container {
       .arrow {
         display: none;
@@ -1842,6 +1866,19 @@ footer {
         img {
           width: 30%;
           height: auto;
+        }
+      }
+    }
+  }
+  footer {
+    .second-container {
+      .xxs-box {
+        display: none;
+      }
+      .follow-btn {
+        img {
+          width: 80%;
+          height: fit-content;
         }
       }
     }
@@ -1908,21 +1945,35 @@ footer {
         padding: 10px;
       }
     }
-    .second-container {
-      .follow-btn {
-        img {
-          margin: 2px;
-        }
-      }
-    }
     .third-container {
       .brands {
+        .sm-img {
+        width: 22%;
+        height: fit-content;
+        }
+        .xs-img {
+        width: 40%;
+        height: fit-content;
+        }
         img {
           margin: 10px 2%;
         }
       }
       p {
         padding: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  footer {
+    .second-container {
+      .follow-btn {
+        img {
+          width: auto;
+          height: a;
+        }
+        display: block;
       }
     }
   }
