@@ -666,11 +666,6 @@ header {
       }
     }
   }
-  .flex-item-right {
-    img {
-      height: 90%;
-    }
-  }
   .first-img {
     background-image: url("./images/circles.svg");
     background-size: contain;
@@ -1528,10 +1523,10 @@ footer {
 @media only screen and (max-width: 1133px) {
   header {
     .main-cta {
-      height: 295px;
+      height: 200px;
       flex: none;
       h1 {
-        font-size: 20px;
+        font-size: 24px;
       }
       p.subtitle {
         padding: 10px;
@@ -1544,6 +1539,14 @@ footer {
     .second-img,
     .first-img {
       max-height: 404px;
+         img {
+        width: 380px;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        display: block;
+      }
     }
     .first-img {
       background-image: none;
@@ -1677,6 +1680,20 @@ footer {
   }
 }
 @media only screen and (max-width: 872px) {
+  header {
+    .first-img,
+    .second-img {
+      max-height: 300px;
+      img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
   main {
     .second-container {
       .md-box {
@@ -1808,13 +1825,16 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 695px) {
+@media only screen and (max-width: 750px) {
   header {
+    .main-cta {
+      height: 300px;
+    }
     .first-img,
     .second-img {
       max-height: 300px;
       img {
-        width: 300px;
+        width: 290px;
         max-width: 100%;
         height: auto;
         margin: auto;
@@ -1825,6 +1845,13 @@ footer {
   }
 }
 @media only screen and (max-width: 630px) {
+  header {
+    .main-cta {
+      h1 {
+        font-size: 19px;
+      }
+    }
+  }
   main {
     .first-container {
       img {
@@ -1871,7 +1898,6 @@ footer {
 @media only screen and (max-width: 500px) {
   header {
     .main-cta {
-
       h1 {
         font-size: 18px;
         text-align: center;
