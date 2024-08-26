@@ -1555,10 +1555,6 @@ footer {
     .flex-item-right {
       margin: auto;
       flex: none;
-      img {
-        padding: 20px;
-        width: 90%;
-      }
     }
   }
 }
@@ -1828,18 +1824,6 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 657px) {
-  header {
-    .main-cta {
-      max-height: 250px;
-      overflow: hidden;
-    }
-    .second-img,
-    .first-img {
-      max-height: 350px;
-    }
-  }
-}
 @media only screen and (max-width: 630px) {
   main {
     .first-container {
@@ -1887,15 +1871,15 @@ footer {
 @media only screen and (max-width: 500px) {
   header {
     .main-cta {
+
       h1 {
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
         padding: 0;
       }
       p.subtitle {
         padding: 0;
         text-align: center;
-        font-size: 16px;
       }
       .main-btn {
         margin: auto;
