@@ -528,7 +528,7 @@ header {
         max-height: 0;
         padding: 0 0 0 45px;
         overflow: hidden;
-        margin: 3px auto;
+        margin: 4px auto;
         width: 100%;
         position: relative;
         transition: max-height 0.3s ease-out;
@@ -1540,7 +1540,7 @@ footer {
     .first-img {
       max-height: 404px;
          img {
-        width: 380px;
+        width: 420px;
         max-width: 100%;
         height: auto;
         margin: auto;
@@ -1685,7 +1685,7 @@ footer {
     .second-img {
       max-height: 300px;
       img {
-        width: 300px;
+        width: 400px;
         max-width: 100%;
         height: auto;
         margin: auto;
@@ -1825,7 +1825,7 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   header {
     .main-cta {
       height: 300px;
