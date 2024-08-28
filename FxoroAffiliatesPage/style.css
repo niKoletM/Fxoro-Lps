@@ -168,10 +168,6 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 100px;
-    .container {
-      padding-left: 0;
-      padding-right: 0;
-    }
     .btn {
       background-color: #ef5a28;
       width: 150px;
@@ -528,7 +524,7 @@ header {
     vertical-align: middle;
   }
   h1 {
-    font-size: 35px;
+    font-size: 36px;
     font-weight: 900;
     span {
       color: #ffb10a;
@@ -575,7 +571,6 @@ main {
     p {
       color: #222222;
       font-size: 15px;
-      font-weight: 500;
       span {
         color: #ffb401;
         font-weight: 800;
@@ -592,62 +587,17 @@ main {
       width: 80%;
     }
     .xs-box {
-      width: 350px;
+      width: 360px;
       text-align: center;
       margin-right: 20px;
       margin-bottom: 3px;
       padding-top: 10px;
-      .icon1 {
-        background: url('./images/top-row-icons.png') 13px 0px;
-        background-repeat: no-repeat, no-repeat;
-        width: 200px;
-        height: 150px;
-        margin: auto;
-        float: none;
-      }
-        .icon2 {
-        background: url('./images/top-row-icons.png') 23px -195px;
-        background-repeat: no-repeat, no-repeat;
-        width: 200px;
-        height: 150px;
-        margin: auto;
-        float: none;
-      }
-        .icon3 {
-        background: url('./images/top-row-icons.png') 28px -374px;
-        background-repeat: no-repeat, no-repeat;
-        width: 200px;
-        height: 150px;
-        margin: auto;
-        float: none;
-      }
-        .icon4 {
-        background: url('./images/lower-icons.png') 37px 0px;
-        background-repeat: no-repeat, no-repeat;
-        width: 200px;
-        height: 160px;
-        margin: auto;
-        float: none;
-      }
-        .icon5 {
-        background: url('./images/lower-icons.png') 24px -185px;
-        background-repeat: no-repeat, no-repeat;
-        width: 200px;
-        height: 160px;
-        margin: auto;
-        float: none;
-      }
-        .icon6 {
-        background: url('./images/lower-icons.png') 30px -435px;
-        background-repeat: no-repeat, no-repeat;
-        width: 200px;
-        height: 160px;
-        margin: auto;
-        float: none;
-      }
       p {
         padding: 10px;
       }
+    }
+    .mt-1 {
+      margin-top: 10px;
     }
   }
 
@@ -825,58 +775,16 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 1133px) {
-  header {
-    .main-cta {
-      height: 200px;
-      flex: none;
-      h1 {
-        font-size: 24px;
-      }
-      p.subtitle {
-        padding: 10px;
-        font-size: 15px;
-      }
-      ul li {
-        font-size: 15px;
-      }
-    }
-    .second-img,
-    .first-img {
-      max-height: 404px;
-         img {
-        width: 420px;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-        text-align: center;
-        display: block;
-      }
-    }
-    .first-img {
-      background-image: none;
-      margin-top: 0;
-      img {
-        margin-top: 0;
-      }
-    }
-    .flex-item-right {
-      margin: auto;
-      flex: none;
-    }
-  }
-}
-@media only screen and (max-width: 1120px) {
-  main {
-    .second-container,
+@media only screen and (max-width: 1149px) {
+main  {
+      .second-container,
     .third-container {
       .xs-box {
         margin-left: 0;
         width: 300px;
       }
-
     }
-  }
+}
 }
 @media only screen and (max-width: 1055px) {
   .flex-container {
@@ -916,11 +824,16 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 969px) {
+  header {
+    h1 {
+      font-size: 24px;
+    }
+  }
   main {
     .second-container,
     .third-container {
-  .xs-box {
+      .xs-box {
         margin-right: auto;
         margin-left: auto;
       }
@@ -963,6 +876,9 @@ footer {
       .xl-box {
         width: 100%;
       }
+      .xs-box {
+        width: 360px;
+      }
     }
   }
   footer {
@@ -982,7 +898,6 @@ footer {
 @media only screen and (max-width: 500px) {
     header {
     h1 {
-      font-size: 20px;
       text-align: center;
     }
   }
@@ -997,10 +912,11 @@ footer {
       }
       h3 {
         margin-top: 20px;
-        font-size: 17px;
+        font-size: 25px;
       }
-      p{
-        font-size: 13px;
+      img {
+        width: 35%;
+        height: auto;
       }
       .fourth-container {
         p{
