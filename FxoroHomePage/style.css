@@ -251,8 +251,8 @@ header {
       cursor: pointer;
     }
     a.drop-btn {
-      padding-top: 10px;
-      height: 30px;
+      margin-top: 12px;
+      margin-bottom: 16px;
     }
     li a:hover,
     p a:hover {
@@ -285,7 +285,7 @@ header {
       z-index: 1;
       /* margin-top: 5px; */
       padding-left: 0;
-      top: 35px;
+      top: 45px;
       list-style-type: none;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
       .main {
@@ -324,13 +324,16 @@ header {
       display: block;
     }
     .select-lang {
-      margin: 9px auto 7px;
+      margin: 11px auto 5px;
+        .dropdown-content {
+        top: 34px;
+      }
     }
     .logIn-btn {
       color: #fff;
       font-weight: 700;
       text-decoration: none;
-      margin: 25px 10px 20px;
+      margin: 27px 10px 18px;
       height: 20px;
     }
     .logIn-btn:hover {
@@ -1520,6 +1523,45 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 1160px) {
+  header {
+    .top-bar {
+      .btn {
+        display: none;
+      }
+      .btn-register-top {
+        display: none;
+      }
+    }
+  }
+  main {
+    .second-container {
+      li {
+        margin-top: 30px;
+      }
+    }
+    .eighth-container {
+      .sm-box {
+        width: 100%;
+      }
+    }
+    .tenth-container {
+      .arrow {
+        display: none;
+      }
+    }
+  }
+  footer {
+    .third-container {
+      .brands {
+        display: block;
+        img {
+          margin: 10px 2%;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1133px) {
   header {
     .main-cta {
@@ -1558,45 +1600,6 @@ footer {
     .flex-item-right {
       margin: auto;
       flex: none;
-    }
-  }
-}
-@media only screen and (max-width: 1160px) {
-  header {
-    .top-bar {
-      .btn {
-        display: none;
-      }
-      .btn-register-top {
-        display: none;
-      }
-    }
-  }
-  main {
-    .second-container {
-      li {
-        margin-top: 30px;
-      }
-    }
-    .eighth-container {
-      .sm-box {
-        width: 100%;
-      }
-    }
-    .tenth-container {
-      .arrow {
-        display: none;
-      }
-    }
-  }
-  footer {
-    .third-container {
-      .brands {
-        display: block;
-        img {
-          margin: 10px 2%;
-        }
-      }
     }
   }
 }
