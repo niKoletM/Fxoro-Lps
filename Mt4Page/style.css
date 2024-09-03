@@ -83,6 +83,19 @@ p, li {
   flex: 0 0 auto;
   width: 75%;
 }
+.xxl-box {
+  width: 100%;
+  margin: 0;
+}
+.xl-box {
+  width: 80%;
+}
+.xs-box {
+  width: 360px;
+}
+.xxs-box {
+  width: 300px;
+}
 .md-box {
   flex: 0 0 auto;
   width: 50%;
@@ -133,6 +146,9 @@ p, li {
   margin-right: 30px;
   margin-left: 30px;
 }
+.mt-0 {
+  margin-top: 0;
+}
 .mt-1 {
   margin-top: 10px;
 }
@@ -148,6 +164,9 @@ p, li {
 .mt-5 {
   margin-top: 50px;
 }
+.mb-0 {
+  margin-bottom: 0;
+}
 .mb-1 {
   margin-bottom: 10px;
 }
@@ -156,6 +175,12 @@ p, li {
 }
 .mb-3 {
   margin-bottom: 30px;
+}
+.mb-4 {
+  margin-bottom: 40px;
+}
+.mb-5 {
+  margin-bottom: 50px;
 }
 .ml-auto {
   margin-left: auto;
@@ -235,7 +260,6 @@ p, li {
 }
 .small-black-btn {
   background-color: #171718;
-  padding: 5px 10px;
   font-size: 16px;
   border-radius: 10px;
   color: #f2f2f2;
@@ -243,38 +267,14 @@ p, li {
   margin: auto;
   text-align: center;
   padding: 8px;
-  margin-bottom: 15px;
   text-decoration: none;
-}
-.xxl-box {
-  width: 100%;
-  margin: 0;
-}
-.xl-box {
-  width: 80%;
-}
-.xs-box {
-  width: 360px;
-  text-align: center;
-  margin-right: 20px;
-  margin-bottom: 3px;
-  padding-top: 10px;
-  p {
-    padding: 10px;
-  }
-}
-.xxs-box {
-  width: 300px;
-  text-align: center;
-  margin-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  p {
-    padding: 10px;
-  }
 }
 .width-auto {
   width: fit-content;
+}
+.img-center {
+  display: flex;
+  margin: auto;
 }
 .text-black{
   color: #0c0c0c;
@@ -288,6 +288,7 @@ p, li {
 .text-right {
   text-align: right !important;
 }
+
 .draw {
   animation: draw 4s ease forwards;
 }
@@ -326,6 +327,7 @@ p, li {
 .line-h {
   line-height: 1.5;
 }
+
 header {
   .top-bar {
     background-color: #273773;
@@ -720,6 +722,19 @@ main {
       padding-top: 1px;
       padding: 0 40px;
       height: 23px;
+      display: inline-block;
+               .icon {
+        background-image: url("./images/plus-svg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    ;
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        float: left;
+      }
     h4 {
       font-size: 17px;
       font-weight: 900;
@@ -727,17 +742,7 @@ main {
       padding-bottom: 10px;
       color: #273773;
       text-transform: uppercase;
-      .icon {
-        background-image: url("./images/plus-svg.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: inline-flex;
-        width: 22px;
-        height: 22px;
-        margin-right: 10px;
-        margin-bottom: -4px;
-      }
+      margin: 3px 0 0 0;
       span {
         font-size: 20px;
         font-weight: 900;
@@ -752,7 +757,6 @@ main {
       }
     }
     }
-   
     .active,
     .accordion:hover {
       color: #273773;
@@ -777,7 +781,7 @@ main {
       z-index: 100;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
       transition: max-height 0.3s ease-out;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       p {
         font-size: 15px;
         text-align: left;
@@ -794,12 +798,15 @@ main {
     }
     }
     .svg-arrow-middle {
-    transform: rotate(268deg);
     position: relative;
-    svg {
-      width: 130px;
-      height: 250px;
-      }
+    width: 200px;
+    margin: auto;
+    height: auto;
+svg {
+  transform: rotate(268deg);
+  position: relative;
+  width: 200px;
+}
     }
     .circles-section {
       background-image: url("./images/mt4\ benefit\ circl\ left.svg"), url("./images/mt4\ benefit\ circl\ right.svg");
@@ -1037,6 +1044,11 @@ footer {
         h4 {
           font-size: 15px;
         }
+        .icon {
+          width: 17px;
+          height: 17px;
+          margin-bottom: 30px;
+        }
       }
     }
     }
@@ -1044,10 +1056,35 @@ footer {
       .xxs-box {
         margin-right: auto;
         margin-left: auto;
+        margin-top: 20px;
       }
   }
 }
 @media only screen and (max-width: 872px) {
+    main {
+  .circles-section {
+    display: flex;
+    flex-direction: column;
+        ul {
+          padding-left: 0;
+        }
+    .mr-5 {
+      margin-right: 0;
+    }
+    .ml-1 {
+      padding: 0;
+    }
+    .svg-arrow-middle {
+      position: relative;
+      margin: auto;
+      height: 90px;
+      svg {
+        transform: rotate(88deg);
+        top: -83px;
+      }
+    }
+    }
+  }
   footer {
     .second-container {
       .xxs-box {
@@ -1071,24 +1108,6 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 810px) {
-  main {
-  .circles-section {
-    display: flex;
-    flex-direction: column;
-    .mr-5 {
-      margin-right: 0;
-    }
-    .ml-1 {
-      padding: 0;
-    }
-    .svg-arrow-middle {
-      margin: 10px auto;
-      transform: rotate(88deg);
-    }
-    }
-  }
-}
 @media only screen and (max-width: 630px) {
   main {
     .xl-box {
@@ -1096,6 +1115,11 @@ footer {
     }
     .xs-box {
       width: 360px;
+    }
+    .xxs-box {
+      .mb-4 {
+        margin-bottom: 20px;
+      }
     }
   }
   footer {
@@ -1123,22 +1147,26 @@ footer {
       .accordion {
         padding: 0 0;
         h4 {
-          font-size: 14px;
+          font-size: 13px;
         }
       }
       .panel {
         padding: 0 0;
       }
     }
+    .circles-section {
+         ul {
+          padding-left: 0;
+        }
+    }
       .second-btn {
-        margin: 10px auto 13px;
+        margin: 5px auto 0px;
       }
       p,
       h3 {
         text-align: center;
       }
       h3 {
-        margin-top: 20px;
         font-size: 25px;
       }
       img {
