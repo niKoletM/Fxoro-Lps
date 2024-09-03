@@ -899,13 +899,15 @@ footer {
     }
   }
   main {
-    .second-container,
-    .third-container {
+  section {
+    h1 {
+      font-size: 25px;
+    }
+  }
       .xs-box {
         margin-right: auto;
         margin-left: auto;
       }
-    }
   }
 }
 @media only screen and (max-width: 872px) {
@@ -939,15 +941,12 @@ footer {
     }
   }
   main {
-    .second-container,
-    .third-container {
       .xl-box {
         width: 100%;
       }
       .xs-box {
         width: 360px;
       }
-    }
   }
   footer {
     .second-container {
@@ -964,13 +963,11 @@ footer {
   }
 }
 @media only screen and (max-width: 500px) {
-  header {
-    h1 {
-      text-align: center;
-    }
-  }
   main {
     section {
+        h1 {
+      text-align: center;
+    }
       .second-btn {
         margin: 10px auto 13px;
       }
