@@ -689,7 +689,7 @@ header {
 main {
   section {
     .header-img {
-      width: clamp(300px, 50vw, 1194px);
+      width: clamp(300px, 70vw, 1194px);
       height: auto;
       margin: 25px auto 25px;
       display: block;
@@ -958,7 +958,6 @@ footer {
     }
   }
 }
-
 @media only screen and (max-width: 1284px) {
   footer {
     .third-container {
