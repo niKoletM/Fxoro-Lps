@@ -649,7 +649,7 @@ header {
 main {
   section {
     .header-img {
-      width: clamp(200px, 70vw, 934px);
+      width: clamp(200px, 70vw, 841px);
       height: auto;
       margin: 25px auto 25px;
       display: block;
