@@ -992,7 +992,6 @@ footer {
     }
   }
 }
-
 @media only screen and (max-width: 1055px) {
   .flex-container {
     flex-direction: column;

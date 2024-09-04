@@ -844,17 +844,6 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 1149px) {
-  main {
-    .second-container,
-    .third-container {
-      .xs-box {
-        margin-left: 0;
-        width: 300px;
-      }
-    }
-  }
-}
 @media only screen and (max-width: 1055px) {
   .flex-container {
     flex-direction: column;
@@ -960,7 +949,7 @@ footer {
       font-size: 18px;
     }
       .second-btn {
-        margin: 15px auto 0px;
+        margin: 5px auto 0px;
       }
       p,
       h3 {
