@@ -269,6 +269,10 @@ p, li {
   padding: 8px;
   text-decoration: none;
 }
+.small-black-btn:hover {
+  background-color: #ef5a28;
+      color: #fff;
+}
 .width-auto {
   width: fit-content;
 }
