@@ -648,8 +648,8 @@ header {
 }
 main {
   section {
-    .header-img {
-      width: clamp(200px, 70vw, 841px);
+    .header-img-affiliates {
+      width: clamp(240px, 70vw, 841px);
       height: auto;
       margin: 25px auto 25px;
       display: block;
@@ -893,11 +893,6 @@ footer {
   }
 }
 @media only screen and (max-width: 969px) {
-  header {
-    h1 {
-      font-size: 24px;
-    }
-  }
   main {
   section {
     h1 {
@@ -935,11 +930,6 @@ footer {
   }
 }
 @media only screen and (max-width: 630px) {
-  header {
-    h1 {
-      font-size: 25px;
-    }
-  }
   main {
       .xl-box {
         width: 100%;
@@ -984,11 +974,6 @@ footer {
       img {
         width: 35%;
         height: auto;
-      }
-      .fourth-container {
-        p {
-          font-size: 13px;
-        }
       }
     }
   }
