@@ -356,6 +356,7 @@ header {
   ul {
     li {
       color: #6affe8;
+      font-size: 18px;
     }
     li::marker {
     color: #fe6aff;
@@ -490,8 +491,12 @@ header {
   .small-box-img {
     display: block;
     .subtitle {
+      font-size: 20px;
       margin-left: 30px;
       margin-top: 5px;
+    }
+    li {
+      font-size: 20px;
     }
   }
  .form {
@@ -526,14 +531,22 @@ header {
 @media only screen and (max-width: 500px) {
   header {
     h1 {
-      font-size: 18px;
+      font-size: 19px;
     }
     p {
-      font-size: 15px;
+      font-size: 16px;
     }
     .form-box {
       h2 {
         font-size: 17px;
+      }
+    }
+    .small-box-img {
+      .subtitle {
+        font-size: 17px;
+      }
+      li {
+        font-size: 16px;
       }
     }
   }
