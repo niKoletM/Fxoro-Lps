@@ -351,12 +351,12 @@ header {
     color: #fff;
   }
   .subtitle {
-    font-size: 20px;
+    font-size: 21px;
   }
   ul {
     li {
       color: #6affe8;
-      font-size: 18px;
+      font-size: 20px;
     }
     li::marker {
     color: #fe6aff;
