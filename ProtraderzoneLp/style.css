@@ -322,7 +322,7 @@ input[type="checkbox"] {
     width: 90%;
     h2 {
       margin: 20px auto;
-      font-size: 25px;
+      font-size: 23px;
       font-weight: 800;
       padding: 0;
       color: #000000;
@@ -396,6 +396,8 @@ footer {
   text-align: center;
     p {
     margin-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 10px;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
@@ -475,6 +477,7 @@ header {
     display: block;
     .subtitle {
       margin-left: 30px;
+      margin-top: 5px;
     }
   }
  .form {
@@ -486,6 +489,7 @@ header {
   width: 100%;
   .form-box {
     padding: 0;
+    margin-bottom: 20px;
     .border-header {
       border-bottom: 2px solid #000000;
       margin-left: 50px;
@@ -508,10 +512,10 @@ header {
 @media only screen and (max-width: 500px) {
   header {
     h1 {
-      font-size: 20px;
+      font-size: 18px;
     }
     p {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
   footer {
