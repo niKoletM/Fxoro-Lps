@@ -531,6 +531,11 @@ header {
     p {
       font-size: 15px;
     }
+    .form-box {
+      h2 {
+        font-size: 17px;
+      }
+    }
   }
   footer {
     text-align: left;
