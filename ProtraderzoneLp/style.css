@@ -534,6 +534,9 @@ header {
   }
   footer {
     text-align: left;
+    p {
+      font-size: 12px;
+    }
     img {
       display: flex;
       margin: auto;
