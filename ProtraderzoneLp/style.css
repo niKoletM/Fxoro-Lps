@@ -166,11 +166,11 @@ input[type="select"] {
 ::placeholder {
    color: #c3c3c3;
 }
-  select.form-select {
+select.form-select {
     background-image: url("./images/svg-select.png");
     background-position: right center;
     background-size: auto;
-  }
+}
 input[type="checkbox"] {
     margin: 0;
     font-family: inherit;
@@ -178,6 +178,9 @@ input[type="checkbox"] {
     position: relative;
     top: 2px;
     margin-right: 2px;
+}
+.agreementCheckbox {
+  display: flex;
 }
 .input-group {
     position: relative;
@@ -327,7 +330,7 @@ input[type="checkbox"] {
       padding: 0;
       color: #000000;
     }
-  }
+}
 header {
   background-image: url("./images/gradient\ background.png");
   background-size: cover;
@@ -456,6 +459,10 @@ header {
 }
 @media only screen and (max-width: 745px) {
   header {
+    .icon-img {
+      width: 30%;
+      height: auto;
+    }
     h1 {
       font-size: 25px;
     }
@@ -526,3 +533,11 @@ header {
     }
   }
 }
+@media only screen and (max-width: 496px) {
+  .agreementCheckbox {
+    label {
+      margin-top: 8px;
+    }
+  }
+}
+
