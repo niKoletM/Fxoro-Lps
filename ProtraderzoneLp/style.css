@@ -537,6 +537,8 @@ header {
     img {
       display: flex;
       margin: auto;
+      width: 40%;
+      height: auto;
     }
   }
 }
