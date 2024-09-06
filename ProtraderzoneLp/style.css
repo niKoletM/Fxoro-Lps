@@ -335,7 +335,7 @@ header {
   background-image: url("./images/gradient\ background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 623px;
+  height: 623px;
   .icon-img {
     margin-top: 30px;
   }
