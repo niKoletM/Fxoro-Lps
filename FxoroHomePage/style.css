@@ -33,7 +33,7 @@
   stroke-width: 15;
   stroke-dasharray: 5000;
   stroke-dashoffset: 5000;
-  animation: draw 4s ease forwards;
+  animation: draw 8s ease forwards;
 }
 .svg-arrow-three {
   fill: none;
@@ -41,7 +41,7 @@
   stroke-width: 30;
   stroke-dasharray: 6000;
   stroke-dashoffset: 5000;
-  animation: draw 4s ease forwards;
+  animation: draw 8s ease forwards;
 }
 .svg-arrow-four {
   fill: none;
@@ -52,7 +52,7 @@
   animation: draw 4s ease forwards;
 }
 .draw {
-  animation: draw 4s ease forwards;
+  animation: draw 8s ease forwards;
 }
 .drawable {
   display: none;
@@ -199,10 +199,6 @@ body {
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.mx-auto {
-  margin-right: auto !important;
-  margin-left: auto !important;
 }
 .text-center {
   text-align: center !important;
@@ -569,7 +565,6 @@ header {
       }
     }
   }
-
   * {
     box-sizing: border-box;
   }
