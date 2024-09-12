@@ -204,6 +204,11 @@ body {
   text-align: center !important;
 }
 header {
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
   .top-bar {
     background-color: #273773;
     padding-top: 15px;
@@ -213,6 +218,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 100px;
+    z-index: 100;
     .btn {
       background-color: #ef5a28;
       width: 150px;
