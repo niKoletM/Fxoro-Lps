@@ -28,9 +28,6 @@ body {
 h1 {
   font-size: 36px;
   font-weight: 900;
-  span {
-    color: #ffb10a;
-  }
 }
 h3 {
   color: #222222;
@@ -42,10 +39,6 @@ p,
 li {
   color: #222222;
   font-size: 15px;
-  span {
-    color: #ffb401;
-    font-weight: 800;
-  }
   .prefix {
     font-weight: 800;
     color: #222222;
@@ -287,6 +280,19 @@ li {
   text-align: right !important;
 }
 header {
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky.top-bar {
+  /* box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0; */
+  /* box-shadow: rgba(245, 245, 250, 0.08) 0px 8px 8px 0; */
+  /* box-shadow: rgb(255 255 255) 0px 3px 8px 0; */
+  box-shadow: rgb(163 156 156) 0px 3px 8px 0;
+  /* box-shadow: #ef5a28 0px 1px 11px 0; */
+  /* box-shadow: #ffb401 0px 1px 11px 0; */
+}
   .top-bar {
     background-color: #273773;
     padding-top: 15px;
@@ -296,6 +302,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 100px;
+    z-index: 100;
     .btn {
       margin-top: 10px;
       margin-left: 10px;
@@ -801,15 +808,10 @@ footer {
     padding: 20px;
     margin: auto;
     text-align: left;
-    .prefix-fx {
+    .bold {
       font-size: 14px;
       font-weight: 700;
       color: #ffffff;
-    }
-    span {
-      color: #ffb401;
-      font-size: 14px;
-      font-weight: 700;
     }
   }
 }

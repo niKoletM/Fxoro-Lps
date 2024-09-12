@@ -32,7 +32,7 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="top-bar top-nav">
+        <div id="topHeader" class="top-bar top-nav">
           <div class="container flex-container">
             <img class="logo" src="./images/fxoro-logo.png" alt="icon" width="198" height="68">
             <div id="menuToggle">
@@ -311,7 +311,7 @@
                     MT4 has gained a leading role over the years thanks to its many features for traders. The development of this
                     platform
                     and its definitive affirmation were also thanks to the main world brokers – such as <span
-                      class="prefix">FX</span><span>ORO</span> – which, in addition to their
+                      class="prefix">FXORO</span> – which, in addition to their
                     native platforms, offer customers the possibility of operating through MT4.</p>
                 </div>
                 <div class="accordion">
@@ -326,7 +326,7 @@
                     operatations on the
                     main financial markets. It is clearly not possible to trade by downloading only the MT4 platform. However, it is
                     necessary to match an open trading account with a specific broker (such as <span
-                      class="prefix">FX</span><span>ORO</span>). The account can be both Demo and
+                      class="prefix">FXORO</span>). The account can be both Demo and
                     Real.
 
                     The second aspect that distinguishes MT4 from the competition is the sheer simplicity of the platform. Thanks to
@@ -349,10 +349,10 @@
 
                     With the countless tools available on this platform a trader’s experience becomes truly encompassing.
 
-                    First and foremost, MetaTrader 4 is meant to trade on the market <span class="prefix">FX</span><span>ORO</span>,
+                    First and foremost, MetaTrader 4 is meant to trade on the market <span class="prefix">FXORO</span>,
                     how much to act on indexes, commodities, and
                     other assets thanks to CFDs. First and foremost, MetaTrader 4 is meant to trade on the market <span
-                      class="prefix">FX</span><span>ORO</span>, how much to act on
+                      class="prefix">FXORO</span>, how much to act on
                     indices, commodities, and other assets thanks to CFDs.
 
                     MT4 is an extremely reliable platform. With the trader’s IP address remaining permanently hidden and with a
@@ -393,11 +393,11 @@
                   <span class="icon"></span><h4>Features of Mt4 (how to open an account, how to download the platform)</h4>
                 </div>
                 <div class="panel">
-                  <p>Thanks to the <span class="prefix">FX</span><span>ORO</span> technologies, every trader can benefit from the
+                  <p>Thanks to the <span class="prefix">FXORO</span> technologies, every trader can benefit from the
                     official Web version of the MT4 platform, logging in
                     with their credentials from any PC. It is also possible to download the MetaTrader 4 mobile platform, which is
                     essential
-                    to be able to operate on the move. The two platforms, <span class="prefix">FX</span><span>ORO</span> and MT4,
+                    to be able to operate on the move. The two platforms, <span class="prefix">FXORO</span> and MT4,
                     are fully compatible in every context.</p>
 
                   <p>The procedure for downloading MT4 is as follows:</p>
@@ -631,8 +631,8 @@
                   <img class="xs-img" loading="lazy" src="./images/mazars-logo.png" width="178" height="28">
                 </div>
                 <p>This website is under the operation of MCA Intelifunds Ltd, trading as <span
-                    class="prefix-fx">FX</span><span>ORO</span>.</p>
-                <p>MCA INTELIFUNDS LTD, trading as “<span class="prefix-fx">FX</span><span>ORO</span>”, is a financial
+                    class="bold">FXORO</span>.</p>
+                <p>MCA INTELIFUNDS LTD, trading as “<span class="bold">FXORO</span>”, is a financial
                   services company incorporated and registered under the laws of
                   the Republic of Cyprus, licensed and regulated by the Cyprus Securities and Exchange Commission
                   (CySEC) with license
@@ -670,9 +670,9 @@
                   extreme volatility.
                   CFDs may shift price rapidly and may depict change in market conditions that result from unforeseeable
                   occurrences. None
-                  of these facts can be manipulated by either you or <span class="prefix-fx">FX</span><span>ORO</span>.
+                  of these facts can be manipulated by either you or <span class="bold">FXORO</span>.
                   It is best to consult with a licensed financial counselor.
-                  <span class="prefix-fx">FX</span><span>ORO</span> does not avail its customers with financial advice
+                  <span class="bold">FXORO</span> does not avail its customers with financial advice
                   and the information provided herein is intended for marketing
                   purposes only. Past performance is not an indicator for future results. Make sure to read the "Risk
                   Warning" to get a
@@ -681,13 +681,27 @@
                 <p>MCA Intelifunds Limited does not offer Contracts for Difference to residents of certain jurisdictions
                   such as the United
                   States of America, the Islamic Republic of Iran and Canada.</p>
-                <p>2024 <span class="prefix-fx">FX</span><span>ORO</span>All rights reserved</p>
+                <p>2024 <span class="bold">FXORO</span>All rights reserved</p>
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+      <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("topHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+      </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;

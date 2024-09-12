@@ -32,7 +32,7 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="top-bar top-nav">
+        <div id="topHeader" class="top-bar top-nav">
           <div class="container flex-container">
             <img class="logo" src="./images/fxoro-logo.png" alt="icon" width="198" height="68">
 
@@ -283,7 +283,7 @@
           <div class="normal-container border-bottom">
           <div class="center-wrap">
             <div class="container">
-              <h1>THE FX<span>ORO</span> PARTNERSHIP PROGRAMS</h1>
+              <h1>THE FXORO PARTNERSHIP PROGRAMS</h1>
               <img class="header-img-affiliates" src="./images/header-image-web.png" width="934" height="422">
             </div>
           </div>
@@ -293,7 +293,7 @@
           <div class="normal-container">
           <div class="container row">
             <div class="xxl-box">
-              <p class="mt-0">Promoting <span class="prefix">FX</span><span>ORO</span> means being part of a complete and professional
+              <p class="mt-0">Promoting <span class="prefix">FXORO</span> means being part of a complete and professional
                 trading experince. We come to your support with
                 a
                 library
@@ -461,8 +461,8 @@
                   <img class="xs-img" loading="lazy" src="./images/mazars-logo.png" width="178" height="28">
                 </div>
                 <p>This website is under the operation of MCA Intelifunds Ltd, trading as <span
-                    class="prefix-fx">FX</span><span>ORO</span>.</p>
-                <p>MCA INTELIFUNDS LTD, trading as “<span class="prefix-fx">FX</span><span>ORO</span>”, is a financial
+                    class="bold">FXORO</span>.</p>
+                <p>MCA INTELIFUNDS LTD, trading as “<span class="bold">FXORO</span>”, is a financial
                   services company incorporated and registered under the laws of
                   the Republic of Cyprus, licensed and regulated by the Cyprus Securities and Exchange Commission
                   (CySEC) with license
@@ -500,9 +500,9 @@
                   extreme volatility.
                   CFDs may shift price rapidly and may depict change in market conditions that result from unforeseeable
                   occurrences. None
-                  of these facts can be manipulated by either you or <span class="prefix-fx">FX</span><span>ORO</span>.
+                  of these facts can be manipulated by either you or <span class="bold">FXORO</span>.
                   It is best to consult with a licensed financial counselor.
-                  <span class="prefix-fx">FX</span><span>ORO</span> does not avail its customers with financial advice
+                  <span class="bold">FXORO</span> does not avail its customers with financial advice
                   and the information provided herein is intended for marketing
                   purposes only. Past performance is not an indicator for future results. Make sure to read the "Risk
                   Warning" to get a
@@ -511,13 +511,27 @@
                 <p>MCA Intelifunds Limited does not offer Contracts for Difference to residents of certain jurisdictions
                   such as the United
                   States of America, the Islamic Republic of Iran and Canada.</p>
-                <p>2024 <span class="prefix-fx">FX</span><span>ORO</span>All rights reserved</p>
+                <p>2024 <span class="bold">FXORO</span> All rights reserved</p>
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+    <script>
+      window.onscroll = function () { myFunction() };
+
+      var header = document.getElementById("topHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
