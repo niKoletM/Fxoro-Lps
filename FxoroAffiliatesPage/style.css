@@ -430,7 +430,7 @@ header {
     #menuToggle {
       display: none;
     }
-    @media (max-width: 1016px) {
+    @media (max-width: 1072px) {
       .logo {
         width: 150px;
         height: fit-content;
@@ -828,13 +828,6 @@ footer {
   }
 }
 @media only screen and (max-width: 1160px) {
-  header {
-    .top-bar {
-      .btn {
-        display: none;
-      }
-    }
-  }
   footer {
     .third-container {
       .brands {
