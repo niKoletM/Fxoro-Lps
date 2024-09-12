@@ -632,9 +632,6 @@ header {
       font-weight: 900;
       height: fit-content;
       padding: 20px 80px 4px 0px;
-      span {
-        color: #ffb401;
-      }
     }
     .second-title {
       color: #273773;
@@ -780,9 +777,6 @@ main {
     h2 {
       font-size: 25px;
       font-weight: 900;
-      span {
-        color: #ffb401;
-      }
     }
     p {
       font-size: 15px;
@@ -832,15 +826,10 @@ main {
     p {
       font-size: 15px;
 
-      .prefix-fx {
+      .bold {
         font-size: 14px;
         font-weight: 700;
         color: #f2f2f2;
-      }
-      span {
-        color: #ffb401;
-        font-size: 14px;
-        font-weight: 700;
       }
     }
     img {
@@ -910,16 +899,13 @@ main {
       text-align: center;
       margin: 15px auto;
       padding: 10px;
-      span {
-        color: #ffb401;
-      }
     }
     p {
       font-size: 15px;
       font-weight: 500;
       text-align: center;
       padding: 0 10px;
-      .prefix-fx {
+      .bold {
         font-size: 14px;
         font-weight: 700;
         color: #171718;
@@ -967,7 +953,7 @@ main {
         padding-right: 3px;
         color: #ffb401;
       }
-      .prefix-fx {
+      .bold {
         font-size: 20px;
         font-weight: 900;
         color: #273773;
@@ -1005,13 +991,12 @@ main {
         font-weight: 500;
         text-align: left;
         padding: 10px 10px;
-        .prefix-fx {
+        .bold {
           font-size: 14px;
           font-weight: 700;
           color: #171718;
         }
         span {
-          color: #ffb401;
           font-size: 14px;
           font-weight: 700;
         }
@@ -1072,9 +1057,6 @@ main {
       color: #ffffff;
       font-size: 15px;
       text-align: center;
-      span {
-        color: #ffb401;
-      }
     }
     .bold {
       font-weight: 600;
@@ -1461,17 +1443,12 @@ footer {
     padding: 20px;
     margin: auto;
     text-align: left;
-    .prefix-fx {
+    .bold {
       font-size: 14px;
       font-weight: 700;
       color: #ffffff;
-    }
-    span {
-      color: #ffb401;
-      font-size: 14px;
-      font-weight: 700;
-    }
   }
+}
 }
 @media only screen and (max-width: 1334px) {
   main {
@@ -1766,7 +1743,7 @@ footer {
             width: 18px;
             height: 18px;
           }
-          .prefix-fx {
+          .bold {
             font-size: 17px;
           }
           span {
