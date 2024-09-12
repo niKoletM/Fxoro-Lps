@@ -212,6 +212,9 @@ body {
 .text-center {
   text-align: center !important;
 }
+.blue-border-top {
+  border-top: 2px solid #273773;
+}
 header {
   .sticky {
   position: fixed;

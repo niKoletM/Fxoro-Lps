@@ -677,6 +677,9 @@ main {
   .border-bottom {
     border-bottom: 2px solid #273773;
   }
+   .top-blue-border {
+    border-top: 2px solid #273773;
+  }
   .attention-container {
     background-color: #273773;
     p {
