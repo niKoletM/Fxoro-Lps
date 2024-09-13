@@ -326,6 +326,62 @@ p, li {
 .line-h {
   line-height: 1.5;
 }
+.contact-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+  background-color: #273773;
+  border: 2px solid #ef5a28;
+  border-radius: 15px;
+
+
+.phone {
+  width: 50px;
+  height: 50px;
+  display: block;
+    svg {
+    margin: 9px 10px;
+  }
+  border-bottom: 1px dashed #f1f1f1;
+}
+.phone:hover {
+.color-svg-phone {
+    stroke: #ffb401;
+  }
+  border-bottom: 1px dashed #ffb401;
+}
+
+.email {
+   width: 50px;
+  height: 50px;
+  display: block;
+    svg {
+    margin: 9px 10px;
+  }
+}
+.email:hover {
+  .color-svg {
+    fill: #ffb401;
+  }
+}
+
+.whatsapp {
+  width: 50px;
+  height: 50px;
+  display: block;
+    svg {
+    margin: 7px 10px;
+  }
+    border-bottom: 1px dashed #f1f1f1;
+}
+.whatsapp:hover {
+  .color-svg {
+    fill: #ffb401;
+  }
+   border-bottom: 1px dashed #ffb401;
+}
+}
 header {
 .sticky {
   position: fixed;
