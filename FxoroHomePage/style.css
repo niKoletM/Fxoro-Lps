@@ -271,6 +271,11 @@ body {
    border-bottom: 1px dashed #ffb401;
 }
 }
+@media (max-width: 1079px) {
+  .contact-bar {
+    display: none;
+  }
+}
 header {
   .sticky {
   position: fixed;
@@ -294,7 +299,7 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     height: 100px;
-    z-index: 100;
+    z-index: 101;
     .btn {
       background-color: #ef5a28;
       width: 150px;
