@@ -250,7 +250,7 @@ body {
   }
 }
 .email:hover {
-  .color-svg {
+  .color-svg-email {
     fill: #ffb401;
   }
 }
@@ -265,7 +265,7 @@ body {
     border-bottom: 1px dashed #f1f1f1;
 }
 .whatsapp:hover {
-  .color-svg {
+  .color-svg-whatsapp {
     fill: #ffb401;
   }
    border-bottom: 1px dashed #ffb401;
@@ -1510,8 +1510,53 @@ footer {
     .follow-btn {
       display: inline-flex;
       margin: auto;
-      img {
+      a {
         margin: 5px;
+        background-color: #fefefe;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      }
+      a:hover {
+        background-color: #ffb10a;
+        .svg {
+          fill: #fff;
+        }
+      }
+      .facebook {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .linkedin {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .instagram {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .whatsapp {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .telegram {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .youtube {
+        svg {
+          margin: 12px 10px;
+        }
+      }
+       .twitter {
+        svg {
+          margin: 8px 10px;
+        }
       }
     }
     .app-btn {
