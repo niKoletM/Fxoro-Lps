@@ -215,6 +215,97 @@ body {
 .blue-border-top {
   border-top: 2px solid #273773;
 }
+.socials-container {
+  margin: auto;
+  flex-direction: row;
+  span {
+     margin: 10px 40px;
+     display: inline-flex;
+  }
+  a {
+    background-color: #fefefe;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+  }
+  .facebook {
+    svg {
+      margin: 12px 10px;
+    }
+  }
+  .facebook:hover {
+    background-color: #39569c;
+    .color {
+      fill: #fff;
+    }
+  }
+    .linkedin {
+    svg {
+      margin: 14px 10px;
+    }
+  }
+    .linkedin:hover {
+    background-color: #0073b2;
+    .color {
+      fill: #fff;
+    }
+  }
+    .instagram {
+    svg {
+      margin: 12px 10px;
+    }
+  }
+    .instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    .color {
+      fill: #fff;
+    }
+  }
+    .whatsapp {
+    svg {
+      margin: 12px 10px;
+    }
+  }
+  .whatsapp:hover {
+    background-color: #25d366;
+    .color {
+      fill: #fff;
+    }
+  }
+    .telegram {
+    svg {
+      margin: 15px 6px;
+    }
+  }
+  .telegram:hover {
+    background-color: #0088cc;
+    .color {
+      fill: #fff;
+    }
+  }
+    .youtube {
+    svg {
+      margin: 16px 10px;
+    }
+  }
+  .youtube:hover {
+    background-color: #FF0000;
+    .color {
+      fill: #fff;
+    }
+  }
+    .twitter {
+    svg {
+      margin: 15px 10px;
+    }
+  }
+  .twitter:hover {
+    background-color: #14171A;
+    .color {
+      fill: #fff;
+    }
+  }
+}
 .contact-bar {
   position: fixed;
   top: 50%;
@@ -1268,31 +1359,8 @@ main {
   }
   .seventh-container {
     background-color: #273773;
-    img {
-      margin: 10px 40px;
-    }
     .box {
       margin: 0 auto;
-    }
-    img:hover {
-      .facebook {
-        background-image: url(./images/facebook_5968764.png);
-      }
-    }
-    .facebook {
-      background-image: url(./images/facebook_5968764.png);
-    }
-    .youTub {
-    }
-    .link {
-    }
-    .wat {
-    }
-    .insta {
-    }
-    .tele {
-    }
-    .twit {
     }
   }
   .eighth-container {
@@ -1508,10 +1576,14 @@ footer {
       margin: 10px 20px 10px;
     }
     .follow-btn {
-      display: inline-flex;
       margin: auto;
+
+      span {
+        margin: 2px;
+        display: inline-flex;
+        flex-direction: row;
+      }
       a {
-        margin: 5px;
         background-color: #fefefe;
         width: 50px;
         height: 50px;
@@ -1545,7 +1617,7 @@ footer {
       }
        .telegram {
         svg {
-          margin: 8px 10px;
+          margin: 10px 10px;
         }
       }
        .youtube {
@@ -1555,7 +1627,7 @@ footer {
       }
        .twitter {
         svg {
-          margin: 8px 10px;
+          margin:10px 10px;
         }
       }
     }
@@ -1886,8 +1958,10 @@ footer {
       }
     }
     .seventh-container {
-      img {
-        margin: 8px;
+      .socials-container {
+        span {
+              margin: 8px;
+            }
       }
     }
     .eighth-container {
