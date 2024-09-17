@@ -90,7 +90,7 @@ p, li {
   width: 360px;
 }
 .s-box {
-  width: 500px;
+  width: 460px;
 }
 .xxs-box {
   width: 300px;
@@ -406,6 +406,11 @@ p, li {
   }
    border-bottom: 1px dashed #ffb401;
 }
+}
+@media (max-width: 1079px) {
+  .contact-bar {
+    display: none;
+  }
 }
 header {
 .sticky {
@@ -784,9 +789,9 @@ header {
 main {
   section {
     .header-img-mt4 {
-      width: clamp(325px, 70vw, 648px);
+      width: clamp(200px, 70vw, 528px);
       height: auto;
-      margin: 28px auto;
+      margin: 5px auto;
       display: flex;
     }
     .second-btn {
@@ -1074,6 +1079,14 @@ footer {
     }
   }
 }
+@media only screen and (max-width : 1150px) {
+  .divider {
+    display: none;
+  }
+  .s-box {
+    margin: 20px;
+  }
+}
 @media only screen and (max-width: 1055px) {
   .flex-container {
     flex-direction: column;
@@ -1083,6 +1096,9 @@ footer {
   }
   .flex-item-right {
     flex: 50%;
+    margin: auto;
+  }
+  .s-box {
     margin: auto;
   }
   footer {
@@ -1258,6 +1274,11 @@ footer {
       img {
         width: 35%;
         height: auto;
+        margin: auto;
+        display: block;
+      }
+      .s-box {
+        width: 300px;
       }
     }
   }
@@ -1288,6 +1309,14 @@ footer {
   }
 }
 @media only screen and (max-width: 350px) {
+  main {
+    section {
+  .s-box {
+    width: 270px;
+  }
+    }
+  }
+
   footer {
     .second-container {
       .follow-btn {

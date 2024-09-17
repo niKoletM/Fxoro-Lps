@@ -382,6 +382,11 @@ p, li {
    border-bottom: 1px dashed #ffb401;
 }
 }
+@media (max-width: 1079px) {
+  .contact-bar {
+    display: none;
+  }
+}
 header {
 .sticky {
   position: fixed;
@@ -761,7 +766,7 @@ main {
     .header-img-mt4 {
       width: clamp(325px, 70vw, 1194px);
       height: auto;
-      margin: 28px auto;
+      margin: 25px auto;
       display: flex;
     }
     .second-btn {
