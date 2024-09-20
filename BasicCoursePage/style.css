@@ -925,10 +925,22 @@ main {
     }
     svg {
       position: absolute;
-      bottom:40%;
+      bottom: 15%;
       right: 43%;
     }
   }
+  .display-left:hover,
+  .display-right:hover {
+     .left-arr,
+      .right-arr,
+      .left-arrow,
+      .right-arrow {
+        fill: #ef5a28;
+      }
+  }
+.course-card:hover {
+  transform: scale(1.05);
+}
  .act {
   opacity: 1;
 }
