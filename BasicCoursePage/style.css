@@ -303,6 +303,9 @@ p, li {
 .text-bold {
   font-weight: 900;
 }
+.no-shadow {
+  box-shadow: none !important;
+}
 .divider {
   width: 2px;
   height: 729px;
@@ -882,18 +885,20 @@ main {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     margin-bottom: 20px;
+    position: relative;
     }
     .slider-cell {
-      width: 100%;
+      margin: auto;
     }
     .gallery {
     display: flex;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     margin-bottom: 20px;
+    position: relative;
 }
   .gallery-cell {
-    width: 100%;
+    margin: auto;
   }
   .course-card {
     cursor: pointer;
@@ -916,6 +921,7 @@ main {
     img {
       position: absolute;
       bottom: 0;
+      width: 100%;
     }
     svg {
       position: absolute;
@@ -929,11 +935,14 @@ main {
 .private {
   opacity: 0.5;
   position: relative;
+  .course-card {
+    background-color: #f1f1f1;
+  }
   .lock-icon {
 display: block;
 position: absolute;
 bottom: 45%;
-left: 40%;
+left: 45%;
   }
 }
 
@@ -952,12 +961,19 @@ left: 40%;
   .display-right {
     cursor: pointer;
     margin: 20px;
-    position: relative;
-    top: 55px;
+    position: absolute;
+    top: 30%;
   }
+  .display-left {
+    left: 0;
+  }
+  .display-right {
+    right: 0;
+  }
+
   section {
     .header-img-courses {
-      width: clamp(200px, 70vw, 670px);
+      width: clamp(200px, 70vw, 700px);
       height: auto;
       margin: 5px auto;
       display: flex;
@@ -983,14 +999,14 @@ svg {
   width: 200px;
 }
     }
-    .circles-section {
-      background-image: url("./images/mt4\ benefit\ circl\ left.svg"), url("./images/mt4\ benefit\ circl\ right.svg");
-      background-position: left, right;
-      background-repeat: no-repeat, no-repeat;
-      display: inline-flex;
-      position: relative;
-    }
+.circles-section {
+  background-image: url("./images/mt4\ benefit\ circl\ left.svg"), url("./images/mt4\ benefit\ circl\ right.svg");
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+  display: inline-flex;
+  position: relative;
   }
+}
   .border-bottom {
     border-bottom: 2px solid #273773;
   }
@@ -1089,7 +1105,7 @@ footer {
     .invest-img {
       margin: 10px 20px 10px;
     }
-      .follow-btn {
+  .follow-btn {
       margin: auto;
 
       span {
@@ -1362,6 +1378,14 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 530px) {
+  main {
+    .course-card {
+      width: 255px;
+      height: 220px;
+    }
+  }
+}
 @media only screen and (max-width: 500px) {
   main {
     section {
@@ -1430,6 +1454,19 @@ footer {
       }
     }
   }
+}
+@media only screen and (max-width: 440px) {
+  main {
+   .slider {
+    .display-right {
+      right: -41px;
+    }
+    .display-left {
+      left: -40px;
+    }
+   }
+  }
+
 }
 @media only screen and (max-width: 350px) {
   main {

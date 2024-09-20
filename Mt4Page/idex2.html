@@ -1,0 +1,135 @@
+<style>
+  .gallery-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Adjust as necessary */
+    overflow: hidden;
+  }
+
+  .gallery-cell {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%) scale(0.8);
+    /* Initially scaled down */
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 0;
+    width: 33.33%;
+    /* Default width for larger screens */
+  }
+
+  /* Active (center) slide */
+  .gallery-cell.active {
+    transform: translateX(0) translateY(-50%) scale(1);
+    /* Full size in the center */
+    left: 33.33%;
+    /* Center of the screen */
+    z-index: 2;
+    /* Bring the middle slide in front */
+    opacity: 1;
+    /* Fully visible */
+  }
+
+  /* Left slide */
+  .gallery-cell.left {
+    left: 0;
+    /* Positioned on the left side */
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    /* Slightly smaller and to the left */
+    opacity: 0.5;
+    /* Semi-transparent */
+    z-index: 1;
+    /* Behind the active slide */
+  }
+
+  /* Right slide */
+  .gallery-cell.right {
+    left: 66.66%;
+    /* Positioned on the right side */
+    transform: translateX(50%) translateY(-50%) scale(0.8);
+    /* Slightly smaller and to the right */
+    opacity: 0.5;
+    /* Semi-transparent */
+    z-index: 1;
+    /* Behind the active slide */
+  }
+
+  /* Responsive behavior */
+  @media (max-width: 600px) {
+    .gallery-cell.active {
+      left: 10%;
+      /* Adjusted center for smaller screens */
+      width: 80%;
+      /* Larger width on smaller screens */
+    }
+
+    .gallery-cell.left {
+      left: -30%;
+      /* Move further off-screen to the left */
+    }
+
+    .gallery-cell.right {
+      left: 110%;
+      /* Move further off-screen to the right */
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1000px) {
+    .gallery-cell.active {
+      left: 25%;
+      /* Adjust center for medium screens */
+      width: 50%;
+      /* Medium width */
+    }
+
+    .gallery-cell.left {
+      left: -20%;
+      /* Slightly off-screen left */
+    }
+
+    .gallery-cell.right {
+      left: 75%;
+      /* Slightly off-screen right */
+    }
+  }
+</style>
+
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var slides = document.getElementsByClassName("gallery-cell");
+
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    // Reset all slides
+    for (i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active", "left", "right");
+      slides[i].style.display = "none"; // Hide all slides initially
+    }
+
+    // Show the current (active), previous (left), and next (right) slides
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].classList.add("active");
+
+    // Previous slide (wrap around)
+    var prevIndex = (slideIndex - 2 >= 0) ? slideIndex - 2 : slides.length - 1;
+    slides[prevIndex].style.display = "block";
+    slides[prevIndex].classList.add("left");
+
+    // Next slide (wrap around)
+    var nextIndex = (slideIndex < slides.length) ? slideIndex : 0;
+    slides[nextIndex].style.display = "block";
+    slides[nextIndex].classList.add("right");
+  }
+</script>
