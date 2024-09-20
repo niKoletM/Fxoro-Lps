@@ -940,6 +940,7 @@ main {
   }
 .course-card:hover {
   transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
  .act {
   opacity: 1;
