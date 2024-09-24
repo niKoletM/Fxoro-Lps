@@ -828,8 +828,14 @@ main {
     background-position: center;
           span {
             margin: 2px;
-        display: inline-flex;
-        flex-direction: row;
+            display: inline-flex;
+            flex-direction: row;
+      }
+      .download-btn {
+       display: none;
+      }
+      .mobile-phone-title {
+        display: none;
       }
       a {
         background-color: #fefefe;
@@ -1306,6 +1312,18 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 1230px) {
+main {
+    section {
+      .arrow-four-box {
+        display: none;
+      }
+      .md-box.phone-body {
+        width: 100%;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1160px) {
   footer {
     .third-container {
@@ -1479,10 +1497,60 @@ footer {
       width: 255px;
       height: 220px;
     }
+    .phone-body {
+      background-size: contain;
+      background-position: top;
+    }
   }
 }
 @media only screen and (max-width: 500px) {
   main {
+    .phone-body {
+      .download-btn {
+        width: 70%;
+        height: auto;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 17px;
+        font-weight: 800;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid #f2f2f2;
+        background-color: #ef5a28;
+        border-radius: 10px;
+        color: #f2f2f2;
+        margin-bottom: 5px;
+        a {
+            background-color: transparent;
+            width: auto;
+            height: auto;
+            border-radius: auto;
+            text-decoration: none;
+            color: #f2f2f2;
+            display: block;
+            margin: 5px;
+        }
+        svg {
+          fill: #f2f2f2;
+          margin: -3px 5px;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+      .web-phone-title {
+        display: none;
+      }
+      .mobile-phone-title {
+        display: block;
+      }
+      .web-qr2,
+      .web-qr1 {
+        display: none;
+      }
+    }
     section {
       h1 {
       text-align: center;
