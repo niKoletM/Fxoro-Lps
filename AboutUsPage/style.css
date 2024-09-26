@@ -1268,7 +1268,7 @@ footer {
          padding-right: 0 !important;
          text-align: center;
       }
-      img {
+      .svg-img {
         width: 35%;
         height: auto;
       }

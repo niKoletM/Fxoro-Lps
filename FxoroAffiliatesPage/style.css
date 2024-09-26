@@ -270,6 +270,21 @@ li {
 .text-black {
   color: #0c0c0c;
 }
+.text-yellow {
+  color: #ffb401;
+}
+.text-white {
+  color: #fff;
+}
+.text-orange {
+  color: #ef5a28;
+}
+.text-dark-blue {
+  color: #273773;
+}
+.text-bold {
+  font-weight: 800;
+}
 .text-center {
   text-align: center !important;
 }
@@ -1011,7 +1026,7 @@ footer {
         padding-right: 0 !important;
         text-align: center;
       }
-      img {
+      .svg-img {
         width: 35%;
         height: auto;
       }

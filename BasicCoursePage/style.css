@@ -38,9 +38,7 @@ h3 {
 p, li {
   color: #222222;
   font-size: 15px;
-  span {
-      font-weight: 800;
-    }
+
   .prefix {
       font-weight: 800;
       color: #222222;
