@@ -982,11 +982,16 @@ left: 45%;
   }
 
   section {
-    .header-img-courses {
-      width: clamp(200px, 70vw, 700px);
+    .header-img-wrap {
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+          img {
+      width: clamp(200px, 70vw, 550px);
       height: auto;
-      margin: 5px auto;
       display: flex;
+      margin: auto;
+    }
     }
     .second-btn {
       text-align: center;
@@ -1221,6 +1226,15 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 1229px) {
+  main {
+    section {
+      .header-img-wrap {
+       height: fit-content;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1160px) {
   footer {
     .third-container {
@@ -1233,7 +1247,7 @@ footer {
     }
   }
 }
-@media only screen and (max-width : 1150px) {
+@media only screen and (max-width: 1150px) {
   .divider {
     display: none;
   }
@@ -1269,7 +1283,7 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 1014px) {
   footer {
     .third-container {
       .brands {

@@ -1070,11 +1070,10 @@ left: 45%;
   section {
     .header-img-wrap {
       height: 500px;
-      display: flex;
       justify-content: center;
       align-items: center;
           img {
-      width: clamp(200px, 70vw, 600px);
+      width: clamp(200px, 70vw, 550px);
       height: auto;
       display: flex;
     }
@@ -1361,6 +1360,9 @@ footer {
     margin: auto;
   }
   .s-box {
+    margin: auto;
+  }
+  .xs-box {
     margin: auto;
   }
   footer {

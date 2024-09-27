@@ -788,11 +788,16 @@ header {
 }
 main {
   section {
-    .header-img-aboutUs {
-      width: clamp(200px, 70vw, 528px);
+    .header-img-wrap {
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+          img {
+      width: clamp(200px, 70vw, 550px);
       height: auto;
-      margin: 5px auto;
       display: flex;
+      margin: auto;
+    }
     }
     .second-btn {
       text-align: center;
@@ -1067,6 +1072,15 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 1229px) {
+  main {
+    section {
+      .header-img-wrap {
+       height: fit-content;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1160px) {
   footer {
     .third-container {
@@ -1115,7 +1129,7 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 1014px) {
   footer {
     .third-container {
       .brands {
