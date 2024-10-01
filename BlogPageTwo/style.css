@@ -233,6 +233,9 @@ p, li {
 .p-4 {
   padding: 2rem !important;
 }
+.pb-0 {
+  padding-bottom: 0 !important;
+}
 .wrap {
   width: 100%;
   font-family: Montserrat;
@@ -442,6 +445,11 @@ p, li {
   .contact-bar {
     display: none;
   }
+}
+.chevron-left,
+.chevron-right {
+    position: relative;
+    bottom: -4px;
 }
 header {
 .sticky {

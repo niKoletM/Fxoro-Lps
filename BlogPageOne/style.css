@@ -1431,6 +1431,10 @@ footer {
 }
 @media only screen and (max-width: 872px) {
     main {
+      .main-btn {
+        margin: auto;
+        text-align: center;
+      }
       section {
          .header-img-wrap {
        height: 660px;
