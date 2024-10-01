@@ -1700,156 +1700,136 @@
           }
         }
       </script>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
 
-          var panel = this.nextElementSibling;
+            var panel = this.nextElementSibling;
 
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = "fit-content";
-          }
-        });
-      }
-    </script>
-    <script>
-         var slideIndex = 1;
-  var numVisibleSlides = getNumVisibleSlides(); // Get the number of visible slides based on screen size
-
-  showDivs(slideIndex);
-
-  // Forward/Back controls
-  function plusDivs(n) {
-    slideIndex += n;
-    showDivs(slideIndex);
-  }
-
-  // Main function to display slides
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("gallery-cell");
-
-    // Wrap-around logic to restart when the loop is done
-    if (n > x.length - numVisibleSlides + 1) { slideIndex = 1; }
-    if (n < 1) { slideIndex = x.length - numVisibleSlides + 1; }
-
-    // Hide all elements initially
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-
-    // Show the correct number of elements based on screen size
-    for (i = 0; i < numVisibleSlides; i++) {
-      if (slideIndex + i > x.length) {
-        x[slideIndex + i - x.length - 1].style.display = "block";
-      } else {
-        x[slideIndex + i - 1].style.display = "block";
-      }
-    }
-  }
-
-  // Function to determine how many slides to show based on screen size
-  function getNumVisibleSlides() {
-    if (window.innerWidth < 600) {
-      return 1; // 1 slide for small screens
-    } else if (window.innerWidth < 1000) {
-      return 2; // 2 slides for medium screens
-    } else {
-      return 3; // 3 slides for large screens
-    }
-  }
-
-  // Adjust the number of visible slides when the window is resized
-  window.addEventListener('resize', function() {
-    numVisibleSlides = getNumVisibleSlides();
-    showDivs(slideIndex); // Reinitialize to adjust the display
-  });
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = "fit-content";
+            }
+          });
+        }
       </script>
-    <script>
-     // Store positions for each slider
-      var sliderPositions = {
-        'beginners': 1,
-        'advanced': 1,
-         'terms': 1,
-          'metatraders': 1
-      };
+      <script>
+          var slideIndex = 1;
+    var numVisibleSlides = getNumVisibleSlides(); // Get the number of visible slides based on screen size
 
-        // Responsive settings
-          var numVisibleSlides = getNumVisibleSlides();
+    showDivs(slideIndex);
 
-      // Initialize slides for each slider
+    function plusDivs(n) {
+      slideIndex += n;
+      showDivs(slideIndex);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("gallery-cell");
+
+      if (n > x.length - numVisibleSlides + 1) { slideIndex = 1; }
+      if (n < 1) { slideIndex = x.length - numVisibleSlides + 1; }
+
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+
+      for (i = 0; i < numVisibleSlides; i++) {
+        if (slideIndex + i > x.length) {
+          x[slideIndex + i - x.length - 1].style.display = "block";
+        } else {
+          x[slideIndex + i - 1].style.display = "block";
+        }
+      }
+    }
+
+    function getNumVisibleSlides() {
+      if (window.innerWidth < 600) {
+        return 1;
+      } else if (window.innerWidth < 1000) {
+        return 2;
+      } else {
+        return 3;
+      }
+    }
+
+    window.addEventListener('resize', function() {
+      numVisibleSlides = getNumVisibleSlides();
+      showDivs(slideIndex);
+    });
+      </script>
+      <script>
+        var sliderPositions = {
+          'beginners': 1,
+          'advanced': 1,
+          'terms': 1,
+            'metatraders': 1
+        };
+            var numVisibleSlides = getNumVisibleSlides();
+        SlideShow(1, 'beginners');
+        SlideShow(1, 'advanced');
+        SlideShow(1, 'terms');
+          SlideShow(1, 'metatraders');
+
+        function plusSlides(n, sliderId) {
+          SlideShow(sliderPositions[sliderId] += n, sliderId);
+        }
+
+        function currentSlide(n, sliderId) {
+          SlideShow(sliderPositions[sliderId] = n, sliderId);
+        }
+
+        function SlideShow(n, sliderId) {
+          var i;
+          var sliderContainer = document.getElementById(sliderId);
+          var slides = sliderContainer.getElementsByClassName("slider-cell");
+
+          if (n > slides.length - numVisibleSlides + 1) { sliderPositions[sliderId] = 1; }
+          if (n < 1) { sliderPositions[sliderId] = slides.length - numVisibleSlides + 1; }
+
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+
+          for (i = 0; i < numVisibleSlides; i++) {
+            if (sliderPositions[sliderId] + i > slides.length) {
+              slides[sliderPositions[sliderId] + i - slides.length - 1].style.display = "block";
+            } else {
+              slides[sliderPositions[sliderId] + i - 1].style.display = "block";
+            }
+          }
+          slides[sliderPositions[sliderId] - 1].style.display = "block";
+        }
+
+          function getNumVisibleSlides() {
+            if (window.innerWidth < 700) {
+              return 1;
+            } else if (window.innerWidth < 1000) {
+              return 2;
+            } else {
+              return 3;
+            }
+          }
+
+    function initializeAllSlides() {
       SlideShow(1, 'beginners');
       SlideShow(1, 'advanced');
-       SlideShow(1, 'terms');
-        SlideShow(1, 'metatraders');
+      SlideShow(1, 'terms');
+      SlideShow(1, 'metatraders');
+    }
 
-      // Forward/Back controls
-      function plusSlides(n, sliderId) {
-        SlideShow(sliderPositions[sliderId] += n, sliderId);
-      }
+    window.addEventListener('resize', function () {
+      numVisibleSlides = getNumVisibleSlides();
 
-      // Current slide controls
-      function currentSlide(n, sliderId) {
-        SlideShow(sliderPositions[sliderId] = n, sliderId);
-      }
-
-      // Main SlideShow function
-      function SlideShow(n, sliderId) {
-        var i;
-        var sliderContainer = document.getElementById(sliderId);
-        var slides = sliderContainer.getElementsByClassName("slider-cell");
-
-        // Loop back if out of bounds
-         if (n > slides.length - numVisibleSlides + 1) { sliderPositions[sliderId] = 1; }
-        if (n < 1) { sliderPositions[sliderId] = slides.length - numVisibleSlides + 1; }
-
-        // Hide all slides
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-
-          // Show the appropriate number of slides based on screen size
-        for (i = 0; i < numVisibleSlides; i++) {
-          if (sliderPositions[sliderId] + i > slides.length) {
-            slides[sliderPositions[sliderId] + i - slides.length - 1].style.display = "block";
-          } else {
-            slides[sliderPositions[sliderId] + i - 1].style.display = "block";
-          }
-        }
-        slides[sliderPositions[sliderId] - 1].style.display = "block";
-      }
-       // Function to determine the number of visible slides based on screen size
-        function getNumVisibleSlides() {
-          if (window.innerWidth < 700) {
-            return 1; // 1 slide for small screens
-          } else if (window.innerWidth < 1000) {
-            return 2; // 2 slides for medium screens
-          } else {
-            return 3; // 3 slides for large screens
-          }
-        }
-  // Initialize slides for all sliders
-  function initializeAllSlides() {
-    SlideShow(1, 'beginners');
-    SlideShow(1, 'advanced');
-    SlideShow(1, 'terms');
-    SlideShow(1, 'metatraders');
-  }
-
-  // Adjust the number of visible slides when the window is resized
-  window.addEventListener('resize', function () {
-    numVisibleSlides = getNumVisibleSlides();
-
-    // Reinitialize slides for all sliders
-    initializeAllSlides();
-  });
-    </script>
+      initializeAllSlides();
+    });
+      </script>
   </body>
 
 </html>

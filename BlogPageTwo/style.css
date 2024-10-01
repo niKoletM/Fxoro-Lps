@@ -1642,12 +1642,38 @@ main {
   }
 
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 355px) {
   main {
     section {
   .s-box {
     width: 270px;
   }
+    }
+    .phone-body {
+      a {
+        width: 30px;
+        height: 30px;
+      }
+        .facebook {
+        svg {
+          margin: 5px 8px;
+        }
+      }
+       .linkedin {
+        svg {
+          margin: 4px 5px;
+        }
+      }
+       .telegram {
+        svg {
+          margin: 4px 4px;
+        }
+      }
+       .twitter {
+        svg {
+          margin: 5px 6px;
+        }
+      }
     }
   }
 
