@@ -770,9 +770,8 @@ main {
       height: 500px;
       justify-content: center;
       align-items: center;
-      .header-img-mt4 {
-        width: clamp(200px, 70vw, 1000px);
-        margin-top: 90px;
+      .header-img-forex {
+        width: clamp(200px, 70vw, 776px);
       }
           img {
       width: clamp(200px, 70vw, 550px);
@@ -997,11 +996,60 @@ footer {
     .invest-img {
       margin: 10px 20px 10px;
     }
-    .follow-btn {
-      display: inline-flex;
+   .follow-btn {
       margin: auto;
-      img {
-        margin: 5px;
+
+      span {
+        margin: 2px;
+        display: inline-flex;
+        flex-direction: row;
+      }
+      a {
+        background-color: #fefefe;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      }
+      a:hover {
+        background-color: #ffb10a;
+        .svg {
+          fill: #fff;
+        }
+      }
+      .facebook {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .linkedin {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .instagram {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .whatsapp {
+        svg {
+          margin: 8px 10px;
+        }
+      }
+       .telegram {
+        svg {
+          margin: 10px 10px;
+        }
+      }
+       .youtube {
+        svg {
+          margin: 12px 10px;
+        }
+      }
+       .twitter {
+        svg {
+          margin:10px 10px;
+        }
       }
     }
     .app-btn {
