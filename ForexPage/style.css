@@ -833,6 +833,10 @@ main {
       margin: auto;
     }
     }
+    .currency-img {
+       width: clamp(220px, 70vw, 380px);
+      height: auto;
+    }
     .second-btn {
       text-align: center;
       p {
@@ -1326,6 +1330,10 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   main {
+    .currency-img {
+          display: flex;
+      margin: auto;
+    }
 .table-wrap {
 td {
     width: 150px;
@@ -1403,6 +1411,10 @@ footer {
 }
 }
 @media only screen and (max-width: 350px) {
+  .svg-img {
+    width: 35%;
+    height: auto;
+  }
   footer {
     .second-container {
       .follow-btn {
