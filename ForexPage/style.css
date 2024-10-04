@@ -1330,8 +1330,11 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   main {
+  .sm-height {
+    height: fit-content;
+}
     .currency-img {
-          display: flex;
+      display: flex;
       margin: auto;
     }
 .table-wrap {
