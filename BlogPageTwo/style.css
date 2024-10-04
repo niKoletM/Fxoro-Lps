@@ -1704,8 +1704,8 @@ main {
       }
       }
       p {
-     margin-top: 5px;
-     margin-bottom: 5px;
+     margin-top: -1px;
+     margin-bottom: 7px;
      font-size: 12px;
       }
          a {
@@ -1735,6 +1735,9 @@ main {
           width: 15px;
           margin: 5px 3px;
         }
+      }
+      .mt-5 {
+        margin-top: 20px !important;
       }
   }
   }
