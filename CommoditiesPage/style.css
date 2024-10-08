@@ -285,11 +285,26 @@ width: 250px;
   display: flex;
   margin: auto;
 }
-.text-black{
+.text-black {
   color: #0c0c0c;
+}
+.text-yellow {
+  color: #ffb401;
+}
+.text-white {
+  color: #fff;
+}
+.text-light-orange {
+  color: #ec673a;
 }
 .text-orange {
   color: #ef5a28;
+}
+.text-dark-blue {
+  color: #273773;
+}
+.text-light-blue {
+  color: #2179bb;
 }
 .text-bold {
   font-weight: 800;
@@ -302,6 +317,9 @@ width: 250px;
 }
 .text-right {
   text-align: right !important;
+}
+.no-text-decoration {
+  text-decoration: none;
 }
 .draw {
   animation: draw 4s ease forwards;
@@ -1213,6 +1231,15 @@ footer {
   .flex-item-right {
     flex: 50%;
     margin: auto;
+  }
+  .whyfxoro {
+width: 350px;
+margin: auto;
+margin-bottom: 20px;
+.text-left {
+  text-align: center !important;
+  margin: auto;
+}
   }
   footer {
     .second-container {
