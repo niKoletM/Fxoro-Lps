@@ -861,7 +861,6 @@ main {
         .header-img-shares,
         .header-img-commodities {
         width: clamp(200px, 70vw, 710px);
-        margin-top: -20px;
       }
           img {
       width: clamp(200px, 70vw, 550px);
@@ -1393,7 +1392,12 @@ td {
 .buy-btn {
         padding: 5px 10px;
     }
-
+}
+.whyfxoro {
+  img {
+    width: 25%;
+    height: auto;
+  }
 }
 section {
   h1 {
@@ -1428,7 +1432,7 @@ section {
       padding-right: 0 !important;
       text-align: center;
   }
-  .svg-img {
+  .img {
     width: 35%;
     height: auto;
   }
