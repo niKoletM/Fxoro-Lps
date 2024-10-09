@@ -321,6 +321,9 @@ width: 250px;
 .no-text-decoration {
   text-decoration: none;
 }
+.no-text-decoration:hover {
+  text-decoration: underline;
+}
 .draw {
   animation: draw 4s ease forwards;
 }

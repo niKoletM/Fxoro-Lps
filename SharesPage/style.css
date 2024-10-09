@@ -282,11 +282,44 @@ width: 250px;
   display: flex;
   margin: auto;
 }
-.text-black{
+.text-black {
   color: #0c0c0c;
+}
+.text-yellow {
+  color: #ffb401;
+}
+.text-white {
+  color: #fff;
+}
+.text-light-orange {
+  color: #ec673a;
 }
 .text-orange {
   color: #ef5a28;
+}
+.text-dark-blue {
+  color: #273773;
+}
+.text-light-blue {
+  color: #2179bb;
+}
+.text-bold {
+  font-weight: 800;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.no-text-decoration {
+  text-decoration: none;
+}
+.no-text-decoration:hover {
+  text-decoration: underline;
 }
 .text-bold {
   font-weight: 800;
