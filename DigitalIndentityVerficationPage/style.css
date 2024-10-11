@@ -193,7 +193,6 @@ width: 250px;
 .ml-2 {
   margin-left: 20px;
 }
-/*start-new*/
 .ml-3 {
   margin-left: 30px;
 }
@@ -203,19 +202,6 @@ width: 250px;
 .ml-5 {
   margin-left: 50px;
 }
-.inline-block {
-  display: inline-block;
-}
-.full-width {
-  width: 100%;
-}
-.width-100 {
-  width: 120px;
-}
-.width-200 {
-  width: 200px;
-}
-/*end-new*/
 .mr-1 {
   margin-left: 10px;
 }
@@ -301,7 +287,6 @@ width: 250px;
   background-color: #ef5a28;
       color: #fff;
 }
-/*start-new*/
    .contact-btn {
     border: 2px solid #1d75ba;
     border-radius: 7px;
@@ -320,7 +305,6 @@ width: 250px;
     color: #273773;
     border: 2px solid #273773;
   }
-  /*end-new*/
 .width-auto {
   width: fit-content;
 }
@@ -910,6 +894,14 @@ header {
 }
 main {
   section {
+     /*start-new*/
+    .digital-id-ver-header {
+      background-image: url("./images/web\ -\ digital\ indentity\ verfication\ 2.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+     /*end-new*/
     .header-img-wrap {
       height: 500px;
       justify-content: center;
@@ -1056,6 +1048,14 @@ svg {
       background-repeat: no-repeat, no-repeat;
       display: inline-flex;
       position: relative;
+    }
+    .div-color-boxes {
+      .number {
+        position: absolute;
+      }
+       .text {
+        position: absolute;
+      }
     }
   }
   .border-bottom {
