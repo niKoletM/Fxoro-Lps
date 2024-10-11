@@ -909,10 +909,11 @@ main {
     } */
      /*end-new*/
          .digital-id-ver-header {
-        background-image: url("./images/outer\ circle.png");
+        background-image: url("./images/web\ -\ digital\ indentity\ verfication\ 2.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        z-index: 100;
       }
     .header-img-wrap {
       height: 500px;
@@ -935,7 +936,11 @@ main {
       }
          .img-div {
           width: clamp(100px, 70vw, 385px);
+          height: 500px;
           margin-top: -16px;
+        }
+           .img-div-mobil {
+          display: none;
         }
           img {
       width: clamp(200px, 70vw, 550px);
@@ -1512,6 +1517,18 @@ margin-bottom: 20px;
         margin-top: 30px;
       }
   }
+section {
+  .digital-id-ver-header {
+    background-image: none;
+      .img-div {
+    display: none;
+  }
+  .img-div-mobil {
+    display: block;
+    width: clamp(100px, 70vw, 180px);
+  }
+  }
+}
   }
   footer {
     .second-container {
