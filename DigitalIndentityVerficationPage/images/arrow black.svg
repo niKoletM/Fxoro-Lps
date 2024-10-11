@@ -2,18 +2,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 320 71.7">
   <defs>
     <style>
-      .cls-1 {
-        fill: #273773;
-      }
-
       .cls-1, .cls-2 {
-        stroke: #273773;
+        stroke: #000;
         stroke-miterlimit: 10;
-        stroke-width: 2px;
       }
 
       .cls-2 {
         fill: none;
+        stroke-width: 2px;
       }
     </style>
   </defs>
