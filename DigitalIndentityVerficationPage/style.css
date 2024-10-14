@@ -900,16 +900,8 @@ header {
 }
 main {
   section {
-     /*start-new*/
-    /* .digital-id-ver-header {
-       background-image: url("./images/web\ -\ digital\ indentity\ verfication\ 2.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: bottom; 
-    } */
-     /*end-new*/
          .digital-id-ver-header {
-        background-image: url("./images/web\ -\ digital\ indentity\ verfication\ 2.png");
+        background-image: url("./images/web\ -\ digital\ indentity\ verfication.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1073,64 +1065,133 @@ svg {
     .div-color-boxes {
       text-align: center;
       width: auto;
-       .blue-box {
-         position: relative;
+       .blue-box-wrap {
+        .blue-box {
+          border: 4px solid #273773;
+          border-radius: 50px;
+          width: 280px;
+          height: 320px;
+          margin: auto;
+          position: relative;
+        }
         .number {
         position: absolute;
         font-size: 30px;
         top: 4px;
-        left: 170px;
+        left: 140px;
       }
        .text {
         position: absolute;
         top: 100px;
-        left: 110px;
+        left: 80px;
         width: 40%;
       }
+      .top-band {
+        position: absolute;
+        left: -32px;
+        top: 10px;
       }
-      .yellow-box {
-         position: relative;
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 60px;
+      }
+      }
+      .yellow-box-wrap {
+            .yellow-box {
+          border: 4px solid #ffb401;
+          border-radius: 50px;
+          width: 280px;
+          height: 320px;
+           margin: auto;
+             position: relative;
+        }
         .number {
         position: absolute;
         font-size: 30px;
         top: 4px;
-        right: 170px;
+        right: 120px;
       }
        .text {
         position: absolute;
           width: 40%;
           top: 100px;
-          right: 100px;
+          right: 80px;
+      }
+           .top-band {
+        position: absolute;
+        left: -31px;
+        top: 10px;
+      }
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 60px;
       }
       }
-       .black-box {
-         position: relative;
+       .black-box-wrap {
+            .black-box {
+          border: 4px solid #0c0c0c;
+          border-radius: 50px;
+          width: 280px;
+          height: 320px;
+           margin: auto;
+             position: relative;
+        }
         .number {
         position: absolute;
          font-size: 30px;
         top: 4px;
-        left: 170px;
+        left: 140px;
       }
        .text {
         position: absolute;
         width: 40%;
         top: 100px;
-        left: 110px;
+        left: 80px;
+      }
+           .top-band {
+        position: absolute;
+        left: -31px;
+        top: 10px;
+      }
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 60px;
       }
       }
-       .light-blue-box {
-         position: relative;
+       .light-blue-box-wrap {
+            .light-blue-box {
+          border: 4px solid #2179bb;
+          border-radius: 50px;
+          width: 280px;
+          height: 320px;
+          margin: auto;
+          position: relative;
+        }
+      
         .number {
         position: absolute;
         font-size: 30px;
         top: 4px;
-        right: 160px;
+        right: 120px;
       }
        .text {
         position: absolute;
         width: 40%;
         top: 100px;
-        right: 100px;
+        right: 80px;
+      }
+        .top-band {
+        position: absolute;
+        left: -31px;
+        top: 10px;
+      }
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 60px;
       }
       }
     
@@ -1512,8 +1573,8 @@ margin-bottom: 20px;
       .flex {
         display: block;
       }
-      .yellow-box,
-      .light-blue-box {
+      .yellow-box-wrap,
+      .light-blue-box-wrap {
         margin-top: 30px;
       }
   }
@@ -1640,42 +1701,14 @@ footer {
 main{
   section {
     .div-color-boxes {
-      .blue-box,
-      .yellow-box,
-      .black-box,
-      .light-blue-box {
+      .blue-box-wrap,
+      .yellow-box-wrap,
+      .black-box-wrap,
+      .light-blue-box-wrap {
         display: flex;
         width: fit-content;
-        img {
-          width: 250px;
-          height: 250px;
-        }
       }
-      .blue-box,
-      .black-box {
-        .number {
-        top: -4px;
-        left: 120px;
-      }
-       .text {
-        position: absolute;
-        top: 100px;
-        left: 80px;
-        width: 40%;
-      }
-      }
-      .yellow-box,
-      .light-blue-box {
-        .number {
-        top: -4px;
-        right: 110px;
-      }
-       .text {
-          width: 40%;
-          top: 100px;
-          right: 70px;
-      }
-      }
+    
     }
   }
 }
