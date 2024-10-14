@@ -1191,7 +1191,6 @@ svg {
         left: 60px;
       }
       }
-    
     }
   }
   .border-bottom {
@@ -1701,10 +1700,130 @@ main{
         display: flex;
         width: fit-content;
       }
-    
+       .blue-box-wrap {
+        .blue-box {
+          width: 240px;
+          height: 290px;
+        }
+        .number {
+        position: absolute;
+        font-size: 30px;
+        top: 4px;
+        left: 110px;
+      }
+       .text {
+        position: absolute;
+        top: 100px;
+        left: 70px;
+        width: 40%;
+      }
+      .top-band {
+        position: absolute;
+        left: -27px;
+        top: 10px;
+        width: 250px;
+      }
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 55px;
+        width: 120px;
+      }
+      }
+      .yellow-box-wrap {
+        .yellow-box {
+           width: 240px;
+          height: 290px;
+        }
+        .number {
+        position: absolute;
+        font-size: 30px;
+        top: 4px;
+        right: 110px;
+      }
+       .text {
+        position: absolute;
+          width: 40%;
+          top: 100px;
+          right: 70px;
+      }
+          .top-band {
+        position: absolute;
+        left: -25px;
+        top: 10px;
+        width: 250px;
+      }
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 55px;
+        width: 120px;
+      }
+      }
+       .black-box-wrap {
+            .black-box {
+         width: 240px;
+          height: 290px;
+        }
+        .number {
+        position: absolute;
+         font-size: 30px;
+        top: 4px;
+        left: 110px;
+      }
+       .text {
+        position: absolute;
+        width: 40%;
+        top: 100px;
+        left: 70px;
+      }
+           .top-band {
+        position: absolute;
+        left: -26px;
+        top: 10px;
+        width: 250px;
+      }
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 55px;
+        width: 120px;
+      }
+      }
+       .light-blue-box-wrap {
+        .light-blue-box {
+          width: 240px;
+          height: 290px;
+        }
+      
+        .number {
+        position: absolute;
+        font-size: 30px;
+        top: 4px;
+        right: 110px;
+      }
+       .text {
+        position: absolute;
+        width: 40%;
+        top: 100px;
+        right: 70px;
+      }
+        .top-band {
+        position: absolute;
+        left: -26px;
+        top: 10px;
+        width: 250px;
+      }
+      .bottom-band {
+        position: absolute;
+        bottom: 0px;
+        left: 55px;
+        width: 120px;
+      }
+      }
+      }
     }
   }
-}
 }
 @media only screen and (max-width: 350px) {
   .svg-img {
