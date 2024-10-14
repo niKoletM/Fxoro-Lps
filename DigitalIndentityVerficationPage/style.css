@@ -931,9 +931,6 @@ main {
           height: 500px;
           margin-top: -16px;
         }
-           .img-div-mobil {
-          display: none;
-        }
           img {
       width: clamp(200px, 70vw, 550px);
       height: auto;
@@ -1580,14 +1577,10 @@ margin-bottom: 20px;
   }
 section {
   .digital-id-ver-header {
-    background-image: none;
       .img-div {
-    display: none;
+   height: 200px;
   }
-  .img-div-mobil {
-    display: block;
-    width: clamp(100px, 70vw, 180px);
-  }
+
   }
 }
   }
