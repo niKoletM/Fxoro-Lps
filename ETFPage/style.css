@@ -202,6 +202,9 @@ width: 250px;
 .mr-5 {
   margin-right: 50px;
 }
+.p-2 {
+  padding: 20px !important;
+}
 .p-3 {
   padding: 1rem !important;
 }
