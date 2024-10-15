@@ -1450,6 +1450,13 @@ td {
     height: auto;
   }
 }
+.pdf-card-wrap {
+        & .pdf-card {
+            .svg {
+                left: 34%;
+            }
+        }
+    }
 section {
   h1 {
   text-align: center;
