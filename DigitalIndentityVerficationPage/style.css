@@ -1702,123 +1702,123 @@ main{
       }
        .blue-box-wrap {
         .blue-box {
-          width: 240px;
-          height: 290px;
+          width: 220px;
+          height: 260px;
         }
         .number {
         position: absolute;
         font-size: 30px;
-        top: 4px;
-        left: 110px;
+        top: 0px;
+        left: 100px;
       }
        .text {
         position: absolute;
         top: 100px;
-        left: 70px;
-        width: 40%;
+        left: 50px;
+        width: 55%;
       }
       .top-band {
         position: absolute;
-        left: -27px;
+        left: -25px;
         top: 10px;
-        width: 250px;
+        width: 230px;
       }
       .bottom-band {
         position: absolute;
         bottom: 0px;
         left: 55px;
-        width: 120px;
+        width: 100px;
       }
       }
       .yellow-box-wrap {
         .yellow-box {
-           width: 240px;
-          height: 290px;
+           width: 220px;
+          height: 260px;
         }
         .number {
         position: absolute;
         font-size: 30px;
-        top: 4px;
-        right: 110px;
+        top: 0px;
+        right: 100px;
       }
        .text {
         position: absolute;
-          width: 40%;
+          width: 60%;
           top: 100px;
-          right: 70px;
+          right: 40px;
       }
           .top-band {
         position: absolute;
         left: -25px;
         top: 10px;
-        width: 250px;
+        width: 230px;
       }
       .bottom-band {
         position: absolute;
         bottom: 0px;
         left: 55px;
-        width: 120px;
+        width: 100px;
       }
       }
        .black-box-wrap {
             .black-box {
-         width: 240px;
-          height: 290px;
+         width: 220px;
+          height: 260px;
         }
         .number {
         position: absolute;
          font-size: 30px;
-        top: 4px;
-        left: 110px;
+        top: 0px;
+        left: 100px;
       }
        .text {
         position: absolute;
-        width: 40%;
+        width: 55%;
         top: 100px;
-        left: 70px;
+        left: 50px;
       }
            .top-band {
         position: absolute;
-        left: -26px;
+        left: -25px;
         top: 10px;
-        width: 250px;
+        width: 230px;
       }
       .bottom-band {
         position: absolute;
         bottom: 0px;
         left: 55px;
-        width: 120px;
+        width: 100px;
       }
       }
        .light-blue-box-wrap {
         .light-blue-box {
-          width: 240px;
-          height: 290px;
+          width: 220px;
+          height: 260px;
         }
 
         .number {
         position: absolute;
         font-size: 30px;
-        top: 4px;
-        right: 110px;
+        top: 0px;
+        right: 100px;
       }
        .text {
         position: absolute;
-        width: 40%;
+        width: 60%;
         top: 100px;
-        right: 70px;
+        right: 40px;
       }
         .top-band {
         position: absolute;
-        left: -26px;
+        left: -25px;
         top: 10px;
-        width: 250px;
+        width: 230px;
       }
       .bottom-band {
         position: absolute;
         bottom: 0px;
         left: 55px;
-        width: 120px;
+        width: 100px;
       }
       }
       }
