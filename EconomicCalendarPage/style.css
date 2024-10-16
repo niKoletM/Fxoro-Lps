@@ -854,6 +854,13 @@ header {
 }
 main {
   section {
+      .economic-calendar-header {
+        background-image: url("./images/fxoro\ -\ economic\ calendar\ -header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 100;
+      }
     .header-img-wrap {
       height: 500px;
       justify-content: center;
@@ -873,6 +880,11 @@ main {
       }
       .header-img-cryptocurrencies {
         width: clamp(200px, 70vw, 1300px);
+      }
+      .img-div {
+        width: clamp(100px, 70vw, 385px);
+        height: 500px;
+        margin-top: -16px;
       }
           img {
       width: clamp(200px, 70vw, 550px);
@@ -1409,6 +1421,14 @@ margin-bottom: 20px;
         margin-bottom: 20px;
       }
     }
+    section {
+  .economic-calendar-header {
+      .img-div {
+   height: 200px;
+  }
+
+  }
+}
   }
   footer {
     .second-container {
