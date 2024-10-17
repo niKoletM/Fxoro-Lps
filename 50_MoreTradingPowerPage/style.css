@@ -866,8 +866,11 @@ main {
       height: 500px;
       justify-content: center;
       align-items: center;
+      position: relative;
       .header-img-50_more {
         width: clamp(200px, 70vw, 520px);
+        position: relative;
+        bottom: -20px;
       }
       .header-img-forex {
         width: clamp(200px, 70vw, 776px);
