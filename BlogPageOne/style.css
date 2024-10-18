@@ -1499,6 +1499,11 @@ footer {
         margin-bottom: 20px;
       }
     }
+    section {
+      .header-img-wrap {
+       height: 600px;
+      }
+    }
   }
   footer {
     .second-container {
@@ -1529,6 +1534,9 @@ footer {
       text-align: center;
       font-size: 22px;
     }
+      .header-img-wrap {
+       height: 590px;
+      }
      .info-mt4 {
       margin-bottom: 20px;
       .accordion {
