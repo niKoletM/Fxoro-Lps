@@ -1448,7 +1448,7 @@ footer {
     margin: auto;
   }
   .three-dots {
-   height: 50px;
+   display: none;
   }
   .whyfxoro {
 width: 350px;
