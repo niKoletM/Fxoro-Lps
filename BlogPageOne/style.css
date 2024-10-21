@@ -1080,6 +1080,12 @@ left: 45%;
 }
 
   section {
+    .header-img-blog {
+      width: clamp(200px, 70vw, 550px);
+       height: auto;
+      display: flex;
+      margin-top: 40px;
+    }
 .header-img-wrap {
   height: 500px;
   justify-content: center;
@@ -1633,7 +1639,6 @@ footer {
           height: auto;
         }
         p {
-          padding: 5px;
           margin: auto;
           text-align: center;
         }
