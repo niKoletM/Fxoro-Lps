@@ -1396,6 +1396,11 @@ td {
 
 }
 section {
+    .header-img-wrap {
+      .header-img-shares {
+        margin-top: 0;
+      }
+    }
   h1 {
   text-align: center;
   font-size: 22px;
