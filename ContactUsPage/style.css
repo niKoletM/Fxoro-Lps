@@ -1443,7 +1443,7 @@ margin-bottom: 20px;
 @media only screen and (max-width: 500px) {
   main {
     .width-200 {
-      p{
+      a {
         font-size: 13px;
       }
     }
@@ -1537,6 +1537,11 @@ footer {
 }
 }
 @media only screen and (max-width: 350px) {
+     .width-200 {
+      a {
+        font-size: 12px;
+      }
+    }
   .svg-img {
     width: 35%;
     height: auto;
