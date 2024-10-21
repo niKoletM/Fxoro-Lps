@@ -974,6 +974,7 @@ main {
       ul {
         padding: 5px;
         margin: auto 30px;
+        padding-bottom: 20px;
       }
     }
     .active,
