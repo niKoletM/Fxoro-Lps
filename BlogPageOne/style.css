@@ -827,7 +827,7 @@ header {
   }
 }
 main {
-  .blog-container {
+.blog-container {
   .box {
     margin: 20px auto;
     img:hover {
@@ -873,159 +873,171 @@ main {
     padding-bottom: 10px;
   }
 }
-    .accordion-wrap {
-      margin: auto;
-      position: relative;
-      display: block;
-      width: 100%;
-    .accordion {
-      color: #444;
-      background-color: transparent;
-      cursor: pointer;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      transition: 0.4s;
-      padding-top: 1px;
-      padding: 0 40px;
-      height: 23px;
-      display: inline-block;
-      .icon {
-        background-image: url("./images/plus-svg.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 22px;
-        height: 22px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        float: left;
-      }
-    h4 {
-      font-size: 17px;
-      font-weight: 900;
-      font-family: Montserrat;
-      padding-bottom: 10px;
-      color: #273773;
-      text-transform: uppercase;
-      margin: 3px 0 0 0;
-      span {
-        font-size: 20px;
-        font-weight: 900;
-        padding-right: 3px;
-      }
-      .bold {
-        font-size: 20px;
-        font-weight: 900;
-        color: #273773;
-        padding: 0;
-      }
-    }
-    }
-    .active,
-    .accordion:hover {
-      color: #273773;
-    }
-    .active,
-    h4:active {
-      .icon {
-        background-image: url("./images/minus-svg.png");
-      }
-    }
-    .active .panel {
-      max-height: 200px;
-    }
-    .panel {
-      max-height: 0;
-      padding: 0 18px;
-      overflow: hidden;
-      margin: 20px;
-      margin: auto;
-      position: relative;
-      background-color: #fff;
-      z-index: 100;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-      transition: max-height 0.3s ease-out;
-      margin-bottom: 10px;
-      p {
-        font-size: 15px;
-        text-align: left;
-        padding: 10px 10px;
-      }
-      ul {
-        padding: 5px;
-        margin: auto 30px;
-      }
-    }
-    .active,
-    li:active {
-      list-style-type: circle;
-    }
-    }
-    .slider {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    margin-bottom: 20px;
-    position: relative;
-    }
-    .slider-cell {
-      margin: auto;
-    }
-    .gallery {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    margin-bottom: 20px;
-    position: relative;
+.big-post-wrap {
+  margin: auto;
+.big-post {
+  width: 360px;
+  margin: auto;
 }
-  .gallery-cell {
+  .text-post {
+    width: 360px;
     margin: auto;
   }
-  .course-card {
-    cursor: pointer;
-    width: 300px;
-    height: 250px;
-    margin: 10px;
-    border: 3px solid #ffb401;
-    border-radius: 6px;
-    background-color: #fff;
-    position: relative;
-    .card-header {
-       position: relative;
- p {
-      color: #273773 !important;
-      font-size: 12px;
-      text-align: center;
-      padding: 0px 5px;
-    }
-    }
-    img {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-    svg {
-      position: absolute;
-      bottom: 15%;
-      right: 43%;
-    }
+}
+
+.accordion-wrap {
+  margin: auto;
+  position: relative;
+  display: block;
+  width: 100%;
+.accordion {
+  color: #444;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  padding-top: 1px;
+  padding: 0 40px;
+  height: 23px;
+  display: inline-block;
+  .icon {
+    background-image: url("./images/plus-svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float: left;
   }
-  .display-left:hover,
-  .display-right:hover {
-     .left-arr,
-      .right-arr,
-      .left-arrow,
-      .right-arrow {
-        fill: #ef5a28;
-      }
+h4 {
+  font-size: 17px;
+  font-weight: 900;
+  font-family: Montserrat;
+  padding-bottom: 10px;
+  color: #273773;
+  text-transform: uppercase;
+  margin: 3px 0 0 0;
+  span {
+    font-size: 20px;
+    font-weight: 900;
+    padding-right: 3px;
   }
+  .bold {
+    font-size: 20px;
+    font-weight: 900;
+    color: #273773;
+    padding: 0;
+  }
+}
+}
+.active,
+.accordion:hover {
+  color: #273773;
+}
+.active,
+h4:active {
+  .icon {
+    background-image: url("./images/minus-svg.png");
+  }
+}
+.active .panel {
+  max-height: 200px;
+}
+.panel {
+  max-height: 0;
+  padding: 0 18px;
+  overflow: hidden;
+  margin: 20px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: max-height 0.3s ease-out;
+  margin-bottom: 10px;
+  p {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 10px;
+  }
+  ul {
+    padding: 5px;
+    margin: auto 30px;
+  }
+}
+.active,
+li:active {
+  list-style-type: circle;
+}
+}
+.slider {
+display: flex;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+margin-bottom: 20px;
+position: relative;
+}
+.slider-cell {
+  margin: auto;
+}
+.gallery {
+display: flex;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+margin-bottom: 20px;
+position: relative;
+}
+.gallery-cell {
+  margin: auto;
+}
+.course-card {
+  cursor: pointer;
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  border: 3px solid #ffb401;
+  border-radius: 6px;
+  background-color: #fff;
+  position: relative;
+  .card-header {
+      position: relative;
+p {
+    color: #273773 !important;
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 5px;
+  }
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  svg {
+    position: absolute;
+    bottom: 15%;
+    right: 43%;
+  }
+}
+.display-left:hover,
+.display-right:hover {
+    .left-arr,
+    .right-arr,
+    .left-arrow,
+    .right-arrow {
+      fill: #ef5a28;
+    }
+}
 .course-card:hover {
   transform: scale(1.05);
   box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
- .act {
+.act {
   opacity: 1;
 }
 .private {
@@ -1053,53 +1065,53 @@ left: 45%;
   transform: translateX(23px) scale(.85);
 }
 
-  .display-left,
-  .display-right {
-    cursor: pointer;
-    margin: 20px;
-    position: absolute;
-    top: 30%;
-  }
-  .display-left {
-    left: 0;
-  }
-  .display-right {
-    right: 0;
-  }
+.display-left,
+.display-right {
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  top: 30%;
+}
+.display-left {
+  left: 0;
+}
+.display-right {
+  right: 0;
+}
 
   section {
-    .header-img-wrap {
-      height: 500px;
-      justify-content: center;
-      align-items: center;
-          img {
-      width: clamp(200px, 70vw, 550px);
-      height: auto;
-      display: flex;
-    }
-    }
-
-    .second-btn {
-      text-align: center;
-      p {
-        color: #222222;
-        margin-top: 20px;
-        font-size: 10px;
-        font-weight: 500;
-      }
-    }
-
-    .svg-arrow-middle {
-    position: relative;
-    width: 200px;
-    margin: auto;
-    height: auto;
-svg {
-  transform: rotate(268deg);
-  position: relative;
-  width: 200px;
+.header-img-wrap {
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+      img {
+  width: clamp(200px, 70vw, 550px);
+  height: auto;
+  display: flex;
 }
-    }
+}
+
+.second-btn {
+  text-align: center;
+  p {
+    color: #222222;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+.svg-arrow-middle {
+position: relative;
+width: 200px;
+margin: auto;
+height: auto;
+svg {
+transform: rotate(268deg);
+position: relative;
+width: 200px;
+}
+}
 .circles-section {
   background-image: url("./images/mt4\ benefit\ circl\ left.svg"), url("./images/mt4\ benefit\ circl\ right.svg");
   background-position: left, right;
@@ -1436,8 +1448,12 @@ footer {
         text-align: center;
       }
       section {
-         .header-img-wrap {
-       height: 660px;
+        .header-img-wrap {
+          height: 660px;
+        .header-img-blog {
+          position: relative;
+          bottom: 5px;
+      }
       }
       }
   .circles-section {
@@ -1502,6 +1518,10 @@ footer {
     section {
       .header-img-wrap {
        height: 600px;
+         .header-img-blog {
+    position: relative;
+    bottom: -45px;
+  }
       }
     }
   }
@@ -1519,11 +1539,52 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 585px) {
+  main {
+       section {
+      .header-img-wrap {
+       height: 630px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 545px) {
+  main {
+       section {
+      .header-img-wrap {
+       height: 670px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 530px) {
   main {
+         section {
+      .header-img-wrap {
+       height: 680px;
+         .header-img-blog {
+    position: relative;
+    bottom: -55px;
+   
+  }
+      }
+    }
     .course-card {
       width: 255px;
       height: 220px;
+    }
+  }
+}
+@media only screen and (max-width: 521px) {
+  main {
+         section {
+      .header-img-wrap {
+       height: 730px;
+         .header-img-blog {
+    position: relative;
+    bottom: -95px;
+  }
+      }
     }
   }
 }
@@ -1535,7 +1596,7 @@ footer {
       font-size: 22px;
     }
       .header-img-wrap {
-       height: 590px;
+       height: 730px;
       }
      .info-mt4 {
       margin-bottom: 20px;
@@ -1566,10 +1627,19 @@ footer {
       }
       .blog-container,
       .big-post {
+        margin: auto;
         img {
           width: 90%;
           height: auto;
         }
+        p {
+          padding: 5px;
+          margin: auto;
+          text-align: center;
+        }
+      }
+      .text-post {
+        width: 100%;
       }
       .small-post {
         margin-left: 20px;
@@ -1613,8 +1683,28 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 457px) {
+  main {
+         section {
+      .header-img-wrap {
+       height: 740px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 440px) {
   main {
+    .big-post-wrap {
+  margin: auto;
+.big-post {
+  width: 100%;
+  margin: auto;
+}
+  .text-post {
+    width: 100%;
+    margin: auto;
+  }
+}
    .slider {
     .display-right {
       right: -41px;
@@ -1624,7 +1714,19 @@ footer {
     }
    }
   }
-
+}
+@media only screen and (max-width: 386px) {
+  main {
+         section {
+      .header-img-wrap {
+       height: 770px;
+         .header-img-blog {
+    position: relative;
+    bottom: -95px;
+  }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 350px) {
   main {
