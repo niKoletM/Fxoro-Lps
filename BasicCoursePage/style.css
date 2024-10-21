@@ -976,9 +976,17 @@ left: 45%;
   }
   .display-left {
     left: 0;
+    svg {
+      position: relative;
+      left: -30px;
+    }
   }
   .display-right {
     right: 0;
+       svg {
+      position: relative;
+      right: -27px
+    }
   }
 
   section {
