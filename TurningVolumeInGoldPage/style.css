@@ -1687,6 +1687,11 @@ footer {
 }
 }
 @media only screen and (max-width: 350px) {
+  main {
+    .xxs-box {
+      width: 100%;
+    }
+  }
   .svg-img {
     width: 35%;
     height: auto;
