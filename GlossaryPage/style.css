@@ -507,7 +507,35 @@ padding-top: 30px;
     color: #ffb401;
     font-weight: 900;
   }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+.letters-wrap {
+.accordion {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion.active {
+  background-color: #fff;
+  color: #ffb401;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.panel div {
+  padding: 10px;
+}
+}
+
 .flex {
   display: flex;
 }
