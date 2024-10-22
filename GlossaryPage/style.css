@@ -498,6 +498,8 @@ padding-top: 30px;
 .letters {
   color: #fff;
   font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
   a {
     color: #fff;
     font-weight: 900;
@@ -515,7 +517,11 @@ padding-top: 30px;
   }
 }
 .letters-wrap {
+  h5 {
+    font-size: 20px;
+  }
 .accordion {
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -523,6 +529,7 @@ padding-top: 30px;
 .accordion.active {
   background-color: #fff;
   color: #ffb401;
+  font-weight: 900;
 }
 
 .panel {
@@ -1462,6 +1469,10 @@ margin-bottom: 20px;
 }
 @media only screen and (max-width: 500px) {
   main {
+    .letters {
+    margin-left: 0;
+    margin-right: 0;
+    }
   .sm-height {
     height: fit-content;
 }
