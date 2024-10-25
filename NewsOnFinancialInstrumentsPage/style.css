@@ -72,10 +72,7 @@ p, li {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.lg-box {
-  flex: 0 0 auto;
-  width: 75%;
-}
+
 .xxl-box {
   width: 100%;
   margin: 0;
@@ -91,6 +88,14 @@ p, li {
 }
 .xxxs-box {
 width: 250px;
+}
+.lg-box {
+  flex: 0 0 auto;
+  width: 75%;
+}
+.md-lg-box {
+  flex: 0 0 auto;
+  width: 65%;
 }
 .md-box {
   flex: 0 0 auto;
@@ -190,6 +195,9 @@ width: 250px;
 .ml-1 {
   margin-left: 10px;
 }
+.ml-2 {
+  margin-left: 20px;
+}
 .mr-1 {
   margin-left: 10px;
 }
@@ -207,6 +215,12 @@ width: 250px;
 }
 .pl-0 {
   padding-left: 0;
+}
+.pr-4 {
+  padding-right: 40px;
+}
+.pr-3 {
+  padding-right: 30px;
 }
 .wrap {
   width: 100%;
@@ -275,6 +289,9 @@ width: 250px;
   background-color: #ef5a28;
       color: #fff;
 }
+.no-btn-shadow {
+  box-shadow: none !important;
+}
 .width-auto {
   width: fit-content;
 }
@@ -283,25 +300,25 @@ width: 250px;
   margin: auto;
 }
 .text-black {
-  color: #0c0c0c;
+  color: #0c0c0c !important;
 }
 .text-yellow {
-  color: #ffb401;
+  color: #ffb401 !important;
 }
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 .text-light-orange {
-  color: #ec673a;
+  color: #ec673a !important;
 }
 .text-orange {
-  color: #ef5a28;
+  color: #ef5a28 !important;
 }
 .text-dark-blue {
-  color: #273773;
+  color: #273773 !important;
 }
 .text-light-blue {
-  color: #2179bb;
+  color: #2179bb !important;
 }
 .text-bold {
   font-weight: 800;
@@ -320,18 +337,6 @@ width: 250px;
 }
 .no-text-decoration:hover {
   text-decoration: underline;
-}
-.text-bold {
-  font-weight: 800;
-}
-.text-center {
-  text-align: center !important;
-}
-.text-left {
-  text-align: left !important;
-}
-.text-right {
-  text-align: right !important;
 }
 .draw {
   animation: draw 4s ease forwards;
@@ -367,7 +372,12 @@ width: 250px;
 .big-bullet {
   color: #273773;
   font-size: 30px;
-    margin: auto 6px;
+  margin: auto 6px;
+  font-weight: 900
+}
+.big-bullets {
+  font-size: 30px;
+  margin: auto 6px;
   font-weight: 900
 }
 .list-style-none {
@@ -437,6 +447,25 @@ width: 250px;
     display: none;
   }
 }
+.table-custom-col-wrap {
+    th:first-child, td:first-child {
+    width: auto;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 30%;
+}
+td:nth-child(2) {
+  font-size: 20px;
+}
+th, td:nth-child(2) {
+  color: #273773 !important;
+  font-weight: 900 !important;
+}
+tbody tr:nth-child(even) {
+    background-color: #e5e5e5 !important;
+}
+}
 .table-wrap {
   table, td {
     border: 1px solid #273773;
@@ -484,6 +513,31 @@ width: 250px;
     color: #1b75ba;
   }
 }
+.pattern-element {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  width: 359px;
+}
+.mobil-pattern-wrap {
+  display: none;
+}
+.islamic-pattern {
+display: none;
+}
+.flex {
+  display: flex;
+}
+.white-big-border {
+  border: 5px solid #fff;
+}
+.white-small-border {
+  border: 2px solid #fff;
+}
+.articles-wrap {
+  max-height: 1000px;
+  overflow-y: auto;
+}
 header {
 .sticky {
   position: fixed;
@@ -491,12 +545,7 @@ header {
   width: 100%;
 }
 .sticky.top-bar {
-  /* box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0; */
-  /* box-shadow: rgba(245, 245, 250, 0.08) 0px 8px 8px 0; */
-  /* box-shadow: rgb(255 255 255) 0px 3px 8px 0; */
   box-shadow: rgb(163 156 156) 0px 3px 8px 0;
-  /* box-shadow: #ef5a28 0px 1px 11px 0; */
-  /* box-shadow: #ffb401 0px 1px 11px 0; */
 }
   .top-bar {
     background-color: #273773;
@@ -860,6 +909,13 @@ header {
 }
 main {
   section {
+      .economic-calendar-header {
+        background-image: url("./images/fxoro\ -\ economic\ calendar\ -header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 100;
+      }
     .header-img-wrap {
       height: 500px;
       justify-content: center;
@@ -867,9 +923,30 @@ main {
       .header-img-forex {
         width: clamp(200px, 70vw, 776px);
       }
-        .header-img-shares {
+        .header-img-shares,
+        .header-img-commodities {
         width: clamp(200px, 70vw, 710px);
-        margin-top: -20px;
+      }
+           .header-img-indices {
+        width: clamp(200px, 70vw, 850px);
+      }
+            .header-img-E-book {
+        width: clamp(200px, 70vw, 1000px);
+      }
+      .header-img-cryptocurrencies,
+      .header-img-news {
+        width: clamp(200px, 70vw, 1300px);
+      }
+      .header-img-financialInstrument {
+         width: clamp(200px, 70vw, 652px);
+      }
+      .header-img-islamicAcc {
+        width: clamp(200px, 70vw, 500px);
+      }
+      .img-div {
+        width: clamp(100px, 70vw, 385px);
+        height: 500px;
+        margin-top: -16px;
       }
           img {
       width: clamp(200px, 70vw, 550px);
@@ -1057,6 +1134,45 @@ svg {
     padding-top: 25px;
     padding-bottom: 20px;
   }
+  .pdf-card-wrap {
+  background-image: url("./images/pattern.png");
+  background-repeat: no-repeat;
+  background-position: right;
+    .pdf-card {
+      border: 4px solid #ffb10a;
+      border-radius: 10px;
+      background-color: #fefefe;
+      width: 420px;
+      padding: 0;
+      position: relative;
+      p {
+        color: #273773;
+        text-align: center;
+        font-weight: 800;
+      }
+    .img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      bottom: -4px;
+      border-radius: 7px;
+      filter: brightness(50%) contrast(120%);
+    }
+    .svg {
+      position: absolute;
+      left: 40%;
+      top: 40%;
+      z-index: 100;
+    }
+    }
+    .pdf-card:hover {
+      transform: scale(1.1);
+      cursor: pointer
+    }
+    a {
+      text-decoration: none;
+    }
+  }
 }
 footer {
   background-color: #222222;
@@ -1241,6 +1357,15 @@ footer {
     flex: 50%;
     margin: auto;
   }
+  .whyfxoro {
+width: 350px;
+margin: auto;
+margin-bottom: 20px;
+.text-left {
+  text-align: center !important;
+  margin: auto;
+}
+  }
   footer {
     .second-container {
       .flex-container {
@@ -1269,33 +1394,68 @@ footer {
 }
 @media only screen and (max-width: 969px) {
   main {
-    section {
-    h1 {
-      font-size: 25px;
-    }
-    .circles-section {
-      background-image: none;
-      display: inline-flex;
-      position: relative;
-    }
-    .info-mt4 {
-      .accordion {
-        h4 {
-          font-size: 15px;
-        }
-        .icon {
-          width: 17px;
-          height: 17px;
-          margin-bottom: 30px;
-        }
+.table-wrap {
+  .lg-box {
+    width: 100%;
+  }
+}
+.md-lg-box {
+  width: 100%;
+}
+ .pattern-element {
+display: none;
+}
+.islamic-pattern {
+display: block;
+}
+.mobil-pattern-wrap {
+    display: block;
+    position: relative;
+    padding-bottom: 70px;
+    margin: auto;
+.mobil-pattern-element {
+  height: auto;
+  position: absolute;
+  top: -130px;
+  right: 50%;
+  left: 45%;
+  width: 200px;
+  transform: translateX(-40%);
+}
+}
+.article-post {
+  display: block;
+  .btn-wrap {
+    margin-bottom: 20px;
+  }
+}
+  section {
+  h1 {
+    font-size: 25px;
+  }
+  .circles-section {
+    background-image: none;
+    display: inline-flex;
+    position: relative;
+  }
+  .info-mt4 {
+    .accordion {
+      h4 {
+        font-size: 15px;
+      }
+      .icon {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 30px;
       }
     }
+  }
+}
+    .xs-box,
+    .xxs-box {
+      margin-right: auto;
+      margin-left: auto;
     }
-      .xs-box,
-      .xxs-box {
-        margin-right: auto;
-        margin-left: auto;
-      }
   }
 }
 @media only screen and (max-width: 872px) {
@@ -1303,9 +1463,9 @@ footer {
   .circles-section {
     display: flex;
     flex-direction: column;
-    ul {
-      padding-left: 0;
-    }
+        ul {
+          padding-left: 0;
+        }
     .mr-5 {
       margin-right: 0;
     }
@@ -1359,6 +1519,14 @@ footer {
         margin-bottom: 20px;
       }
     }
+    section {
+  .economic-calendar-header {
+      .img-div {
+   height: 200px;
+  }
+
+  }
+}
   }
   footer {
     .second-container {
@@ -1375,6 +1543,18 @@ footer {
   }
 }
 @media only screen and (max-width: 500px) {
+  .article-post {
+  img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+  }
+  .btn-wrap {
+    margin: auto;
+    display: flex;
+  }
+}
   main {
   .sm-height {
     height: fit-content;
@@ -1393,14 +1573,21 @@ td {
 .buy-btn {
         padding: 5px 10px;
     }
-
 }
-section {
-    .header-img-wrap {
-      .header-img-shares {
-        margin-top: 0;
-      }
+.whyfxoro {
+  img {
+    width: 25%;
+    height: auto;
+  }
+}
+.pdf-card-wrap {
+        & .pdf-card {
+            .svg {
+                left: 34%;
+            }
+        }
     }
+section {
   h1 {
   text-align: center;
   font-size: 22px;
@@ -1433,7 +1620,7 @@ section {
       padding-right: 0 !important;
       text-align: center;
   }
-  .svg-img {
+  .img {
     width: 35%;
     height: auto;
   }
