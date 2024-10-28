@@ -475,8 +475,14 @@ tbody tr:nth-child(even) {
   th {
     background-color: #ffb401;
     color: #0c0c0c;
-    font-weight: 700;
+    font-weight: 800;
      padding: 10px;
+  }
+  .custom-th {
+     background-color: #e5e5e5;
+    font-weight: 800;
+     padding: 10px;
+       border: 1px solid #273773;
   }
   td {
     width: 150px;
@@ -1356,6 +1362,11 @@ footer {
   .flex-item-right {
     flex: 50%;
     margin: auto;
+  }
+  .table-wrap {
+    .md-box {
+      width: 100%;
+    }
   }
   .whyfxoro {
 width: 350px;
