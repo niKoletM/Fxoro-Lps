@@ -915,7 +915,7 @@ main {
       .header-img-forex {
         width: clamp(200px, 70vw, 776px);
       }
-      .header-img-fixedSpreadAcc {
+      .header-img-fixedSpredAcc {
         width: clamp(200px, 70vw, 614px);
       }
         .header-img-shares,
@@ -926,7 +926,8 @@ main {
         width: clamp(200px, 70vw, 850px);
       }
             .header-img-E-book,
-            .header-img-ECNAcc {
+            .header-img-ECNAcc,
+            .header-img-variableSpreadAcc {
         width: clamp(200px, 70vw, 1000px);
       }
       .header-img-cryptocurrencies {
