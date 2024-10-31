@@ -1392,6 +1392,15 @@ margin-bottom: 20px;
     }
   }
 }
+@media only screen and (max-width: 1029px) {
+  .reverse-flex {
+   flex-direction: column-reverse;
+}
+ .lg-box.full-width {
+  width: 100% !important;
+  }
+
+}
 @media only screen and (max-width: 1014px) {
   footer {
     .third-container {
