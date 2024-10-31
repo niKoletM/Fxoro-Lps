@@ -540,6 +540,9 @@ display: none;
 .flex {
   display: flex;
 }
+.width-70 {
+  width: 70%;
+}
 header {
 .sticky {
   position: fixed;
@@ -1395,10 +1398,20 @@ margin-bottom: 20px;
 @media only screen and (max-width: 1029px) {
   .reverse-flex {
    flex-direction: column-reverse;
+   img.mt-2 {
+    margin-top: 10px;
+   }
 }
  .lg-box.full-width {
   width: 100% !important;
   }
+  .xxxs-box {
+    margin: auto;
+    img {
+      margin: auto;
+    }
+  }
+
 
 }
 @media only screen and (max-width: 1014px) {
@@ -1654,6 +1667,11 @@ footer {
     }
   }
 }
+}
+@media only screen and (max-width: 440px) {
+     .width-70 {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 350px) {
   .svg-img {
