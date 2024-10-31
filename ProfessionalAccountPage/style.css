@@ -1463,6 +1463,13 @@ display: block;
   }
 }
 @media only screen and (max-width: 872px) {
+  .md-box.width-100 {
+      width: 100%;
+    }
+    .professional-img {
+      position: relative;
+      margin: auto;
+    }
     main {
   .circles-section {
     display: flex;
@@ -1648,6 +1655,10 @@ footer {
   .svg-img {
     width: 35%;
     height: auto;
+  }
+  .professional-img {
+    width: 250px;
+    bottom: -35px;
   }
   footer {
     .second-container {
