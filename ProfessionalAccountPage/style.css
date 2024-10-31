@@ -228,9 +228,6 @@ width: 250px;
 .pr-5 {
   padding-right: 50px !important;
 }
-.pl-3 {
-  padding-left: 30px !important;
-}
 .wrap {
   width: 100%;
   font-family: Montserrat;
@@ -294,18 +291,18 @@ width: 250px;
   padding: 8px;
   text-decoration: none;
 }
-.no-box-shadow {
-  box-shadow: none !important;
-}
-.small-white-border {
-  border: 1px solid #fff;
-}
 .small-black-btn:hover {
   background-color: #ef5a28;
       color: #fff;
 }
 .width-auto {
   width: fit-content;
+}
+.width-70 {
+  width: 70%;
+}
+.width-100 {
+  width: 100%;
 }
 .img-center {
   display: flex;
@@ -475,7 +472,7 @@ th, td:nth-child(2) {
   font-weight: 900 !important;
 }
 tbody tr:nth-child(even) {
-    background-color: #e5e5e5 !important;
+  background-color: #e5e5e5 !important;
 }
 }
 .table-wrap {
@@ -537,11 +534,15 @@ tbody tr:nth-child(even) {
 .islamic-pattern {
 display: none;
 }
+.professional-img {
+  position: absolute;
+  width: 363px;
+  height: auto;
+  right: 0;
+  bottom: -43px;
+}
 .flex {
   display: flex;
-}
-.width-70 {
-  width: 70%;
 }
 header {
 .sticky {
@@ -933,23 +934,14 @@ main {
       .header-img-forex {
         width: clamp(200px, 70vw, 776px);
       }
-      .header-img-fixedSpreadAcc {
-        width: clamp(200px, 70vw, 614px);
-      }
         .header-img-shares,
         .header-img-commodities {
         width: clamp(200px, 70vw, 710px);
       }
-      .header-img-onlineTradingAcc {
-        width: clamp(200px, 70vw, 800px);
-        position: relative;
-        bottom: -20px;
-      }
            .header-img-indices {
         width: clamp(200px, 70vw, 850px);
       }
-            .header-img-E-book,
-            .header-img-ECNAcc {
+            .header-img-E-book {
         width: clamp(200px, 70vw, 1000px);
       }
       .header-img-cryptocurrencies {
@@ -957,6 +949,9 @@ main {
       }
       .header-img-islamicAcc {
         width: clamp(200px, 70vw, 500px);
+      }
+      .header-img-professionalAcc {
+        width: clamp(200px, 70vw, 440px);
       }
       .img-div {
         width: clamp(100px, 70vw, 385px);
@@ -1395,25 +1390,6 @@ margin-bottom: 20px;
     }
   }
 }
-@media only screen and (max-width: 1029px) {
-  .reverse-flex {
-   flex-direction: column-reverse;
-   img.mt-2 {
-    margin-top: 10px;
-   }
-}
- .lg-box.full-width {
-  width: 100% !important;
-  }
-  .xxxs-box {
-    margin: auto;
-    img {
-      margin: auto;
-    }
-  }
-
-
-}
 @media only screen and (max-width: 1014px) {
   footer {
     .third-container {
@@ -1667,11 +1643,6 @@ footer {
     }
   }
 }
-}
-@media only screen and (max-width: 440px) {
-  .width-70 {
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 350px) {
   .svg-img {
