@@ -880,12 +880,12 @@ main {
       .header-img-cryptocurrencies {
         width: clamp(200px, 70vw, 1300px);
       }
-          img {
+      img {
       width: clamp(200px, 70vw, 550px);
       height: auto;
       display: flex;
       margin: auto;
-    }
+      }
     }
     .currency-img {
        width: clamp(220px, 70vw, 380px);
