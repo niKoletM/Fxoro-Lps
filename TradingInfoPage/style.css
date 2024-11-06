@@ -659,6 +659,26 @@ display: none;
     color: #fff;
   }
  }
+ .trading-info-body {
+  background-image: url("./images/Trading\ info\ body\ image.png");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+  .trading-info-body-img {
+    display: none;
+ }
+    @media (max-width: 1702px) {
+   .trading-info-body {
+  background-image: none;
+  height: auto;
+ }
+  .trading-info-body-img {
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+ }
 .flex {
   display: flex;
 }
@@ -1185,6 +1205,60 @@ main {
         margin: auto 30px;
         padding-bottom: 20px;
       }
+      a {
+        text-decoration: none;
+        color: #2179bb;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        th {
+          background-color: #ffb401;
+        }
+        th, td {
+          padding: 10px;
+        }
+      }
+          .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .table, .table th, .table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    .table-responsive {
+      overflow-x: auto;
+    }
+       .nav-tabs {
+        margin-top: 10px;
+      display: flex;
+      border-bottom: 2px solid #ddd;
+      cursor: pointer;
+    }
+    .nav-tabs .tab {
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      border-bottom: none;
+      background-color: #f1f1f1;
+      margin-right: 5px;
+      font-weight: bold;
+    }
+    .nav-tabs .tab.active {
+      background-color: #fff;
+      border-bottom: 2px solid #fff;
+      color: #2179bb;
+    }
+    .tab-content {
+      padding: 20px;
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
     }
     .active,
     li:active {
@@ -1542,6 +1616,9 @@ margin-bottom: 20px;
      .md-lg-box {
   width: 100%;
  }
+ .md-box {
+  width: 100%;
+ }
  .pattern-element {
 display: none;
 }
@@ -1668,6 +1745,15 @@ display: block;
     .xxs-box {
       .mb-4 {
         margin-bottom: 20px;
+      }
+    }
+    .td-what-is {
+      .md-box,
+      .xxl-box {
+        display: block;
+      }
+      img {
+        margin-left: 0;
       }
     }
     section {
