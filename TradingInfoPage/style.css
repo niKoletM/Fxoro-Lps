@@ -337,6 +337,9 @@ width: 250px;
 .text-bold {
   font-weight: 800;
 }
+.text-bolder {
+  font-weight: 900;
+}
 .text-center {
   text-align: center !important;
 }
@@ -658,17 +661,17 @@ display: none;
     background-color: #ec673a;
     color: #fff;
   }
- }
- .trading-info-body {
+}
+.trading-info-body {
   background-image: url("./images/Trading\ info\ body\ image.png");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
- }
-  .trading-info-body-img {
+}
+.trading-info-body-img {
     display: none;
- }
-    @media (max-width: 1702px) {
+}
+@media (max-width: 1702px) {
    .trading-info-body {
   background-image: none;
   height: auto;
@@ -678,7 +681,7 @@ display: none;
     width: 100%;
     height: auto;
  }
- }
+}
 .flex {
   display: flex;
 }
@@ -1747,7 +1750,7 @@ display: block;
         margin-bottom: 20px;
       }
     }
-    .td-what-is {
+    .td-what-is-td {
       .md-box,
       .xxl-box {
         display: block;
