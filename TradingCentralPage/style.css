@@ -349,6 +349,9 @@ width: 250px;
 .text-right {
   text-align: right !important;
 }
+.text-italic {
+  font-style: italic !important;
+}
 .no-text-decoration {
   text-decoration: none;
 }
@@ -670,6 +673,80 @@ display: none;
 }
 .trading-info-body-img {
     display: none;
+}
+.round-buttons-wrap {
+  width: 235px;
+  height: 230px;
+  margin: auto;
+}
+.round-dots-button:hover {
+  .round-button {
+    box-shadow: inset -1px -4px 12px 0px rgba(0, 0, 0, 0.4), inset 5px -3px 3px -3px rgba(0, 0, 0, 0.4);
+  }
+}
+.round-dots-button {
+    width: 200px;
+    height: 200px;
+    border-radius: 180px;
+    border: 1px dashed #747272;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+  .round-button {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    width: 170px;
+    height: 170px;
+    border-radius: 180px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    .title {
+      top: 30px;
+      left: 35px;
+      position: absolute;
+      font-size: 15px;
+      font-weight: 900;
+      text-align: center;
+      width: 100px;
+    }
+    .number {
+      top: 60px;
+      left: 75px;
+      position: absolute;
+      font-size: 40px;
+      font-weight: 900;
+    }
+  }
+      .orange-arrow {
+      position: absolute;
+      width: 255px;
+      bottom: -69px;
+      right: -95px;
+    }
+      .yellow-arrow {
+      position: absolute;
+      width: 255px;
+      top: -73px;
+      right: -92px;
+    }
+      .black-arrow {
+      position: absolute;
+      width: 255px;
+      bottom: -68px;
+      right: -87px;
+    }
+      .blue-arrow {
+      position: absolute;
+      width: 239px;
+      top: -77px;
+      right: -80px;
+    }
+      .black-line {
+      position: absolute;
+      width: 207px;
+      bottom: -78px;
+      right: -54px;
+    }
 }
 @media (max-width: 1702px) {
    .trading-info-body {
@@ -1085,6 +1162,9 @@ main {
       }
            .header-img-indices {
         width: clamp(200px, 70vw, 850px);
+      }
+      .header-img-trading-central {
+        width: clamp(200px, 70vw, 968px);
       }
             .header-img-E-book {
         width: clamp(200px, 70vw, 1000px);
