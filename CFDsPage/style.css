@@ -365,6 +365,87 @@ margin-top: -15px;
    border-bottom: 1px dashed #ffb401;
 }
 }
+.round-small-buttons-wrap {
+  width: 205px;
+  height: 205px;
+  margin: auto;
+}
+.round-dots-small-button:hover {
+  .round-small-button {
+    box-shadow: inset -1px -4px 12px 0px rgba(0, 0, 0, 0.4), inset 5px -3px 3px -3px rgba(0, 0, 0, 0.4);
+  }
+}
+.round-dots-small-button {
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    border: 1px dashed #747272;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+  .round-small-button {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    width: 150px;
+    height: 150px;
+    border-radius: 180px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    .title {
+      top: 30px;
+      left: 25px;
+      position: absolute;
+      font-size: 13px;
+      font-weight: 900;
+      text-align: center;
+      width: 100px;
+    }
+    .number {
+      top: 60px;
+      left: 65px;
+      position: absolute;
+      font-size: 30px;
+      font-weight: 900;
+    }
+  }
+      .orange-bottom-arrow {
+      position: absolute;
+      width: 215px;
+      bottom: -58px;
+      right: -80px;
+    }
+     .orange-top-arrow {
+      position: absolute;
+      width: 215px;
+      top: -61px;
+      right: -78px;
+    }
+      .yellow-arrow {
+      position: absolute;
+      width: 215px;
+      bottom: -59px;
+      right: -80px;
+    }
+      .light-blue-arrow {
+      position: absolute;
+      width: 215px;
+      top: -62px;
+      right: -78px;
+    }
+      .blue-arrow {
+      position: absolute;
+      width: 215px;
+      bottom: -59px;
+      right: -80px;
+    }
+      .black-line {
+      position: absolute;
+      width: 180px;
+      top: -70px;
+      right: -46px;
+      transform: rotate(-95deg);
+    }
+}
 header {
 .sticky {
   position: fixed;
@@ -772,91 +853,6 @@ main {
     }
     .btn {
       padding: 5px 45px;
-    }
-    .round-btn {
-      width: 200px;
-      height: 200px;
-      display: inline-flex;
-      position: relative;
-      margin: auto;
-      svg {
-        margin: auto;
-      }
-      .text {
-        position: absolute;
-         text-align: center;
-         margin: auto;
-         z-index: 100;
-      }
-       .one {
-        left: 70px;
-        top: 54px;
-        }
-        .two {
-        left: 65px;
-        top: 54px;
-        }
-        .three {
-        left: 34px;
-        top: 44px;
-        }
-        .four {
-        left: 65px;
-        top: 54px;
-        }
-        .five {
-        left: 45px;
-        top: 25px;
-        }
-        .six {
-        left: 72px;
-        top: 40px;
-        }
-    p {
-      font-weight: 900;
-      font-size: 13px;
-    }
-    .no {
-      font-size: 30px;
-      font-weight: 900;
-    }
-    .background-btn {
-      border-radius: 190px;
-      width: 137px;
-      height: 137px;
-      position: absolute;
-      top: 21px;
-      left: 27px;
-    }
-    .second {
-      top: 28px !important;
-      left: 24px !important;
-    }
-    .third {
-     top: 18px !important;
-      left: 21px !important;
-    }
-      .forth {
-      top: 37px !important;
-      left: 26px !important;
-    }
-    .fifth {
-     top: 18px !important;
-      left: 23px !important;
-    }
-      .sixth {
-      top: 20px !important;
-      left: 16px !important;
-      width: 147px;
-      height: 146px;
-    }
-    }
-    .round-btn:hover,
-    .round-btn:active {
-       .background-btn {
-        transform: scale(0.98);
-      box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    }
     }
   }
   .border-bottom {
