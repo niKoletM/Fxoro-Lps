@@ -1044,11 +1044,11 @@ main {
     width: 200px;
     margin: auto;
     height: auto;
-svg {
-  transform: rotate(268deg);
-  position: relative;
-  width: 200px;
-}
+      svg {
+        transform: rotate(268deg);
+        position: relative;
+        width: 200px;
+      }
     }
     .circles-section {
       background-image: url("./images/mt4\ benefit\ circl\ left.svg"), url("./images/mt4\ benefit\ circl\ right.svg");
