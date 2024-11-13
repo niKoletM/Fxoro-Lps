@@ -145,6 +145,9 @@ li {
 .xxs-box {
   width: 300px;
 }
+.xxxs-box {
+width: 250px;
+}
 .md-box {
   flex: 0 0 auto;
   width: 50%;
@@ -366,6 +369,12 @@ li {
 .width-100 {
   width: 100%;
 }
+.full-width {
+  width: 100%;
+}
+.width-200 {
+  width: 200px;
+}
 .img-center {
   display: flex;
   margin: auto;
@@ -408,6 +417,12 @@ li {
 }
 .text-bolder {
   font-weight: 900;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
 .text-italic {
   font-style: italic !important;
@@ -850,6 +865,9 @@ display: none;
 .flex {
   display: flex;
 }
+.float-right {
+  float: right;
+}
 .video-wrap {
    position: relative;
    width: 100%;
@@ -977,6 +995,7 @@ svg.pause {
 
 @media (max-width: 400px) {
   .logo-wrap {
+    top: 0%;
     img {
         width: 20%;
     }
@@ -985,8 +1004,8 @@ svg.pause {
     }
   }
   svg.play {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .ctrlW {
     width: 90%;
@@ -1386,16 +1405,30 @@ body {
   display: none;
   overflow: hidden;
   /* height: 800px; */
+  .flex-item-right,
+  .flex-item-left {
+    flex: 50%
+  }
 }
 .slideshow-container {
-  min-height: 500px;
+  height: 500px;
   position: relative;
   margin: auto;
+
+}
+.dots-wrap {
+position: relative;
+}
+.dots-bar {
+width: 100px;
+height: 25px;
+margin: auto;
+display: flex;
 }
 .dot {
   height: 15px;
   width: 15px;
-  margin: 10px 5px;
+  margin: 5px;
   background-color: #273773;
   border-radius: 50%;
   display: inline-block;
@@ -1447,23 +1480,49 @@ p.subtitle {
   text-align: left;
 }
 .main-btn {
-  width: 225px;
-  margin-top: 20px;
   p {
     margin-top: 20px;
     font-size: 10px;
     text-align: center;
   }
+  .yellow-btn-shadow {
+    box-shadow: #0c0c0c 10px 10px 0px -3px, #ffb401 10px 10px;
+  }
 }
 }
 .first-img {
-  background-image: url("./images/circles.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
   margin-top: 5px;
   img {
     margin-top: 50px;
   }
+}
+.diwali-bg {
+  background-image: url("./images/diwali-bg-m.webp");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.diwali-img {
+  display: none;
+}
+.cricket-bg {
+  width: 100%;
+  height: 500px;
+  background-color: #0c0c0c;
+  background-image: url("./images/bg-v3-d.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cricket-player {
+position: relative;
+bottom: -5px;
+left: 20%;
+}
+.cricket-player-mobil {
+  display: none;
 }
 .img-wrap {
   display: flex;
@@ -1994,6 +2053,9 @@ p {
 .black-container {
   background-color: #000000;
 }
+.blackis-container {
+background-color: #0c0c0c;
+}
 .normal-container {
   padding-top: 25px;
   padding-bottom: 20px;
@@ -2009,6 +2071,20 @@ p {
 }
 .blue-bottom-border {
   border-bottom: 2px solid #273773;
+}
+.payment-container {
+  text-align: center;
+    .sm-box-img {
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: inline-flex;
+      img {
+        display: flex;
+      }
+    }
+  
 }
 .socials-container {
   margin: auto;
@@ -2332,26 +2408,13 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 1334px) {
-  main {
-    section {
-      .second-image {
-        display: none;
-      }
-      .third-image {
-        display: none;
-      }
-    }
-  }
-}
+
 @media only screen and (max-width: 1284px) {
   main {
     section {
-   .second-img {
-      img {
-        width: 95%;
-      }
-    }
+   .cricket-player {
+    left: 10%;
+   }
     }
   }
   footer {
@@ -2367,6 +2430,20 @@ footer {
 @media only screen and (max-width: 1199px) {
   main {
     section {
+      .slideshow-container {
+        height: 400px;
+
+    .diwali-bg {
+      height: 400px;
+    }
+    .cricket-bg {
+      height: 400px;
+    }
+        img {
+          width: 90%;
+          height: auto;
+        }
+      }
   .vertical {
     display: none;
   }
@@ -2393,7 +2470,8 @@ footer {
       li {
         margin-top: 30px;
       }
-     .blog-container { .sm-box {
+     .blog-container {
+       .sm-box {
         width: 100%;
       }
     }
@@ -2471,6 +2549,15 @@ footer {
   }
   main {
     section {
+      .mySlides {
+        .flex-container {
+          flex-direction: row;
+        }
+        .flex-item-left,
+        .flex-item-right {
+        flex: 50%;
+        }
+      }
     img {
         margin: 5px 10px;
       }
@@ -2532,21 +2619,27 @@ footer {
 @media only screen and (max-width: 872px) {
   main {
     section {
-    .first-img,
-    .second-img {
-      max-height: 300px;
-      img {
-        width: 350px;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-        text-align: center;
-        display: block;
-      }
-    }
+        .slideshow-container {
+          height: 363px;
+        .cricket-bg {
+          height: 363px;
+          .cricket-player {
+            bottom: 0;
+          }
+        }
+        .diwali-bg {
+          height: 363px;
+        }
+        .main-cta {
+          h1 {
+            padding: 20px 20px 4px 0px;
+          }
+        }
+        }
+
     .info-box {
-          padding: 0 10px;
-          margin: 0 auto 30px;
+      padding: 0 10px;
+      margin: 0 auto 30px;
       }
       .md-box {
         width: 100%;
@@ -2672,22 +2765,55 @@ footer {
 }
 @media only screen and (max-width: 800px) {
   main {
-section{
-  .main-cta {
-      height: 300px;
+section {
+  & .mySlides {
+    .flex-container {
+      flex-direction: column;
     }
-    .first-img,
-    .second-img {
-      max-height: 355px;
-      img {
-        width: 250px;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-        text-align: center;
+    .flex-item-left,
+    .flex-item-right {
+        flex: 100%;
+    }
+}
+
+.slideshow-container {
+    height: fit-content;
+    img {
+      width: 60%;
+    }
+  .cricket-bg {
+    height: 450px;
+    background-size: auto;
+    .cricket-player {
+      display: none;
+    }
+    .cricket-player-mobil {
+      display: block;
+      height: auto;
+      margin: auto;
+      width: 80%;
+    }
+  }
+    .diwali-bg {
+      height: 200px;
+      background-size: auto;
+      background-image: none;
+      .diwali-img {
         display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
       }
     }
+    .main-cta {
+      height: fit-content;
+      margin: auto;
+      float: none;
+      h1 {
+        padding: 20px 20px 4px 0px;
+      }
+    }
+  }
 }
   }
 }
@@ -2697,7 +2823,7 @@ section{
       .main-cta {
       h1 {
         font-size: 19px;
-               .second-title {
+        .second-title {
         font-size: 19px;
       }
       }
@@ -2712,21 +2838,7 @@ section{
           height: auto;
       }
     }
-    .payment-container {
-      .sm-img {
-        width: 8%;
-        height: auto;
-      }
-      .xs-img {
-        width: 13%;
-        height: auto;
-      }
-  img {
-      margin: 1px 10px;
-      width: 20%;
-      height: fit-content;
-  }
-}
+
 }
   }
   footer {
@@ -2824,536 +2936,6 @@ section{
   }
 }
 @media only screen and (max-width: 350px) {
-  footer {
-    .second-container {
-      .follow-btn {
-        img {
-          width: auto;
-          height: a;
-        }
-        display: block;
-      }
-    }
-  }
-}
-
-
-
-footer {
-  background-color: #222222;
-  .first-container {
-    p {
-      font-size: 12px;
-      font-weight: 300;
-      color: #ffffff;
-      padding: 30px 20px 10px;
-      margin: auto;
-      text-align: left;
-      span {
-        font-size: 13px;
-        font-weight: 700;
-        color: #ffffff;
-      }
-    }
-  }
-
-  .second-container {
-    background-color: #363636;
-    margin: auto;
-    p {
-      text-align: center;
-      font-size: 14px;
-      font-weight: 500;
-    }
-    .xxs-box {
-      width: 140px;
-      margin: auto;
-    }
-    .sm-box {
-      width: 430px;
-      margin: auto;
-    }
-    .xs-box {
-      width: 322px;
-      margin: auto;
-    }
-    .invest-img {
-      margin: 10px 20px 10px;
-    }
-   .follow-btn {
-      margin: auto;
-
-      span {
-        margin: 2px;
-        display: inline-flex;
-        flex-direction: row;
-      }
-      a {
-        background-color: #fefefe;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-      }
-      a:hover {
-        background-color: #ffb10a;
-        .svg {
-          fill: #fff;
-        }
-      }
-      .facebook {
-        svg {
-          margin: 8px 10px;
-        }
-      }
-       .linkedin {
-        svg {
-          margin: 8px 10px;
-        }
-      }
-       .instagram {
-        svg {
-          margin: 8px 10px;
-        }
-      }
-       .whatsapp {
-        svg {
-          margin: 8px 10px;
-        }
-      }
-       .telegram {
-        svg {
-          margin: 10px 10px;
-        }
-      }
-       .youtube {
-        svg {
-          margin: 12px 10px;
-        }
-      }
-       .twitter {
-        svg {
-          margin:10px 10px;
-        }
-      }
-    }
-    .app-btn {
-      display: inline-flex;
-      margin: auto;
-      img {
-        margin: 10px;
-      }
-    }
-    img {
-      margin: 20px 10px;
-    }
-  }
-  .brands {
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    margin: 20px auto;
-    display: block;
-    img {
-      margin: 10px 4%;
-    }
-  }
-  p {
-    font-size: 12px;
-    font-weight: 300;
-    color: #ffffff;
-    padding: 20px;
-    margin: auto;
-    text-align: left;
-    .bold {
-      font-size: 14px;
-      font-weight: 700;
-      color: #ffffff;
-    }
-    span {
-      color: #ffb401;
-      font-size: 14px;
-      font-weight: 700;
-    }
-  }
-}
-@media only screen and (max-width: 1284px) {
-  footer {
-    .third-container {
-      .brands {
-        img {
-          margin: 10px 3%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1229px) {
-  main {
-    section {
-      .header-img-wrap {
-       height: fit-content;
-          .header-img-mt4 {
-            width: clamp(200px, 70vw, 1000px);
-            margin-top: 50px;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1160px) {
-  .arrow-wrap {
-    .first-inner-arrow,
-    .second-inner-arrow,
-    .third-inner-arrow {
-      clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
-      margin-right: 5px;
-    }
-  }
-  footer {
-    .third-container {
-      .brands {
-        display: block;
-        img {
-          margin: 10px 2%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1055px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .flex-item-left {
-    flex: 50%;
-  }
-  .flex-item-right {
-    flex: 50%;
-    margin: auto;
-  }
-  .whyfxoro {
-width: 350px;
-margin: auto;
-margin-bottom: 20px;
-.text-left {
-  text-align: center !important;
-  margin: auto;
-}
-  }
-  footer {
-    .second-container {
-      .flex-container {
-        flex-direction: row;
-        margin: auto;
-        .xs-box,
-        .sm-box,
-        .xxs-box {
-          width: auto;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1014px) {
-  footer {
-    .third-container {
-      .brands {
-        display: block;
-        img {
-          margin: 10px 5%;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 969px) {
-  main {
-    .table-wrap {
-      .lg-box {
-        width: 100%;
-      }
-    }
-     .md-lg-box {
-  width: 100%;
- }
- .md-box {
-  width: 100%;
- }
- .pattern-element {
-display: none;
-}
-.islamic-pattern {
-display: block;
-}
-.mobil-pattern-wrap {
-    display: block;
-    position: relative;
-    padding-bottom: 70px;
-    margin: auto;
-.mobil-pattern-element {
-  height: auto;
-  position: absolute;
-  top: -130px;
-  right: 50%;
-  left: 45%;
-  width: 200px;
-  transform: translateX(-40%);
-}
-}
-    section {
-    h1 {
-      font-size: 25px;
-    }
-    .circles-section {
-      background-image: none;
-      display: inline-flex;
-      position: relative;
-    }
-    .info-mt4 {
-      .accordion {
-        h4 {
-          font-size: 15px;
-        }
-        .icon {
-          width: 17px;
-          height: 17px;
-          margin-bottom: 30px;
-        }
-      }
-    }
-    }
-      .xs-box,
-      .xxs-box {
-        margin-right: auto;
-        margin-left: auto;
-      }
-  }
-}
-@media only screen and (max-width: 872px) {
-  .md-box.width-100 {
-      width: 100%;
-    }
-    .professional-img {
-      position: relative;
-      margin: auto;
-    }
-    main {
-  .circles-section {
-    display: flex;
-    flex-direction: column;
-        ul {
-          padding-left: 0;
-        }
-    .mr-5 {
-      margin-right: 0;
-    }
-    .ml-1 {
-      padding: 0;
-    }
-    .svg-arrow-middle {
-      position: relative;
-      margin: auto;
-      height: 90px;
-      svg {
-        transform: rotate(88deg);
-        top: -83px;
-      }
-    }
-    }
-  }
-  footer {
-    .second-container {
-      .xxs-box {
-        img {
-          margin: 20px auto 10px;
-        }
-      }
-      .app-btn {
-        display: block;
-        margin: auto;
-        text-align: center;
-        img {
-          margin: 3px;
-        }
-      }
-      .invest-img {
-        margin: 10px 20px 10px;
-        width: 90%;
-        height: auto;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 800px) {
- .arrow-wrap {
-  display: none;
- }
- .mobile-how-to-inv-realShares {
-  display: block;
- flex-direction: column;
- }
-
-}
-@media only screen and (max-width: 630px) {
-  main {
-    .xl-box {
-      width: 100%;
-    }
-    .xs-box {
-      width: 360px;
-    }
-    .xxs-box {
-      .mb-4 {
-        margin-bottom: 20px;
-      }
-    }
-    .td-what-is-td {
-      .md-box,
-      .xxl-box {
-        display: block;
-      }
-      img {
-        margin-left: 0;
-      }
-    }
-    section {
-  .economic-calendar-header {
-      .img-div {
-   height: 200px;
-  }
-
-  }
-}
-  }
-  footer {
-    .second-container {
-      .xxs-box {
-        display: none;
-      }
-      .follow-btn {
-        img {
-          width: 80%;
-          height: fit-content;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  main {
-  .sm-height {
-    height: fit-content;
-}
-    .currency-img {
-      display: flex;
-      margin: auto;
-    }
-.table-wrap {
-td {
-    width: 150px;
-    font-weight: 700;
-    padding: 29px 2px;
-}
-.sell-btn,
-.buy-btn {
-        padding: 5px 10px;
-    }
-}
-.whyfxoro {
-  img {
-    width: 25%;
-    height: auto;
-  }
-}
-.pdf-card-wrap {
-        & .pdf-card {
-            .svg {
-                left: 34%;
-            }
-        }
-    }
-section {
-  h1 {
-  text-align: center;
-  font-size: 22px;
-}
-  .info-mt4,
-  .accordion-wrap {
-  margin-bottom: 20px;
-  .accordion {
-    padding: 0 0;
-    h4 {
-      font-size: 13px;
-    }
-  }
-  .panel {
-    padding: 0 0;
-  }
-}
-.circles-section {
-      ul {
-      padding-left: 0;
-      margin-top: 0;
-    }
-}
-  .second-btn {
-    margin: 5px auto 0px;
-  }
-  h3 {
-    font-size: 20px;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-      text-align: center;
-  }
-  .img {
-    width: 35%;
-    height: auto;
-  }
-}
-  }
-footer {
-  .first-container {
-    p {
-      padding: 10px;
-    }
-  }
-  .third-container {
-    .brands {
-      .sm-img {
-        width: 22%;
-        height: fit-content;
-      }
-      .xs-img {
-        width: 40%;
-        height: fit-content;
-      }
-      img {
-        margin: 10px 2%;
-      }
-    }
-    p {
-      padding: 10px;
-    }
-  }
-}
-}
-@media only screen and (max-width: 440px) {
- .mobile-how-to-inv-realShares {
-  .first-card.xs-box,
-  .second-card.xs-box,
-  .third-card.xs-box {
-    width: 100%;
-  }
- }
-}
-@media only screen and (max-width: 350px) {
-  .svg-img {
-    width: 35%;
-    height: auto;
-  }
-  .professional-img {
-    width: 250px;
-    bottom: -35px;
-  }
   footer {
     .second-container {
       .follow-btn {
