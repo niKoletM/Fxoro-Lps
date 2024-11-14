@@ -1449,10 +1449,10 @@ margin-bottom: 20px;
   .sm-height {
     height: fit-content;
 }
-    .currency-img {
-      display: flex;
-      margin: auto;
-    }
+.currency-img {
+  display: flex;
+  margin: auto;
+}
 .table-wrap {
 td {
     width: 150px;
@@ -1476,7 +1476,7 @@ td {
                 left: 34%;
             }
         }
-    }
+}
 section {
   h1 {
   text-align: center;
