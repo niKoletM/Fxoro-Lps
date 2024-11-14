@@ -961,8 +961,15 @@ svg.pause {
   display: none;
 }
 
-.d-none {
-  display: none;
+#overlay,
+#videofirstframe {
+  transition: opacity 0.5s ease;
+  
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 
