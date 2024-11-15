@@ -142,11 +142,32 @@ body {
 .mt-0 {
   margin-top: 0;
 }
+.mt-2 {
+  margin-top: 20px !important;
+}
 .p-3 {
   padding: 1rem !important;
 }
 .p-4 {
   padding: 2rem !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-1 {
+  padding-bottom: 10px !important;
+}
+.pt-1 {
+  padding-top: 10px !important;
+}
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+.mt-1 {
+  margin-top: 10px !important;
 }
 .wrap {
   width: 100%;
