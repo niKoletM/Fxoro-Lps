@@ -1443,8 +1443,10 @@ position: relative;
 cursor: pointer;
 }
 .dots-bar {
-width: 100px;
-/* height: 25px; */
+width: fit-content;
+background-color: #fff;
+border-radius: 9px;
+border: 1px solid #162856;
 margin: auto;
 display: flex;
 position: absolute;
@@ -2754,11 +2756,9 @@ footer {
         margin: 8px;
       }
       .socials-container {
-        .box {
-          img {
-            width: auto;
-          }
-        }
+      span {
+              margin: 8px;
+       }
       }
       .box {
         img {
@@ -2860,6 +2860,15 @@ section {
 }
 @media only screen and (max-width: 630px) {
   main {
+        .payment-container {
+      .sm-box-img {
+        width: 35%;
+        img {
+          width: 70%;
+          height: auto;
+        }
+      }
+    }
   section {
     .dots-bar {
       left: 43%;
@@ -2952,6 +2961,7 @@ section {
         }
       }
     }
+
    }
   }
   footer {
