@@ -2465,13 +2465,13 @@ footer {
   main {
     section {
       .slideshow-container {
-        height: 400px;
+        height: 470px;
 
     .diwali-bg {
-      height: 400px;
+      height: 470px;
     }
     .cricket-bg {
-      height: 400px;
+      height: 470px;
     }
         img {
           width: 90%;
@@ -2628,6 +2628,10 @@ footer {
 @media only screen and (max-width: 1010px) {
   main {
     section {
+    .main-cta {
+      float: none;
+      margin: auto;
+    }
   .vertical {
         display: none;
       }
@@ -2667,6 +2671,9 @@ footer {
         .main-cta {
           h1 {
             padding: 20px 20px 4px 0px;
+          }
+          .main-btn {
+            width: 300px;
           }
         }
         }
@@ -2854,6 +2861,9 @@ section {
 @media only screen and (max-width: 630px) {
   main {
   section {
+    .dots-bar {
+      left: 43%;
+    }
       .main-cta {
       h1 {
         font-size: 19px;
@@ -2971,6 +2981,20 @@ section {
   }
 }
 @media only screen and (max-width: 350px) {
+  main {
+    section {
+        .dots-bar {
+      left: 37%;
+    }
+    .slideshow-container {
+   .main-cta {
+      .main-btn {
+        width: 250px;
+        }
+      }
+     }
+    }
+  }
   footer {
     .second-container {
       .follow-btn {
