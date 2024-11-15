@@ -223,6 +223,9 @@ width: 250px;
 .mt-5 {
   margin-top: 50px;
 }
+.mt-6 {
+  margin-top: 60px;
+}
 .mb-0 {
   margin-bottom: 0;
 }
@@ -240,6 +243,9 @@ width: 250px;
 }
 .mb-5 {
   margin-bottom: 50px;
+}
+.ml-3 {
+  margin-left: 30px;
 }
 .ml-auto {
   margin-left: auto;
@@ -1483,11 +1489,12 @@ bottom: 5px;
   }
 }
 .main-cta {
+  margin-top: 30px;
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 900;
   height: fit-content;
-  padding: 20px 80px 4px 0px;
+  padding: 20px 0px 0px 0px;
   .second-title {
     color: #273773;
     font-size: 36px;
@@ -1502,9 +1509,9 @@ li {
   margin-top: 0px;
 }
 p.subtitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  padding: 20px 80px 4px 0px;
+  padding: 20px 80px 10px 0px;
   text-align: left;
 }
 .main-btn {
@@ -1526,41 +1533,7 @@ p.subtitle {
   }
 }
 }
-.first-img {
-  margin-top: 5px;
-  img {
-    margin-top: 50px;
-  }
-}
-.diwali-bg {
-  background-image: url("./images/diwali-bg-m.webp");
-  width: 100%;
-  height: 620px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.diwali-img {
-  display: none;
-}
 .mobil-player {
-  display: none;
-}
-.cricket-bg {
-  width: 100%;
-  height: 500px;
-  background-color: #0c0c0c;
-  background-image: url("./images/bg-v3-d.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.cricket-player {
-position: relative;
-bottom: -5px;
-left: 20%;
-}
-.cricket-player-mobil {
   display: none;
 }
 .img-wrap {
@@ -2451,9 +2424,11 @@ footer {
 @media only screen and (max-width: 1284px) {
   main {
     section {
-   .cricket-player {
-    left: 10%;
-   }
+  .main-cta {
+    .smaller-header {
+      font-size: 40px;
+    }
+  }
     }
   }
   footer {
@@ -2466,24 +2441,24 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 1211px) {
+  main {
+    section {
+ .slideshow-container {
+        img {
+          width: 97%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1199px) {
   main {
     section {
       .slideshow-container {
-        height: 470px;
-
-    .diwali-bg {
-      height: 470px;
-    }
-    .cricket-bg {
-      height: 470px;
-    }
-    .player {
-        width: 58%;
-        height: auto;
-    }
         img {
-          width: 90%;
+          width: 96%;
           height: auto;
         }
       }
@@ -2536,11 +2511,13 @@ footer {
 @media only screen and (max-width: 1133px) {
   main {
     section {
+      .slideshow-container {
+        height: 580px;
+      }
     .main-cta {
-      height: 200px;
       flex: none;
       h1 {
-        font-size: 24px;
+        font-size: 40px;
          .second-title {
         font-size: 24px;
       }
@@ -2592,6 +2569,17 @@ footer {
   }
   main {
     section {
+      .slideshow-container {
+        height: 520px;
+        .main-cta {
+          h1 {
+            font-size: 35px;
+          }
+          .smaller-header {
+            font-size: 33px;
+          }
+        }
+      }
       .mySlides {
         .flex-container {
           flex-direction: row;
@@ -2663,23 +2651,38 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 969px) {
+  main {
+    section {
+   .slideshow-container {
+        height: 460px;
+        img {
+          width: 93%;
+        }
+        .main-cta {
+          h1 {
+            font-size: 35px;
+          }
+          .smaller-header {
+            font-size: 33px;
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 872px) {
   main {
     section {
         .slideshow-container {
-          height: 363px;
-        .cricket-bg {
-          height: 363px;
-          .cricket-player {
-            bottom: 0;
-          }
-        }
-        .diwali-bg {
-          height: 363px;
-        }
+          height: 440px;
         .main-cta {
           h1 {
-            padding: 20px 20px 4px 0px;
+            font-size: 30px;
+            padding: 20px 0px 4px 0px;
+          }
+          .smaller-header {
+            font-size: 28px;
           }
           .main-btn {
             width: 300px;
@@ -2825,48 +2828,33 @@ section {
 }
 
 .slideshow-container {
-    height: 560px;
+    height: 620px;
     img {
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
       width: 60%;
     }
-  .cricket-bg {
-    height: 450px;
-    background-size: auto;
-    .cricket-player {
-      display: none;
-    }
-    .cricket-player-mobil {
-      display: block;
-      height: auto;
-      margin: auto;
-      width: 80%;
-    }
-  }
-    .diwali-bg {
-      height: 240px;
-      background-size: auto;
-      background-image: none;
-      .diwali-img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: 0;
-      }
+    .shares-img {
+        margin-top: 20px;
     }
     .player {
       display: none;
     }
     .mobil-player {
       display: block;
-      width: 70%;
+      width: 68%;
       height: auto;
+      position: relative;
+      bottom: 0;
+      margin-bottom: 0;
     }
     .main-cta {
       height: fit-content;
       margin: auto;
       float: none;
       h1 {
-        padding: 20px 20px 4px 0px;
+        padding: 20px 0px 4px 0px;
       }
     }
   }
@@ -2885,12 +2873,6 @@ section {
       }
     }
   section {
-    .slideshow-container {
-      height: fit-content;
-      .mobil-player {
-    margin-bottom: 0;
-      }
-    }
     .dots-bar {
       left: 43%;
     }
@@ -2933,25 +2915,24 @@ section {
   main {
    section {
     .slideshow-container {
-      img {
-        width: 58%;
-        height: auto;
-      }
-      .diwali-bg {
-        height: 240px;
-      }
-      .mobil-player {
-        width: 58%;
+        height: 600px;
+        .shares-img {
+          margin-top: 40px;
+        }
+        .main-cta {
+          .smaller-header {
+            font-size: 28px;
+            padding: 20px 10px 0px 10px;
+        }
       }
     }
        .main-cta {
       h1 {
         font-size: 18px;
         text-align: center;
-        padding: 0;
       }
+    
       p.subtitle {
-        padding: 0;
         text-align: center;
       }
       .main-btn {
@@ -3023,6 +3004,22 @@ section {
     }
   }
 }
+@media only screen and (max-width: 397px) {
+  main {
+    section {
+      .slideshow-container {
+        height: fit-content;
+      .mobil-player {
+        margin-top: 5px;
+      }
+              .shares-img {
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 350px) {
   main {
     section {
@@ -3030,9 +3027,12 @@ section {
       left: 37%;
     }
     .slideshow-container {
-      .diwali-bg {
-        height: 180px;
-      }
+
+          .shares-img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
    .main-cta {
       .main-btn {
         width: 250px;
