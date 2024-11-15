@@ -1433,7 +1433,7 @@ body {
   }
 }
 .slideshow-container {
-  height: 500px;
+  height: 620px;
   position: relative;
   margin: auto;
 
@@ -1484,7 +1484,7 @@ bottom: 5px;
 }
 .main-cta {
 h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 900;
   height: fit-content;
   padding: 20px 80px 4px 0px;
@@ -1535,12 +1535,15 @@ p.subtitle {
 .diwali-bg {
   background-image: url("./images/diwali-bg-m.webp");
   width: 100%;
-  height: 500px;
+  height: 620px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .diwali-img {
+  display: none;
+}
+.mobil-player {
   display: none;
 }
 .cricket-bg {
@@ -2475,6 +2478,10 @@ footer {
     .cricket-bg {
       height: 470px;
     }
+    .player {
+        width: 58%;
+        height: auto;
+    }
         img {
           width: 90%;
           height: auto;
@@ -2818,7 +2825,7 @@ section {
 }
 
 .slideshow-container {
-    height: fit-content;
+    height: 560px;
     img {
       width: 60%;
     }
@@ -2836,7 +2843,7 @@ section {
     }
   }
     .diwali-bg {
-      height: 200px;
+      height: 240px;
       background-size: auto;
       background-image: none;
       .diwali-img {
@@ -2845,6 +2852,14 @@ section {
         height: auto;
         margin: 0;
       }
+    }
+    .player {
+      display: none;
+    }
+    .mobil-player {
+      display: block;
+      width: 70%;
+      height: auto;
     }
     .main-cta {
       height: fit-content;
@@ -2870,6 +2885,12 @@ section {
       }
     }
   section {
+    .slideshow-container {
+      height: fit-content;
+      .mobil-player {
+    margin-bottom: 0;
+      }
+    }
     .dots-bar {
       left: 43%;
     }
@@ -2911,6 +2932,18 @@ section {
 @media only screen and (max-width: 500px) {
   main {
    section {
+    .slideshow-container {
+      img {
+        width: 58%;
+        height: auto;
+      }
+      .diwali-bg {
+        height: 240px;
+      }
+      .mobil-player {
+        width: 58%;
+      }
+    }
        .main-cta {
       h1 {
         font-size: 18px;
@@ -2997,6 +3030,9 @@ section {
       left: 37%;
     }
     .slideshow-container {
+      .diwali-bg {
+        height: 180px;
+      }
    .main-cta {
       .main-btn {
         width: 250px;
