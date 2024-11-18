@@ -383,6 +383,9 @@ body {
    border-bottom: 1px dashed #ffb401;
 }
 }
+.small-white-border {
+  border: 1px solid #fff;
+}
 @media (max-width: 1079px) {
   .contact-bar {
     display: none;
