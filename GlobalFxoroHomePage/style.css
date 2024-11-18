@@ -3050,3 +3050,8 @@ section {
     }
   }
 }
+@media only screen and (max-width: 300px) {
+  svg.play {
+    margin-top: 5px;
+  }
+}
