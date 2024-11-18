@@ -1180,6 +1180,9 @@ main {
       .header-img-cryptocurrencies {
         width: clamp(200px, 70vw, 1300px);
       }
+      .header-img-tc-newsletter {
+        width: clamp(200px, 70vw, 510px);
+      }
       .header-img-islamicAcc {
         width: clamp(200px, 70vw, 500px);
       }
