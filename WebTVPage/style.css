@@ -1164,6 +1164,9 @@ main {
         .header-img-commodities {
         width: clamp(200px, 70vw, 710px);
       }
+      .header-img-web-tv {
+        width: clamp(200px, 70vw, 703px);
+      }
            .header-img-indices {
         width: clamp(200px, 70vw, 850px);
       }
