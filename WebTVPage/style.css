@@ -1165,9 +1165,10 @@ main {
         width: clamp(200px, 70vw, 710px);
       }
       .header-img-web-tv {
+        margin-top: 20px;
         width: clamp(200px, 70vw, 703px);
       }
-           .header-img-indices {
+      .header-img-indices {
         width: clamp(200px, 70vw, 850px);
       }
       .header-img-trading-central {
