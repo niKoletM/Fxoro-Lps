@@ -896,7 +896,7 @@
                 <a href="https://my.global.fxoro.com/register?version=global" target="_blank" class="btn">START TRADING</a>
                 <p class="pt-1">Trading CFD’s is risky.<br> You might lose all your invested capital.</p>
               </div>
-              <img class="chat-img" loading="lazy" src="./images/communication icons.svg" width="61" height="50">
+              <img class="chat-img d-none" loading="lazy" src="./images/communication icons.svg" width="61" height="50">
             </div>
           </div>
         </section>
@@ -1433,6 +1433,7 @@
         video.addEventListener("ended", function () {
           fadeIn(overlay);
           fadeIn(firstFrame);
+          cntnt.style.display = "block"
           playButton.style.display = "block";
           pauseButton.style.display = "none";
           muteButton.style.display = "none";
