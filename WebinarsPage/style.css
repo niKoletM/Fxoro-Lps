@@ -228,6 +228,9 @@ width: 250px;
 .pt-1 {
   padding-top: 10px !important;
 }
+.pb-0 {
+  padding-bottom: 0px !important;
+}
 .wrap {
   width: 100%;
   font-family: Montserrat;
@@ -1420,6 +1423,9 @@ margin-bottom: 20px;
 }
 @media only screen and (max-width: 969px) {
   main {
+    .header-img-webinars {
+      margin-top: 15px;
+  }
     .table-wrap {
       .lg-box {
         width: 100%;
@@ -1450,6 +1456,11 @@ display: block;
 }
 }
     section {
+      .header-img-wrap {
+            .header-img-webinars {
+              margin-top: 15px;
+            }
+        }
     h1 {
       font-size: 25px;
     }

@@ -2424,6 +2424,12 @@ footer {
 @media only screen and (max-width: 1284px) {
   main {
     section {
+  .slideshow-container {
+    img {
+      width: 97%;
+      height: auto;
+    }
+  }
   .main-cta {
     .smaller-header {
       font-size: 40px;
