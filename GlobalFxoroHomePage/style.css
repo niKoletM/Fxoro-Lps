@@ -1054,6 +1054,9 @@ header {
 }
 .sticky.top-bar {
   box-shadow: rgb(163 156 156) 0px 3px 8px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 90;
 }
 .top-bar {
   background-color: #273773;
@@ -2820,7 +2823,7 @@ footer {
 @media only screen and (max-width: 800px) {
   main {
 section {
-  & .mySlides {
+   .mySlides {
     .flex-container {
       flex-direction: column;
     }

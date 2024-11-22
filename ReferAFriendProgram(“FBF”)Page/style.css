@@ -19,7 +19,6 @@
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -223,16 +222,6 @@ width: 250px;
 .pr-3 {
   padding-right: 30px;
 }
-.pl-5 {
-  padding-left: 50px !important;
-}
-.pr-5 {
-  padding-right: 50px !important;
-}
-.px-0 {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
 .wrap {
   width: 100%;
   font-family: Montserrat;
@@ -303,42 +292,36 @@ width: 250px;
 .width-auto {
   width: fit-content;
 }
-.width-70 {
-  width: 70%;
-}
-.width-100 {
-  width: 100%;
-}
 .img-center {
   display: flex;
   margin: auto;
 }
 .text-black {
-  color: #0c0c0c !important;
+  color: #0c0c0c;
 }
 .text-yellow {
-  color: #ffb401 !important;
+  color: #ffb401;
 }
 .text-white {
-  color: #fff !important;
+  color: #fff;
 }
 .text-light-orange {
-  color: #ec673a !important;
+  color: #ec673a;
 }
 .text-orange {
-  color: #ef5a28 !important;
+  color: #ef5a28;
 }
 .text-dark-blue {
   color: #273773 !important;
 }
 .text-light-blue {
-  color: #2179bb !important;
+  color: #2179bb;
 }
 .text-bold {
   font-weight: 800;
 }
 .text-bolder {
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 .text-center {
   text-align: center !important;
@@ -354,6 +337,9 @@ width: 250px;
 }
 .no-text-decoration:hover {
   text-decoration: underline;
+}
+.no-list-style {
+  list-style: none;
 }
 .draw {
   animation: draw 4s ease forwards;
@@ -480,10 +466,11 @@ th, td:nth-child(2) {
   font-weight: 900 !important;
 }
 tbody tr:nth-child(even) {
-  background-color: #e5e5e5 !important;
+    background-color: #e5e5e5 !important;
 }
 }
 .table-wrap {
+  overflow-x: auto;
   table, td {
     border: 1px solid #273773;
     text-align: center;
@@ -530,6 +517,12 @@ tbody tr:nth-child(even) {
     color: #1b75ba;
   }
 }
+@media (max-width: 800px) {
+  .table-wrap table {
+    width: 100%; /* Ensures table remains scrollable */
+    min-width: 350px; /* Optional: Set a minimum width to prevent excessive shrinking */
+  }
+}
 .pattern-element {
   position: absolute;
   top: -27px;
@@ -542,146 +535,6 @@ tbody tr:nth-child(even) {
 .islamic-pattern {
 display: none;
 }
-.professional-img {
-  position: absolute;
-  width: 363px;
-  height: auto;
-  right: 0;
-  bottom: -43px;
-}
-.small-text {
-  font-size: 12px;
-}
-.realShares-tablet {
-  position: relative;
-  width: auto;
-  height: auto;
-  bottom: -20px;
-}
-.arrow-wrap {
-  padding: 5px 20px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  color: #273773;
-  display: flex;
-  clip-path: polygon(
-    0 0,
-    97% 0,
-    100% 50%,
-    97% 100%,
-    0 100%
-  );
-  .first-inner-arrow {
-    width: 35%;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #dbd5d5;
-  
-    clip-path: polygon(
-    0 0,
-    92% 0,
-    100% 50%,
-    92% 100%,
-    0 100%
-  );
-  }
-   .second-inner-arrow {
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #dbd5d5;
-    clip-path: polygon(
-    8% 0,
-    92% 0,
-    100% 50%,
-    92% 100%,
-    8% 100%,
-    14% 50%
-  );
-  }
-    .third-inner-arrow {
-      width: 40%;
-     margin: auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #dbd5d5;
-
-    clip-path: polygon(
-    8% 0,
-    92% 0,
-    100% 50%,
-    92% 100%,
-    8% 100%,
-    14% 50%
-  );
-  }
-    .first-inner-arrow:hover {
-    background-color: #2179bb;
-    color: #fff;
-    font-weight: 900;
-  }
-   .second-inner-arrow:hover {
-    background-color: #ffb401;
-    color: #fff;
-    font-weight: 900;
-  }
-    .third-inner-arrow:hover {
-    background-color: #ec673a;
-    color: #fff;
-    font-weight: 900;
-  }
-}
-.mobile-how-to-inv-realShares {
-  width: 100%;
-    display: none;
-    text-align: center;
-    font-weight: 800;
-  .first-card {
-    border: 5px solid #fff;
-    padding: 20px;
-    margin: 15px auto;
-    background-color: #2179bb;
-    color: #fff;
-  }
-   .second-card {
-    border: 5px solid #fff;
-    padding: 20px;
-    margin: 15px auto;
-    background-color: #ffb401;
-    color: #fff;
-  }
-   .third-card {
-    border: 5px solid #fff;
-    padding: 20px;
-    margin: 15px auto;
-    background-color: #ec673a;
-    color: #fff;
-  }
-}
-.trading-info-body {
-  background-image: url("./images/Trading\ info\ body\ image.png");
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.trading-info-body-img {
-    display: none;
-}
-@media (max-width: 1702px) {
-   .trading-info-body {
-  background-image: none;
-  height: auto;
- }
-  .trading-info-body-img {
-    display: block;
-    width: 100%;
-    height: auto;
- }
-}
 .flex {
   display: flex;
 }
@@ -692,7 +545,12 @@ header {
   width: 100%;
 }
 .sticky.top-bar {
+  /* box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0; */
+  /* box-shadow: rgba(245, 245, 250, 0.08) 0px 8px 8px 0; */
+  /* box-shadow: rgb(255 255 255) 0px 3px 8px 0; */
   box-shadow: rgb(163 156 156) 0px 3px 8px 0;
+  /* box-shadow: #ef5a28 0px 1px 11px 0; */
+  /* box-shadow: #ffb401 0px 1px 11px 0; */
 }
   .top-bar {
     background-color: #273773;
@@ -1063,25 +921,19 @@ main {
         background-position: center;
         z-index: 100;
       }
-      .header-background-realShares {
-        background-image: url("./images/background\ numbers.png");
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: center;
-      }
     .header-img-wrap {
       height: 500px;
       justify-content: center;
       align-items: center;
-      .header-img-realShares {
-        width: clamp(200px, 70vw, 660px);
-      }
       .header-img-forex {
         width: clamp(200px, 70vw, 776px);
       }
         .header-img-shares,
         .header-img-commodities {
         width: clamp(200px, 70vw, 710px);
+      }
+      .header-img-refer-a-friend-prog {
+        width: clamp(200px, 70vw, 660px);
       }
            .header-img-indices {
         width: clamp(200px, 70vw, 850px);
@@ -1094,9 +946,6 @@ main {
       }
       .header-img-islamicAcc {
         width: clamp(200px, 70vw, 500px);
-      }
-      .header-img-professionalAcc {
-        width: clamp(200px, 70vw, 440px);
       }
       .img-div {
         width: clamp(100px, 70vw, 385px);
@@ -1208,60 +1057,6 @@ main {
         margin: auto 30px;
         padding-bottom: 20px;
       }
-      a {
-        text-decoration: none;
-        color: #2179bb;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      table {
-        th {
-          background-color: #ffb401;
-        }
-        th, td {
-          padding: 10px;
-        }
-      }
-          .table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    .table, .table th, .table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-    }
-    .table-responsive {
-      overflow-x: auto;
-    }
-    .nav-tabs {
-        margin-top: 10px;
-      display: flex;
-      border-bottom: 2px solid #ddd;
-      cursor: pointer;
-    }
-    .nav-tabs .tab {
-      padding: 10px 20px;
-      border: 1px solid #ddd;
-      border-bottom: none;
-      background-color: #f1f1f1;
-      margin-right: 5px;
-      font-weight: bold;
-    }
-    .nav-tabs .tab.active {
-      background-color: #fff;
-      border-bottom: 2px solid #fff;
-      color: #2179bb;
-    }
-    .tab-content {
-      padding: 20px;
-      display: none;
-    }
-    .tab-content.active {
-      display: block;
-    }
     }
     .active,
     li:active {
@@ -1289,6 +1084,9 @@ svg {
   }
   .border-bottom {
     border-bottom: 2px solid #273773;
+  }
+   .blue-border-top {
+    border-top: 2px solid #273773;
   }
   .attention-container {
     background-color: #273773;
@@ -1544,14 +1342,6 @@ footer {
   }
 }
 @media only screen and (max-width: 1160px) {
-  .arrow-wrap {
-    .first-inner-arrow,
-    .second-inner-arrow,
-    .third-inner-arrow {
-      clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
-      margin-right: 5px;
-    }
-  }
   footer {
     .third-container {
       .brands {
@@ -1619,9 +1409,6 @@ margin-bottom: 20px;
      .md-lg-box {
   width: 100%;
  }
- .md-box {
-  width: 100%;
- }
  .pattern-element {
 display: none;
 }
@@ -1673,13 +1460,6 @@ display: block;
   }
 }
 @media only screen and (max-width: 872px) {
-  .md-box.width-100 {
-      width: 100%;
-    }
-    .professional-img {
-      position: relative;
-      margin: auto;
-    }
     main {
   .circles-section {
     display: flex;
@@ -1727,16 +1507,6 @@ display: block;
     }
   }
 }
-@media only screen and (max-width: 800px) {
- .arrow-wrap {
-  display: none;
- }
- .mobile-how-to-inv-realShares {
-  display: block;
- flex-direction: column;
- }
-
-}
 @media only screen and (max-width: 630px) {
   main {
     .xl-box {
@@ -1748,15 +1518,6 @@ display: block;
     .xxs-box {
       .mb-4 {
         margin-bottom: 20px;
-      }
-    }
-    .td-what-is-td {
-      .md-box,
-      .xxl-box {
-        display: block;
-      }
-      img {
-        margin-left: 0;
       }
     }
     section {
@@ -1880,23 +1641,10 @@ footer {
   }
 }
 }
-@media only screen and (max-width: 440px) {
- .mobile-how-to-inv-realShares {
-  .first-card.xs-box,
-  .second-card.xs-box,
-  .third-card.xs-box {
-    width: 100%;
-  }
- }
-}
 @media only screen and (max-width: 350px) {
   .svg-img {
     width: 35%;
     height: auto;
-  }
-  .professional-img {
-    width: 250px;
-    bottom: -35px;
   }
   footer {
     .second-container {
