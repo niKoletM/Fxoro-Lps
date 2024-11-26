@@ -1197,20 +1197,24 @@
             </a>
           </div>
     </div>
-    <script>
-      window.onscroll = function () { myFunction() };
+   <script>
+    window.onscroll = function () {
+      myFunction();
+    };
 
-      var header = document.getElementById("topHeader");
-      var sticky = header.offsetTop;
+    var header = document.getElementById("topHeader");
+    var sticky = header.offsetTop;
 
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        header.classList.remove("sticky-return");
+      } else {
+        header.classList.remove("sticky");
+        header.classList.add("sticky-return");
       }
-    </script>
+    }
+  </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const imageContainer = document.querySelector('.image-container');

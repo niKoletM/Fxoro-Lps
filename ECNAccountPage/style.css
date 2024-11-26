@@ -922,9 +922,12 @@ main {
            .header-img-indices {
         width: clamp(200px, 70vw, 850px);
       }
-            .header-img-E-book,
-            .header-img-ECNAcc {
+            .header-img-E-book {
         width: clamp(200px, 70vw, 1000px);
+      }
+      .header-img-ECNAcc {
+        margin-top: 30px;
+        width: clamp(200px, 70vw, 1078px);
       }
       .header-img-cryptocurrencies {
         width: clamp(200px, 70vw, 1300px);

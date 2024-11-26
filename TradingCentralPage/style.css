@@ -692,6 +692,9 @@ display: none;
     position: relative;
     margin: auto;
     cursor: pointer;
+    img {
+      pointer-events: none; 
+    }
   .round-button {
     position: absolute;
     top: 13px;
