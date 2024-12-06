@@ -31,7 +31,7 @@
       <header>
         <div id="topHeader" class="top-bar top-nav">
           <div class="container flex-container">
-            <img class="logo" src="./images/global-fxoro_logo.png" alt="icon" width="204" height="68">
+            <img class="logo" src="./images/global-fxoro_logo.png" alt="icon" width="166" height="60">
           <div class="hidden-contact-bar">
             <button class="openbtn"><svg xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512" width="30" hight="30">
@@ -231,7 +231,7 @@
               </div>
             </div>
 
-            <nav class="header_menu" id="Menu">
+            <nav class="header_menu mx-auto" id="Menu">
               <div class="menu-container">
                 <ul id="menu-fxoro-menu" class="menu">
                   <li class="dropdown menu-item">
@@ -340,8 +340,10 @@
                   <p><a href="https://global.fxoro.com/vi/" target="_blank" title="Tiếng Việt (vi)">Tiếng Việt</a></p>
                 </ul>
               </div>
-              <a href="https://my.global.fxoro.com/login/" target="_blank" class="logIn-btn">LOG IN</a>
-              <a href="https://my.global.fxoro.com/register?version=global" target="_blank" class="btn">REGISTER</a>
+                  <div class="login-register-btns">
+                    <a href="https://my.fxoro.com/login" target="_blank" class="btn">LOG IN</a>
+                    <a href="https://my.fxoro.com/register/" target="_blank" class="btn">REGISTER</a>
+                  </div>
             </div>
 
           </div>
@@ -1215,236 +1217,236 @@
       }
     }
   </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const imageContainer = document.querySelector('.image-container');
-        let observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('slide-up');
-              observer.disconnect();
-            }
-          });
-        }, {
-          threshold: 0.5
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const imageContainer = document.querySelector('.image-container');
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('slide-up');
+            observer.disconnect();
+          }
         });
-        observer.observe(imageContainer);
+      }, {
+        threshold: 0.5
       });
-    </script>
-    <script>
-    let slideIndex1 = 0;
+      observer.observe(imageContainer);
+    });
+  </script>
+  <script>
+  let slideIndex1 = 0;
+  showSlides(slideIndex1);
+
+  function showSlides(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    if (n >= slides.length) { slideIndex1 = 0; }
+    if (n < 0) { slideIndex1 = slides.length - 1; }
+
+    slides[slideIndex1].style.display = "block";
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex1].className += " active";
+  }
+
+  function currentSlide(n) {
+    slideIndex1 = n;
     showSlides(slideIndex1);
+  }
+  document.querySelectorAll('.dot').forEach((dot, index) => {
+    dot.addEventListener("click", () => currentSlide(index));
+  });
 
-    function showSlides(n) {
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
+  function autoSlides() {
+    slideIndex1++;
+    showSlides(slideIndex1);
+    setTimeout(autoSlides, 90000);
+  }
 
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+  autoSlides();
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    function moveToSelected(element) {
+      if (element == "next") {
+        var selected = $(".selected").next();
+      } else if (element == "prev") {
+        var selected = $(".selected").prev();
+      } else {
+        var selected = element;
       }
 
-      if (n >= slides.length) { slideIndex1 = 0; }
-      if (n < 0) { slideIndex1 = slides.length - 1; }
+      var next = $(selected).next();
+      var prev = $(selected).prev();
+      var prevSecond = $(prev).prev();
+      var nextSecond = $(next).next();
 
-      slides[slideIndex1].style.display = "block";
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+      $(selected).removeClass().addClass("selected");
+
+      $(prev).removeClass().addClass("prev");
+      $(next).removeClass().addClass("next");
+
+      $(nextSecond).removeClass().addClass("nextRightSecond");
+      $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+      $(nextSecond).nextAll().removeClass().addClass("hideRight");
+      $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+    }
+
+    $(document).keydown(function (e) {
+      switch (e.which) {
+        case 37: // left
+          moveToSelected("prev");
+          break;
+
+        case 39: // right
+          moveToSelected("next");
+          break;
+
+        default:
+          return;
       }
-      dots[slideIndex1].className += " active";
-    }
-
-    function currentSlide(n) {
-      slideIndex1 = n;
-      showSlides(slideIndex1);
-    }
-    document.querySelectorAll('.dot').forEach((dot, index) => {
-      dot.addEventListener("click", () => currentSlide(index));
+      e.preventDefault();
     });
 
-    function autoSlides() {
-      slideIndex1++;
-      showSlides(slideIndex1);
-      setTimeout(autoSlides, 90000);
+    $("#carousel div").click(function () {
+      moveToSelected($(this));
+    });
+
+    $("#prev").click(function () {
+      moveToSelected("prev");
+    });
+
+    $("#next").click(function () {
+      moveToSelected("next");
+    });
+
+  </script>
+  <script>
+    var svgElements = document.querySelectorAll('.drawable');
+    document.addEventListener('scroll', animate);
+
+    function inView(element) {
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+
+      var scrollPosition = scrollY + windowHeight;
+      var elementPosition = element.getBoundingClientRect().top + scrollY + element.clientHeight;
+
+      return scrollPosition > elementPosition;
     }
 
-    autoSlides();
-    </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-      function moveToSelected(element) {
-        if (element == "next") {
-          var selected = $(".selected").next();
-        } else if (element == "prev") {
-          var selected = $(".selected").prev();
+    function animate() {
+      svgElements.forEach(function (svgElement) {
+        if (inView(svgElement)) {
+          svgElement.classList.add('draw');
+        }
+      });
+    }
+  </script>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
         } else {
-          var selected = element;
+          panel.style.maxHeight = "fit-content";
         }
+      });
+    }
+  </script>
+  <script>
+    document.querySelector('.openbtn').addEventListener('click', function () {
+        const popup = document.querySelector('.pup');
+        popup.classList.toggle('hidden');
+      });
 
-        var next = $(selected).next();
-        var prev = $(selected).prev();
-        var prevSecond = $(prev).prev();
-        var nextSecond = $(next).next();
+      document.addEventListener('click', function (event) {
+        const popup = document.querySelector('.pup');
+        const button = document.querySelector('.openbtn');
 
-        $(selected).removeClass().addClass("selected");
+        if (!popup.contains(event.target) && !button.contains(event.target)) {
+          popup.classList.add('hidden');
+        }
+      });
+  </script>
+  <script>
 
-        $(prev).removeClass().addClass("prev");
-        $(next).removeClass().addClass("next");
+    document.addEventListener("DOMContentLoaded", function () {
+      const video = document.getElementById("vidVid");
+      const overlay = document.getElementById("overlay");
+      const cntnt = document.getElementById("cntnt");
+      const firstFrame = document.getElementById("videofirstframe");
+      const playButton = document.querySelector(".play");
+      const pauseButton = document.getElementById("pause");
+      const muteButton = document.getElementById("mute");
+      const unmuteButton = document.getElementById("unmute");
 
-        $(nextSecond).removeClass().addClass("nextRightSecond");
-        $(prevSecond).removeClass().addClass("prevLeftSecond");
-
-        $(nextSecond).nextAll().removeClass().addClass("hideRight");
-        $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+        function fadeOut(element) {
+        element.classList.add("hidden");
       }
 
-      $(document).keydown(function (e) {
-        switch (e.which) {
-          case 37: // left
-            moveToSelected("prev");
-            break;
-
-          case 39: // right
-            moveToSelected("next");
-            break;
-
-          default:
-            return;
-        }
-        e.preventDefault();
-      });
-
-      $("#carousel div").click(function () {
-        moveToSelected($(this));
-      });
-
-      $("#prev").click(function () {
-        moveToSelected("prev");
-      });
-
-      $("#next").click(function () {
-        moveToSelected("next");
-      });
-
-    </script>
-    <script>
-      var svgElements = document.querySelectorAll('.drawable');
-      document.addEventListener('scroll', animate);
-
-      function inView(element) {
-        var windowHeight = window.innerHeight;
-        var scrollY = window.scrollY || window.pageYOffset;
-
-        var scrollPosition = scrollY + windowHeight;
-        var elementPosition = element.getBoundingClientRect().top + scrollY + element.clientHeight;
-
-        return scrollPosition > elementPosition;
+        function fadeIn(element) {
+        element.classList.remove("hidden");
       }
 
-      function animate() {
-        svgElements.forEach(function (svgElement) {
-          if (inView(svgElement)) {
-            svgElement.classList.add('draw');
-          }
-        });
-      }
-    </script>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-
-          var panel = this.nextElementSibling;
-
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = "fit-content";
-          }
-        });
-      }
-    </script>
-    <script>
-      document.querySelector('.openbtn').addEventListener('click', function () {
-          const popup = document.querySelector('.pup');
-          popup.classList.toggle('hidden');
-        });
-
-        document.addEventListener('click', function (event) {
-          const popup = document.querySelector('.pup');
-          const button = document.querySelector('.openbtn');
-
-          if (!popup.contains(event.target) && !button.contains(event.target)) {
-            popup.classList.add('hidden');
-          }
-        });
-    </script>
-    <script>
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const video = document.getElementById("vidVid");
-        const overlay = document.getElementById("overlay");
-        const cntnt = document.getElementById("cntnt");
-        const firstFrame = document.getElementById("videofirstframe");
-        const playButton = document.querySelector(".play");
-        const pauseButton = document.getElementById("pause");
-        const muteButton = document.getElementById("mute");
-        const unmuteButton = document.getElementById("unmute");
-
-          function fadeOut(element) {
-          element.classList.add("hidden");
-        }
-
-         function fadeIn(element) {
-          element.classList.remove("hidden");
-        }
-
-        playButton.addEventListener("click", function () {
-          video.play();
-           fadeOut(overlay);
-          fadeOut(firstFrame);
-          cntnt.style.display = "none";
-          playButton.style.display = "none";
-          pauseButton.style.display = "block";
-          muteButton.style.display = "block";
-        });
-
-        pauseButton.addEventListener("click", function () {
-          video.pause();
-          fadeIn(overlay);
-          fadeIn(firstFrame);
-          cntnt.style.display = "block";
-          playButton.style.display = "block";
-          pauseButton.style.display = "none";
-          muteButton.style.display = "none";
-          unmuteButton.style.display = "none";
-        });
-
-        muteButton.addEventListener("click", function () {
-          video.muted = true;
-          muteButton.style.display = "none";
-          unmuteButton.style.display = "block";
-        });
-
-        unmuteButton.addEventListener("click", function () {
-          video.muted = false;
-          unmuteButton.style.display = "none";
-          muteButton.style.display = "block";
-        });
-
-        video.addEventListener("ended", function () {
-          fadeIn(overlay);
-          fadeIn(firstFrame);
-          cntnt.style.display = "block"
-          playButton.style.display = "block";
-          pauseButton.style.display = "none";
-          muteButton.style.display = "none";
-          unmuteButton.style.display = "none";
-        });
+      playButton.addEventListener("click", function () {
+        video.play();
+          fadeOut(overlay);
+        fadeOut(firstFrame);
+        cntnt.style.display = "none";
+        playButton.style.display = "none";
+        pauseButton.style.display = "block";
+        muteButton.style.display = "block";
       });
-    </script>
+
+      pauseButton.addEventListener("click", function () {
+        video.pause();
+        fadeIn(overlay);
+        fadeIn(firstFrame);
+        cntnt.style.display = "block";
+        playButton.style.display = "block";
+        pauseButton.style.display = "none";
+        muteButton.style.display = "none";
+        unmuteButton.style.display = "none";
+      });
+
+      muteButton.addEventListener("click", function () {
+        video.muted = true;
+        muteButton.style.display = "none";
+        unmuteButton.style.display = "block";
+      });
+
+      unmuteButton.addEventListener("click", function () {
+        video.muted = false;
+        unmuteButton.style.display = "none";
+        muteButton.style.display = "block";
+      });
+
+      video.addEventListener("ended", function () {
+        fadeIn(overlay);
+        fadeIn(firstFrame);
+        cntnt.style.display = "block"
+        playButton.style.display = "block";
+        pauseButton.style.display = "none";
+        muteButton.style.display = "none";
+        unmuteButton.style.display = "none";
+      });
+    });
+  </script>
 
 
   </body>
