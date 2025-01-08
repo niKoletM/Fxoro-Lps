@@ -28,6 +28,20 @@
 
   <body>
     <div class="wrap">
+      <div id="cookie_msg" class="cookie-msg">
+        <div class="container">
+          <div class="row">
+            <div class="xl-box">
+              <p>The site uses cookies. By closing the message you are agreeing to our use of cookies.
+                <a class="no-text-decoration text-light-blue" href="/privacy-and-security-policy/">Read More</a>
+              </p>
+            </div>
+            <div class="width-100">
+              <a class="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; acceptCookies()">Ok</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <header>
         <div id="topHeader" class="top-bar top-nav">
           <div class="container flex-container">
@@ -347,7 +361,21 @@
             </div>
 
           </div>
+          <div id="getOurApp" class="getOurApp-wrap">
+            <div class="container">
+              <div class="row">
+                <div id="GetOurApp" style="inset:unset;position:relative; border-radius:0;border:0;background-color:transparent;">
+                  <div class="content">
+                    <p>Get our app!</p>
+                    <a href="https://fxoro.com/app/?click_location=website_popup_link" target="_blank" class="btn">
+                      Download </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+       
       </header>
       <main>
         <section>
@@ -1153,6 +1181,15 @@
           </div>
         </div>
       </footer>
+            <div class="scrollBtn">
+              <button id="scrollToTopBtn">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                </svg>
+              </button>
+            </div>
           <div class="contact-bar">
             <a href="Tel:+357.25.20.5555" class="phone">
               <?xml version="1.0" encoding="utf-8"?>
@@ -1198,25 +1235,55 @@
               </svg>
             </a>
           </div>
+          <div id="disclaimer-bar" class="disclaimer_footer">
+            <div class="container">
+              <div class="row">
+                    <div class="xl-box">
+                      <p>
+                        For best execution purposes, ORO Fintech Limited has chosen a European Regulated Investment Firm as
+                        execution venue, in order to maintain professional standards and to preserve top-notch quality of services.
+                      </p>
+                    </div>
+                    <div class="width-100">
+                      <span class="btn">Close</span>
+                    </div>
+              </div>
+            </div>
+          </div>
     </div>
-   <script>
-    window.onscroll = function () {
-      myFunction();
-    };
+        <script>
+          var header = document.getElementById("topHeader");
+          var sticky = header.offsetTop;
 
-    var header = document.getElementById("topHeader");
-    var sticky = header.offsetTop;
+          window.addEventListener("scroll", function () {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+              header.classList.remove("sticky-return");
+            } else {
+              header.classList.remove("sticky");
+              header.classList.add("sticky-return");
+            }
+          });
+        </script>
+        <script>
+          var cookie_msg = document.getElementById("cookie_msg");
+          // var getAppBar = document.getElementById("getOurApp");
+          var sticky = header.offsetTop;
 
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-        header.classList.remove("sticky-return");
-      } else {
-        header.classList.remove("sticky");
-        header.classList.add("sticky-return");
-      }
-    }
-  </script>
+          window.addEventListener("scroll", function () {
+            if (window.pageYOffset > sticky) {
+              cookie_msg.classList.add("stay");
+              cookie_msg.classList.remove("return");
+              getAppBar.classList.add("stay");
+              getAppBar.classList.remove("return");
+            } else {
+              cookie_msg.classList.remove("stay");
+              cookie_msg.classList.add("return");
+              getAppBar.classList.remove("stay");
+              getAppBar.classList.add("return");
+            }
+          });
+        </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const imageContainer = document.querySelector('.image-container');
@@ -1447,8 +1514,35 @@
       });
     });
   </script>
-
-
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+    scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+<script>
+	function acceptCookies (){
+		let date = new Date();
+		date.setDate(date.getDate() + 30);
+		let element = document.getElementById("cookie_msg");
+		document.cookie = "acceptedCookies=true;expires="+date.toUTCString()+";path=/;domain=.fxoro.com;";
+		element.style.display="none";
+		const mainElement = document.querySelector("body .content-area.with-cookie-msg")
+		if (mainElement){
+			mainElement.classList.remove("with-cookie-msg")
+		}
+	}
+</script>
   </body>
 
 </html>

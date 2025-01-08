@@ -950,6 +950,10 @@ main {
            .header-img-indices {
         width: clamp(200px, 70vw, 850px);
       }
+        .header-img-regulations {
+      width: clamp(200px, 70vw, 1159px);
+       margin-top: 20px;
+    }
             .header-img-E-book {
         width: clamp(200px, 70vw, 1000px);
       }
