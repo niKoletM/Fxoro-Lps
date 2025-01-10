@@ -1516,18 +1516,35 @@
   </script>
   <script>
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    window.onscroll = function () {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 200) {
         scrollToTopBtn.style.display = "block";
       } else {
         scrollToTopBtn.style.display = "none";
       }
-    };
+    });
+
     scrollToTopBtn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+      const scrollDuration = 2000;
+      const startTime = performance.now();
+      const startPosition = window.scrollY;
+
+      function scrollStep(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / scrollDuration, 1);
+        const easeProgress = progress * (2 - progress);
+        const scrollPosition = 1 - Math.cos((progress *Math.Pi) / 2);
+
+        window.scrollTo(0, startPosition * (1 - easeProgress));
+
+        if (progress < 1) {
+          requestAnimationFrame(scrollStep);
+        } else {
+          window.scrollTo(0,0)
+        }
+      }
+    requestAnimationFrame(scrollStep);
     });
   </script>
 <script>
