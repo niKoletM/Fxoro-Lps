@@ -1525,27 +1525,19 @@
       }
     });
 
-    scrollToTopBtn.addEventListener("click", function () {
-      const scrollDuration = 2000;
-      const startTime = performance.now();
-      const startPosition = window.scrollY;
+    scrollToTopBtn.addEventListener("click", function() {
+      const scrollSpeed = 100;
 
-      function scrollStep(currentTime) {
-        const elapsedTime = currentTime - startTime;
-        const progress = Math.min(elapsedTime / scrollDuration, 1);
-        const easeProgress = progress * (2 - progress);
-        const scrollPosition = 1 - Math.cos((progress *Math.Pi) / 2);
-
-        window.scrollTo(0, startPosition * (1 - easeProgress));
-
-        if (progress < 1) {
-          requestAnimationFrame(scrollStep);
+      function constantSpeedScroll() {
+        if (window.scrollY >0) {
+          window.scrollBy(0, -scrollSpeed);
+          requestAnimationFrame(constantSpeedScroll);
         } else {
-          window.scrollTo(0,0)
+          window.scrollTo(0,0);
         }
       }
-    requestAnimationFrame(scrollStep);
-    });
+      requestAnimationFrame(constantSpeedScroll);
+    })
   </script>
 <script>
 	function acceptCookies (){
